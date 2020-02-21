@@ -1,0 +1,27 @@
+---
+title: Exercise 2.1 Review
+author: David Brown
+date: 16/01/2020
+language: en-US
+state:
+server: https://isle.heinz.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# Exercise 2.1 Review
+
+### For homework, you were asked to write one complete sentence that communicates the main story for each visualization.
+
+### With a partner, compare responses and compose one together that best represents your interpretation.
+
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_1_a.jpg" alt="A. Percentage of adults who feel secure sharing private data via different communication channels" />
+
+<FreeTextQuestion
+    question="A. Percentage of adults who feel secure sharing private data via different communication channels."  
+/>
+
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_1_b.jpg" alt="Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine." />
+
+<FreeTextQuestion
+    question="Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
+/>

@@ -1,0 +1,72 @@
+---
+title: "MICSUP Normalized Frequencies"
+author: David Brown
+date: 30/12/2019
+state:
+require:
+    dfm_wide: https://isle.stat.cmu.edu/76-380_780_micusp_dfm.csv
+    dfm_long: https://isle.stat.cmu.edu/76-380_780_micusp_dfm_long.csv
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# MICUSP Normalized Frequencies
+
+The data in the Explorer below include normalized counts of the 200 most frequent tokens in <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+
+The matrix also includes some metadata (in the form of categorial variables), like *paper discipline*, *student gender*, and *student level*.
+
+Let's start with a simple plot:
+1. Click 'Show Toolbox'
+1. From the 'Plots' menu, select 'Box Plot'
+1. Select 'the' as your variable
+1. 'Group By' 'level_cat'
+1. Click 'Generate'
+
+What does the plot suggest to you?
+
+Now let's try another:
+1. Click 'Show Toolbox'
+1. Find the 'Plots' menu and select 'Bar Chart'
+1. From 'Bars represent' select 'Function evaluated for variable'
+1. From 'Variable' select 'paper_discipline'
+1. Set the y-axis to 'the'
+1. 'Summary function' should be 'Mean'
+1. Order the bars either by ascending or descending frequency
+1. Finally, click 'Generate'
+
+Does the plot suggest any kind of pattern to you?
+
+Repeat the above process for the token 'his'.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="dfm_wide"
+        data={dfm_wide}
+        categorical={['text_id','paper_discipline','level_cat','student_gender','speaker_status','paper_type']}
+        quantitative={['the','of','and','to','in','a','is','that','for','this','be','as','are','with','it','on','not','by','was','from','an','have','their','or','which','i','they','his','can','will','we','were','at','these','more','but','he','would','has','one','also','all','there','her','between','when','if','may','only','about','been','what','its','into','both','time','who','students','had','could','social','some','how','them','she','do','my','used','does','our','people','each','so','then','should','use','study','system','new','data','where','those','state','like','women','after','found','research','using','must','model','important','within','work','et_al','life','world','power','process','children','number','society','analysis','case','able','information','development','class','high','individual','possible','group','education','him','human','theory','just','school','need','level','point','you','water','us','language','change','control','second','political','figure','community','family','good','health','studies','higher','states','nature','behavior','shown','economic','energy','values','groups','history','individuals','public','p','role','increase','american','paper','support','experience','design','provide','sense','relationship','question','effects','specific','knowledge','value','current','me','test','god','body','table','species','man','place','understanding','rights','structure','systems','care','think','words','type','environment','levels','population','questions','culture','idea','government','quality','right','area','act','men','areas','policy','white','best','determine','gender','participants','potential']}
+        models={["Simple Linear Regression","Multiple Linear Regression","Logistic Regression"]}
+    />
+</Gate>
+
+Next, we'll look at the data (or at least some of it) reorganized into a 'long' format. Here our numerical columns are collapsed into a categorial variable called 'token' that contains what were the column headings and one called 'per_mil' that now contains the normalized frequencies.
+
+This allows us to filter and plot the data in new ways. For example, lets make a histogram for the pronoun 'I':
+1. At the top of the 'token' column select 'i' from the drop-down list.
+1. At the bottom of the Data Explorer choose 'Create filtered dataset'.
+1. From the 'Plot' menu select 'Histogram'.
+1. For the variable choose 'per_mil'.
+1. For 'Group By' select 'speaker_status'
+1. Finally, click 'Generate'.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="dfm_long"
+        data={dfm_long}
+        categorical={['text_id','paper_discipline','level_cat','student_gender','speaker_status','paper_type','token']}
+        quantitative={['per_mil']}
+        models={["Simple Linear Regression","Multiple Linear Regression","Logistic Regression"]}
+    />
+</Gate>
+
+Based on that 

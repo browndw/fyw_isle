@@ -1,0 +1,125 @@
+---
+title: "MICUSP Confidence"
+author: David Brown
+date: 22/01/2020
+state:
+require:
+    norm: "https://isle.stat.cmu.edu/76-107_micusp_confidence.json"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# Exploring Expressions of Confidence
+# in MICUSP
+
+For this exercise, we're going to investigate the ways which various academic disciples manage expressions of confidence.
+
+Which disciplines are more tolerant of or prone to expressing high conficence: *it is clear that...*, *the obvious response...*, *the data show...* And which ones are more prone to hedging: *this may indicate...*, *one potential solution...*, *the data suggest...*
+
+The data we'll be investigating, come from  <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+
+We, then, tagged that data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a> categorizes words and phrases into rhetorical categories. For example, in some <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> or text-types (like much of the writing done in universities), abstract and technical language serve an important function. DocuScope groups all these words into a category called **AcademicTerms**. Here is an excerpt from an upper-level student paper, with the AcademicTerms identified by DocuScope in bold:
+
+* With this **equation**, the initial conditions, and the **experimentally** determined **natural frequency** and damping **ratio**, we can know the under-damped vibration **as a function of** time, and, thus, the exact **behavior** of the floorboard.
+
+There are  <a href="https://drive.google.com/open?id=1Igmu8tf7KOI_UQB7OUPPyjbU8Cq46muA8MkQP5BwuPM" target="_blank">37 DocuScope categories</a> (or what are called "clusters"):
+
+1. AcademicTerms
+1. AcademicWritingMoves
+1. Character
+1. Citation
+1. CitationAuthority
+1. CitationHedged
+1. ConfidenceHedged
+1. ConfidenceHigh
+1. ConfidenceLow
+1. Contingent
+1. Description
+1. Facilitate
+1. FirstPerson
+1. ForceStressed
+1. Future
+1. InformationChange
+1. InformationChangeNegative
+1. InformationChangePositive
+1. InformationExposition
+1. InformationPlace
+1. InformationReportVerbs
+1. InformationStates
+1. InformationTopics
+1. Inquiry
+1. Interactive
+1. MetadiscourseCohesive
+1. MetadiscourseInteractive
+1. Narrative
+1. Negative
+1. Positive
+1. PublicTerms
+1. Reasoning
+1. Responsibility
+1. Strategic
+1. SyntacticComplexity
+1. Uncertainty
+1. Updates
+
+For this excercise, we'll only be looking at ConfidenceHigh and ConfidenceHedged.
+
+### Let's start with a quick survey.
+
+<MultipleChoiceSurvey
+    anonymous
+    id="ConfidenceHighSurvey"
+    question="In which discipline is ConfidenceHigh the most frequent?"
+    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
+
+
+<MultipleChoiceSurvey
+    anonymous
+    id="ConfidenceHedgedSurvey"
+    question="In which discipline is ConfidenceHedged the most frequent?"
+    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
+
+### Now we'll check the data.
+
+Below is a data table with columns for the normalized frequcies of ConfidenceHigh and ConfidenceHedged for each paper.
+
+There is also a column idenfiying the academic discipline.
+
+We're going to make plots showing the average (or mean) for ConfidenceHigh and ConfidenceHedged by PaperDiscipline.
+
+To make these plots:
+
+1. Click 'Show Toolbox'
+1. Find the 'Plots' menu and select 'Bar Chart'
+1. From 'Bars represent' select 'Function evaluated for variable'
+1. From 'Variable' select 'PaperDiscipline'
+1. 'Summary function' should be 'Mean'
+1. Order the bars either by ascending or descending frequency
+1. Finally, click 'Generate'
+
+You plot should appear in the 'Output'. You can hide the toolbox and use the toggle option for a fullscreen view of your plot.
+
+Generate plots for both ConfidenceHedged and ConfidenceHigh.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="norm"
+        data={norm}
+        categorical={['PaperID','PaperDiscipline']}
+        quantitative={['ConfidenceHedged','ConfidenceHigh']}
+    />
+</Gate>
+
+### Finally, suggest brief explanations for the patterns you found.
+
+You might think about the topics these disciplines engage, how they engage in research, and how represent knowledge.
+
+For this, it might be useful to consult the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. You can search for words and phrases, in addition to restricing your search to specific disciplines.
+
+<FreeTextQuestion
+    question="What might account for disciplines at the extremes of ConfidenceHedged?"
+/>
+
+<FreeTextQuestion
+    question="What might account for disciplines at the extremes of ConfidenceHigh?"
+/>
