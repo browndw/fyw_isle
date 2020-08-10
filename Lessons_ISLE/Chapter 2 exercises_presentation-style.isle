@@ -1,0 +1,150 @@
+---
+title: Chapter 2 Review
+author: Mike Laudenbach
+description: null
+keywords: null
+date: 08/06/2020
+language: en-US
+state: null
+server: https://isle.heinz.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+type: presentation
+---
+
+# Exercises 2.1 & 2.2 Review
+#### Objective: To give you practice writing stories about data
+
+===
+<div align="left">## For homework, you were asked to write one complete sentence that communicates the main story for each visualization.
+
+### With your group, compare responses and compose one together that best represents your interpretation.</div>
+
+
+
+===
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_a.png" width="500" height="300"
+/></div>
+
+<FreeTextQuestion
+    question="Percentage of adults who feel secure sharing private data via different communication channels."  
+/>
+
+===
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_b.png"  width="500" height="285"
+/></div>
+
+<FreeTextQuestion
+    question="Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
+/>
+
+===
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_c.png"  width="500" height="285" /></div>
+
+<FreeTextQuestion
+    question="Times to complete three different virtual store functions by adults over 60 years and under 30 years."
+/>
+
+===
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_d.png"  width="500" height="170" /></div>
+
+<FreeTextQuestion
+    question="Average hours studied per week, GPA, and degree completion of students in three different majors."
+/>
+
+===
+
+### When you're done with 2.1, leave your breakout room and return to the main meeting.
+
+===
+
+<div align="left">## For 2.2, discuss you thoughts on each of the visualizations and accompanying claim in your group. As best you can, come to a concensus/compromise on how credible you find each of them.
+
+### Submit your responses using the survey.
+</div>
+
+===
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="Male students answered more questions correctly than their female peers"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/>
+
+===
+
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="The number of units sold increased from 2014-2017"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/>
+</Panel>
+
+===
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" /> </div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="Racist attitudes toward dating appear to have improved slightly since 2008"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/></Panel>
+
+===
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="Revenue has steadily increased over the last decade"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/></Panel>
+
+===
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="Shorter women receive more unsolicited emails than taller women (especially women above 5’10”) while the opposite trend is true for men"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/></Panel>
+
+===
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="Gasoline prices dropped by over one-third between 2012-2015"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/></Panel>
+
+===
+<Panel bodyStyle={{ overflowY: 'scroll', height: 700 }}>
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    question="According to the OKCupid database, women are nearly twice as likely as men to believe that the earth is bigger than the sun"
+    answers={[ '4 = Completely credible', '3 = Probably credible', '2 = Probably not credible', '1 = Not at all credible' ]}
+/></Panel>
+
+===
+
+### When your group is done, you can leave the break out room. Be prepared to discuss your choices.
+

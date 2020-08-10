@@ -1,0 +1,26 @@
+---
+title: Nurses Gloves Assignment
+author: Mike Laudenbach
+description:
+keywords:
+date: 08/07/2020
+language: en-US
+state:
+require:
+    dataset_NG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Nurses Gloves Assignment 
+
+## Exercise 4.3
+
+Dataset:
+<DataExplorer
+  data={dataset_NG}
+  categorical={[]}
+  quantitative={[]}
+/>
+
+
+

@@ -1,0 +1,32 @@
+---
+title: Exercise 4.3 WaD
+author: Mike Laudenbach
+description:
+keywords:
+date: 06/06/2020
+language: en-US
+state:
+require:
+    dataset_a: "https://isle.stat.cmu.edu/proseed-dummy-course_dataset_a.csv"
+    dataset_b: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset_b_4_3.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 4
+
+## Exercise 4.3
+The following two data sets should encourage you to think carefully about how your group and arrange your data. For each of these data sets, create a visualization that tells the most compelling story. Refer to the checklist above to ensure that your visualization follows all of the best practices. Be prepared to describe and defend your design choices in class discussion.
+
+<Pages>
+Dataset A: This data was collected to answer the question of which fuel type is safest for the environment. The EUG2000 fuel is currently available while SEGO fuel is an experimental alkylate blend for small motors<DataExplorer
+  data={dataset_a}
+  categorical={['Fuel Type', 'Catalyst']}
+  quantitative={['Emissions (in grams CO2 per gallon)']}
+/>
+
+Dataset B: This data was collected to learn which type of surface or pavement will cause the fewest vehicle skids. We measure this through Coefficient of Friction (COF), which ranges from zero to one. A higher COF means that the vehicle is less likely to skid<DataExplorer
+  data={dataset_b}
+  categorical={['Surface Type']}
+  quantitative={['10mph', '20mph', '30mph', '40mph']}
+/></Pages>
+

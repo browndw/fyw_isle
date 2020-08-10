@@ -1,0 +1,76 @@
+---
+title: Exercise 3.3 WaD
+author: Michael Laudenbach
+description:
+keywords:
+date: 06/12/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset1_3.3.csv"
+    dataset2: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset2_3.3.csv"
+    dataset3: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset3_3.3.csv"
+    dataset4: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset4_3.3.csv" 
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 3
+## Exercise 3.3
+### Objective: Create appropriate data visualizations that tell effective data stories
+[Summary of what the chapter emphasizes]
+
+
+For each of the following four data sets, create a data visualization that tells a compelling story. You may choose to represent the data with a graph or leave it in a table, but be sure to design your visualization to emphasize the story you want to tell. Your visualizations should include:
+* Clearly labeled axes 
+* Readable and easily understandable legends
+* Captions that contain
+    * The word “figure” or “table” followed by a number and a colon
+    * Clearly explained units of measurement 
+    * What is being compared 
+    * Any other necessary context
+
+Be prepared to describe and defend your design choices in class discussion.
+
+<Pages>
+### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.<DataExplorer
+  data={dataset1}
+  categorical={['Major']}
+  quantitative={['Percent students "satisfied" or "Very satisfied"']}
+/>
+<FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+
+
+
+### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. <DataExplorer
+  data={dataset2}
+  categorical={[]}
+  quantitative={[]}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+
+
+### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. <DataExplorer
+  data={dataset3}
+  categorical={[]}
+  quantitative={[]}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+
+
+### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. <DataExplorer
+  data={dataset4}
+  categorical={[]}
+  quantitative={[]}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</Pages>
+
+
+
+
+
