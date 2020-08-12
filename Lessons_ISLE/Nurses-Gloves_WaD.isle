@@ -24,3 +24,8 @@ Dataset:
 
 
 
+<DataExplorer
+  data={dataset_NG}
+  categorical={[]}
+  quantitative={[]}
+/>
