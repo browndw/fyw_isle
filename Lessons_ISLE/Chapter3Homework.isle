@@ -7,10 +7,10 @@ date: 06/12/2020
 language: en-US
 state:
 require:
-    dataset1: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset1_3.3.csv"
-    dataset2: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset2_3.3.csv"
-    dataset3: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset3_3.3.csv"
-    dataset4: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset4_3.3.csv" 
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
+    dataset2: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_b.csv"
+    dataset3: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_c.csv"
+    dataset4: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_d.csv" 
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
@@ -101,8 +101,8 @@ Be prepared to describe and defend your design choices in class discussion.
 
 ### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. <DataExplorer
   data={dataset2}
-  categorical={[]}
-  quantitative={[]}
+  categorical={['Month']}
+  quantitative={['Detroit', 'Austin']}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
@@ -110,8 +110,8 @@ Be prepared to describe and defend your design choices in class discussion.
 
 ### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. <DataExplorer
   data={dataset3}
-  categorical={[]}
-  quantitative={[]}
+  categorical={['Type']}
+  quantitative={['Number_Brands', 'Avg_Calories', 'Avg_Sodium_mgs']}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
@@ -119,8 +119,8 @@ Be prepared to describe and defend your design choices in class discussion.
 
 ### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. <DataExplorer
   data={dataset4}
-  categorical={[]}
-  quantitative={[]}
+  categorical={['Interval']}
+  quantitative={['Revolution_Helmet', 'Standard_Helmet']}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />

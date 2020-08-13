@@ -8,7 +8,7 @@ language: en-US
 state:
 require:
     dataset_a: "https://isle.stat.cmu.edu/proseed-dummy-course_dataset_a.csv"
-    dataset_b: "https://isle.stat.cmu.edu/draft-WaD-proseed_dataset_b_4_3.csv"
+    dataset_b: "https://isle.stat.cmu.edu/WAD-proseed_dataset_4.3_b.csv"
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
@@ -76,7 +76,7 @@ For each of these data sets, create a visualization that tells the most compelli
 ### Dataset B: This data was collected to learn which type of surface or pavement will cause the fewest vehicle skids. We measure this through Coefficient of Friction (COF), which ranges from zero to one. A higher COF means that the vehicle is less likely to skid<DataExplorer
   data={dataset_b}
   categorical={['Surface Type']}
-  quantitative={['10mph', '20mph', '30mph', '40mph']}
+  quantitative={['10mph', '20mph', '30mph', '40mph', 'Average_mph']}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
