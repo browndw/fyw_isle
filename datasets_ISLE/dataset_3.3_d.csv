@@ -1,7 +1,7 @@
-Interval ,Percentage_athlete_concussions,Helmet_Type
+Interval,Percentage_athlete_concussions,Helmet_Type
  One week ,0.49,Revolution
  Two weeks ,0.78,Revolution
- Three weeks ,0.90,Revolution
+ Three weeks ,0.9,Revolution
  Four weeks ,0.98,Revolution
  One week ,0.46,Standard
  Two weeks ,0.72,Standard

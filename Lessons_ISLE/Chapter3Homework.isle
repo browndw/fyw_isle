@@ -17,13 +17,13 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 # Chapter 3 Exercises
 
 
-### After reading Chapter 3, please complete Exercises 3.1 and 3.3, below.
+### After reading Chapter 3, please complete Exercises 3.1 and 3.3, below. Simply click each exercise's button to see your assigned tasks. 
 
 
 ***************************************
-
-
-#### Exercise 3.1
+<Collapse
+  header="Exercise 3.1"
+>
 
 **The purpose of this exercise is to refine your caption-writing skills.** 
 
@@ -68,9 +68,14 @@ On each of the 6 pages below, analyze the caption and determine whether it is ad
     </div>
 
 </Pages>
+  
+</Collapse>
+
 
 ****************************************
-#### Exercise 3.3
+<Collapse
+  header="Exercise 3.2"
+>
 
 **The purpose of this exercise is to give you practice in creating strong data visualizations.**
 
@@ -215,6 +220,8 @@ Be prepared to describe and defend your design choices in class discussion.
 />
 </div>
 </Pages>
+
+</Collapse>
 
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
 <LessonSubmit />
