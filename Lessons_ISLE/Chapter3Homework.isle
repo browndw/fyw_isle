@@ -25,7 +25,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 #### Exercise 3.1
 
-*The purpose of this exercise is to refine your caption-writing skills.* 
+**The purpose of this exercise is to refine your caption-writing skills.** 
 
 On each of the 6 pages below, analyze the caption and determine whether it is adequate as it stands or if it needs more information. If it needs more information, specify how the caption should be revised.
 
@@ -89,41 +89,131 @@ Be prepared to describe and defend your design choices in class discussion.
 
 
 <Pages>
-### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.<DataExplorer
+<div>
+### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
+
+<DataExplorer
   data={dataset1}
   categorical={['Major']}
-  quantitative={['Percent students "satisfied" or "Very satisfied"']}
-/><FreeTextQuestion
-  question="Enter your caption for the visualization above"
+  quantitative={['Percent_students_satisfied_verysatisfied']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
 />
 
+<FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</div>
 
+<div>
+### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. 
 
-### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. <DataExplorer
+<DataExplorer
   data={dataset2}
-  categorical={['Month']}
-  quantitative={['Detroit', 'Austin']}
+  categorical={['Month', 'City']}
+  quantitative={['Kilowatts_per_hour']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
+</div>
 
+<div>
+### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. 
 
-### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. <DataExplorer
+<DataExplorer
   data={dataset3}
-  categorical={['Type']}
-  quantitative={['Number_Brands', 'Avg_Calories', 'Avg_Sodium_mgs']}
+  categorical={['Type ']}
+  quantitative={['Number_brands_analyzed', 'Average_Cals ', 'Average_Sodium_mgs']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
+</div>
 
+<div>
+### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. 
 
-### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. <DataExplorer
+<DataExplorer
   data={dataset4}
-  categorical={['Interval']}
-  quantitative={['Revolution_Helmet', 'Standard_Helmet']}
+  categorical={['Interval ', 'Helmet_Type']}
+  quantitative={['Percentage_athlete_concussions']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
 /><FreeTextQuestion
   question="Enter your caption for the visualization above"
 />
+</div>
 </Pages>
 
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.

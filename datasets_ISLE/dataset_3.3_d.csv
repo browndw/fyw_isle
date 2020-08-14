@@ -1,20 +1,9 @@
-Interval , Revolution Helmet , Standard Helmet ,,,,,
- One week , 48.8% , 45.6% ,,,,,
- Two weeks , 78.0% , 71.9% ,,,,,
- Three weeks , 90.2% , 78.9% ,,,,,
- Four weeks , 97.6% , 91.2% ,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+Interval ,Percentage_athlete_concussions,Helmet_Type
+ One week ,0.49,Revolution
+ Two weeks ,0.78,Revolution
+ Three weeks ,0.90,Revolution
+ Four weeks ,0.98,Revolution
+ One week ,0.46,Standard
+ Two weeks ,0.72,Standard
+ Three weeks ,0.79,Standard
+ Four weeks ,0.91,Standard
