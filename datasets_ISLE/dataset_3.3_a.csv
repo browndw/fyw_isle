@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-Major,"Percent students ""satisfied"" or ""Very satisfied"""
-Arts & Humanities,0.82
-Engineering,0.44
-Science,0.68
-Social Sciences,0.70
-=======
 Major,Percent_students_satisfied_verysatisfied
 Arts & Humanities,0.82
 Engineering,0.44
 Science,0.68
 Social Sciences,0.7
->>>>>>> a30fd3385acad4ce1d316882369c56dea173beb3

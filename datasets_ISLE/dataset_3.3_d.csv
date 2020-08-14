@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-Interval , Revolution Helmet , Standard Helmet 
- One week ,0.488,0.456
- Two weeks ,0.78,0.719
- Three weeks ,0.902,0.789
- Four weeks ,0.976,0.912
-=======
-Interval ,Percentage_athlete_concussions,Helmet_Type
+Interval,Percentage_athlete_concussions,Helmet_Type
  One week ,0.49,Revolution
  Two weeks ,0.78,Revolution
- Three weeks ,0.90,Revolution
+ Three weeks ,0.9,Revolution
  Four weeks ,0.98,Revolution
  One week ,0.46,Standard
  Two weeks ,0.72,Standard
  Three weeks ,0.79,Standard
  Four weeks ,0.91,Standard
->>>>>>> a30fd3385acad4ce1d316882369c56dea173beb3
