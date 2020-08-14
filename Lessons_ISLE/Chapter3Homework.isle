@@ -3,7 +3,7 @@ title: Chapter 03 Homework
 author: Emily DeJeu
 description:
 keywords:
-date: 06/12/2020
+date: 08/14/2020
 language: en-US
 state:
 require:
@@ -23,7 +23,10 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ***************************************
 
 
-#### Exercise 3.1
+  <Collapse
+  header="Exercise 3.1"
+> 
+
 
 **The purpose of this exercise is to refine your caption-writing skills.** 
 
@@ -68,9 +71,14 @@ On each of the 6 pages below, analyze the caption and determine whether it is ad
     </div>
 
 </Pages>
+  </Collapse>
 
 ****************************************
-#### Exercise 3.3
+
+<Collapse
+  header="Exercise 3.3"
+> 
+
 
 **The purpose of this exercise is to give you practice in creating strong data visualizations.**
 
@@ -158,8 +166,8 @@ Be prepared to describe and defend your design choices in class discussion.
 
 <DataExplorer
   data={dataset3}
-  categorical={['Type ']}
-  quantitative={['Number_brands_analyzed', 'Average_Cals ', 'Average_Sodium_mgs']}
+  categorical={['Type']}
+  quantitative={['Number_brands_analyzed', 'Average_Cals', 'Average_Sodium_mgs']}
   models={[]}
   plots={[
   "Bar Chart",
@@ -189,7 +197,7 @@ Be prepared to describe and defend your design choices in class discussion.
 
 <DataExplorer
   data={dataset4}
-  categorical={['Interval ', 'Helmet_Type']}
+  categorical={['Interval', 'Helmet_Type']}
   quantitative={['Percentage_athlete_concussions']}
   models={[]}
   plots={[
@@ -216,8 +224,9 @@ Be prepared to describe and defend your design choices in class discussion.
 </div>
 </Pages>
 
+
+</Collapse>
+
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
 <LessonSubmit />
-
-
 
