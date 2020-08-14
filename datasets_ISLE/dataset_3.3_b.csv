@@ -1,3 +1,31 @@
+<<<<<<< HEAD
 Location , Sep , Oct , Nov , Dec , Jan , Feb , Mar , Apr , May , June , July , Aug 
  Detroit , 13.4 , 16.2 , 36.7 , 34 , 38.5 , 36.4 , 29.7 , 15.4 , 14.2 , 13.3 , 14.7 , 13.6 
  Austin , 16.0 , 13.2 , 15.9 , 17.8 , 19.1 , 18.7 , 16.2 , 12.8 , 14.3 , 16.6 , 19.1 , 22.4 
+=======
+Month,Kilowatts_per_hour,City
+Sep,13.4,Detroit
+Oct,16.2,Detroit
+Nov,36.7,Detroit
+Dec,34,Detroit
+Jan,38.5,Detroit
+Feb,36.4,Detroit
+Mar,29.7,Detroit
+Apr,15.4,Detroit
+May,14.2,Detroit
+June,13.3,Detroit
+July,14.7,Detroit
+Aug,13.6,Detroit
+Sep,16,Austin
+Oct,13.2,Austin
+Nov,15.9,Austin
+Dec,17.8,Austin
+Jan,19.1,Austin
+Feb,18.7,Austin
+Mar,16.2,Austin
+Apr,12.8,Austin
+May,14.3,Austin
+June,16.6,Austin
+July,19.1,Austin
+Aug,22.4,Austin
+>>>>>>> a30fd3385acad4ce1d316882369c56dea173beb3
