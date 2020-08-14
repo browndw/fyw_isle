@@ -18,7 +18,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 ***************************************
 
-#### Exercise 4.2
+<Collapse header='Exercise 4.2' >
 
 **The purpose of this exercise is to help you apply the best practices of visualization design you have learned about in Chapter 4**. 
 
@@ -54,12 +54,12 @@ Then, on each of the four pages below, use the space provided to describe how yo
   
 </Pages>
 
-
+</Collapse>
 
 
 ***************************************
 
-#### Exercise 4.3
+<Collapse header='Exercise 4.3'>
 **The purpose of this exercise is to help you think carefully about how you group and arrange data.**
 
 For each of these data sets, create a visualization that tells the most compelling story. Refer to the checklist on page 19 of Chapter 4 to ensure that your visualization follows all of the best practices. Be prepared to describe and defend your design choices in class discussion.
@@ -132,6 +132,7 @@ For each of these data sets, create a visualization that tells the most compelli
 </div>
 
 </Pages>
+</Collapse>
 
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
 <LessonSubmit />
