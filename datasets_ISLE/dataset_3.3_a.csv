@@ -1,20 +1,5 @@
-Major,"Percent students ""satisfied"" or ""Very satisfied""",,,,,,
-Arts & Humanities,82%,,,,,,
-Engineering,44%,,,,,,
-Science,68%,,,,,,
-Social Sciences,70%,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+Major,Percent_students_satisfied_verysatisfied
+Arts & Humanities,0.82
+Engineering,0.44
+Science,0.68
+Social Sciences,0.7

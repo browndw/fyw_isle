@@ -1,0 +1,230 @@
+---
+title: Chapter 03 Homework
+author: Emily DeJeu
+description:
+keywords:
+date: 06/12/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
+    dataset2: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_b.csv"
+    dataset3: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_c.csv"
+    dataset4: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_d.csv" 
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 3 Exercises
+
+
+### After reading Chapter 3, please complete Exercises 3.1 and 3.3, below. Simply click each exercise's button to see your assigned tasks. 
+
+
+***************************************
+<Collapse
+  header="Exercise 3.1"
+>
+
+**The purpose of this exercise is to refine your caption-writing skills.** 
+
+On each of the 6 pages below, analyze the caption and determine whether it is adequate as it stands or if it needs more information. If it needs more information, specify how the caption should be revised.
+
+<Pages>
+    <div>
+        <FreeTextQuestion
+          question="Figure 1: Average GPA (on 4-point scale) by hours studied per week of students at University X."
+          solution=""
+        />
+    </div>
+<div>
+        <FreeTextQuestion
+          question="Figure 2 shows the average test scores of male and female students."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Figure 3: Levelized costs (in dollars per megawatt hours of electricity) of five different power plants."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Table 1: Memory usage of five different web browsers with one tab open."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Figure 4: Harley-Davidson is the most popular motorcycle"
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Table 2: Popularity of the top-selling motorcycle brands among registered motorcycle owners in Pittsburgh. Harley-Davidson is the most popular."
+          solution=""
+        />
+    </div>
+
+</Pages>
+  
+</Collapse>
+
+
+****************************************
+<Collapse
+  header="Exercise 3.2"
+>
+
+**The purpose of this exercise is to give you practice in creating strong data visualizations.**
+
+For each of the four datasets, create a data visualization that tells a compelling story. You may choose to represent the data with a graph or leave it in a table, but be sure to design your visualization to emphasize the story you want to tell. 
+
+Your visualizations should include 
+* Clearly labeled axes 
+* Readable and easily understandable legends
+* Captions that contain 
+    - The word “figure” or “table” followed by a number and a colon 
+    - Clearly explained units of measurement
+    - What is being compared 
+    - Any other necessary context 
+
+Be prepared to describe and defend your design choices in class discussion.
+
+
+<Pages>
+<div>
+### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
+
+<DataExplorer
+  data={dataset1}
+  categorical={['Major']}
+  quantitative={['Percent_students_satisfied_verysatisfied']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+/>
+
+<FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</div>
+
+<div>
+### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. 
+
+<DataExplorer
+  data={dataset2}
+  categorical={['Month', 'City']}
+  quantitative={['Kilowatts_per_hour']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</div>
+
+<div>
+### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. 
+
+<DataExplorer
+  data={dataset3}
+  categorical={['Type ']}
+  quantitative={['Number_brands_analyzed', 'Average_Cals ', 'Average_Sodium_mgs']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</div>
+
+<div>
+### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. 
+
+<DataExplorer
+  data={dataset4}
+  categorical={['Interval ', 'Helmet_Type']}
+  quantitative={['Percentage_athlete_concussions']}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+/><FreeTextQuestion
+  question="Enter your caption for the visualization above"
+/>
+</div>
+</Pages>
+
+</Collapse>
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
+
+
+

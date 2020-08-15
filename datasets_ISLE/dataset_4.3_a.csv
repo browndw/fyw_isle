@@ -1,20 +1,5 @@
-Fuel Type,Catalyst,Emissions (in grams CO2 per gallon),,,,,
-EUG2000,Yes,3.50,,,,,
-EUG2000,No,3.41,,,,,
-SEGO,Yes,2.48,,,,,
-SEGO,No,1.29,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+Fuel_type,Catalyst,Emissions_grams_Co2_per_gallon
+EUG2000,Yes,3.5
+EUG2000,No,3.41
+SEGO,Yes,2.48
+SEGO,No,1.29
