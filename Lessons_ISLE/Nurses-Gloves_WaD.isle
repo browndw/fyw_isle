@@ -7,8 +7,7 @@ date: 08/07/2020
 language: en-US
 state:
 require:
-    dataset_NG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
-    submit-button: "https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png"
+    datasetNG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
@@ -68,7 +67,7 @@ A strong report will include all of the relevant stories this data set can tell.
 ### Nurses Gloves Dataset
 
 <DataExplorer
-  data={dataset_NG}
+  data={datasetNG}
   categorical={["Nurse", "Years Experience"]}
   quantitative={["Before training", "1 month after training", "6 months after training"]}
   models={[]}
@@ -91,4 +90,9 @@ A strong report will include all of the relevant stories this data set can tell.
   tables={[]}
   transformer={false}
 />
+
+*************************
+
+### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
 
