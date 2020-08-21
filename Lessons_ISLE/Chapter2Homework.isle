@@ -16,6 +16,10 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 *************************************
 
+<Collapse
+header="Exercise 2.1">
+  
+
 
 #### Exercise 2.1
 **The goal of this exercise is to give you practice telling stories about data.** Below you will find four data visualizations accompanied by captions that describe, but do not tell a story about, the visualization’s content.
@@ -56,8 +60,10 @@ On each of the four pages below, study the data visualization. Then, write one c
 
 </Pages>
 
+</Collapse>
 
-*****************************************************
+<Collapse
+header="Exercise 2.2">
 
 #### Exercise 2.2
 **The goal of this exercise is to generate good questions about what is and is not credible in discussing data.** Focus on your understanding and on raising good questions rather than obsessing over whether you are obtaining the “correct” answer.
@@ -227,8 +233,9 @@ For each example that you rate less than “completely credible,” indicate whi
   
 </Pages>
 
+</Collapse>
 
-
+*********************************************************
 
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
 <LessonSubmit />
