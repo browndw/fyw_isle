@@ -162,8 +162,8 @@ Be prepared to describe and defend your design choices in class discussion.
 
 <DataExplorer
   data={dataset3}
-  categorical={['Type ']}
-  quantitative={['Number_brands_analyzed', 'Average_Cals ', 'Average_Sodium_mgs']}
+  categorical={['Type']}
+  quantitative={['Number_brands_analyzed', 'Average_Cals', 'Average_Sodium_mgs']}
   models={[]}
   plots={[
   "Bar Chart",
@@ -193,7 +193,7 @@ Be prepared to describe and defend your design choices in class discussion.
 
 <DataExplorer
   data={dataset4}
-  categorical={['Interval ', 'Helmet_Type']}
+  categorical={['Interval', 'Helmet_Type']}
   quantitative={['Percentage_athlete_concussions']}
   models={[]}
   plots={[
