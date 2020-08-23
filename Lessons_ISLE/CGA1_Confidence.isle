@@ -52,23 +52,18 @@ For this excercise, we'll only be looking at ConfidenceHigh and ConfidenceHedged
 
 *************************
 <Collapse header="CGA Exercise 1: MICUSP">
-
-### Let's start with a quick survey.
-
-<MultipleChoiceSurvey
+<Pages>
+### Let's start with a quick survey.<MultipleChoiceSurvey
     anonymous
     id="MICUSPHighSurvey"
     question="In which discipline is ConfidenceHigh the most frequent?"
-    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
-
-
-<MultipleChoiceSurvey
+    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/><MultipleChoiceSurvey
     anonymous
     id="MICUSPHedgedSurvey"
     question="In which discipline is ConfidenceHedged the most frequent?"
     answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
-
-### Now we'll check the data.
+<div>
+### Now we'll check the data. 
 
 Below is a data table with columns for the normalized frequencies of ConfidenceHigh and ConfidenceHedged for each paper.
 
@@ -104,6 +99,8 @@ Generate plots for both ConfidenceHedged and ConfidenceHigh.
 The counts you're seeing represent a percentage of the total tokens in each text. The term *token* is a technical term denoting the language unit being counted.
 
 Note that the default y-axis just reads "Count". Click on it and change the label to one that is accurate.
+</div>
+<div>
 
 ### Now, suggest brief explanations for the patterns you found.
 
@@ -123,10 +120,14 @@ To know what to search for, let's look at a table of counts. These are the frequ
 <FreeTextQuestion
     question="What might account for the discipline that realizes the highest frequencies of both Hedged and High Confidence? As part of your answer, include an example (short quotation) from at least one MICUSP paper."
 />
+</div>
+</Pages>
 </Collapse>
 
 ***********************
 <Collapse header="CGA Exercise 2: COCA">
+<Pages>
+<div>
 ### Same thing but with COCA
 
 Now let's trying repeating the process with the <a href="https://www.english-corpora.org/coca" target="_blank">Corpus of Contemporary American English (COCA)</a>.
@@ -156,8 +157,9 @@ Rather than being categorized by discipline, these data are divided into text-ty
     question="In which discipline is ConfidenceHedged the most frequent?"
     answers={[ 'Academic','Fiction','Magazine','Newspaper','Spoken','Blogs','Web' ]}/>
 
-### 
-### Now for our plots. Same as before.
+</div>
+<div>
+### Now, let's make the same plot as before.
 
 1. Click 'Show Toolbox'
 1. Find the 'Plots' menu and select 'Bar Chart'
@@ -179,8 +181,8 @@ Generate plots for both ConfidenceHedged and ConfidenceHigh.
         quantitative={['ConfidenceHedged','ConfidenceHigh']}
     />
 </Gate>
-
-### 
+</div>
+<div> 
 ### Finally, explain a pattern.
 
 First, consult some counts of Hedged and High confidence tokens. Note that these are normalized per million tokens.
@@ -196,9 +198,11 @@ Then, search the <a href="https://www.english-corpora.org/coca" target="_blank">
 <FreeTextQuestion
     question="What might account for the text-type that realizes the lowest frequencies of both Hedged and High Confidence? As part of your answer, include an example (short quotation) from at least one COCA text. Note that your example could come from a different text-type to illustrate contrast."
 />
+</div>
+</Pages>
 </Collapse>
 
 *************************
 
-#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+#### Don't forget to click the 'Finish Lesson' button below.
 <LessonSubmit />
