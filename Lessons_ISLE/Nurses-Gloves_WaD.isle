@@ -49,21 +49,6 @@ A strong report will include all of the relevant stories this data set can tell.
 
 **********************************
 
-<Collapse header="ISLE Submission Instructions">
-##### To complete this assignment, use the **report** function in the data explorer below:
-
-
-<div>
-  1. Draft your report & create your data visualizations
-  2. Click + hold "Drag Plot" to add your visualizations to your report
-  3. Click the submit button:<Image src='https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png' width="40" height="40" />
-  4. Always save your report for your own records:
-      * Save as HTML: <Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
-     * Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
-</div>
-</Collapse>
-
-**********************************
 ### Nurses Gloves Dataset
 
 <DataExplorer
@@ -90,6 +75,22 @@ A strong report will include all of the relevant stories this data set can tell.
   tables={[]}
   transformer={false}
 />
+
+*************************
+
+<Collapse header="ISLE Submission Instructions">
+##### To complete this assignment, use the **report** function in the data explorer below:
+
+
+<div>
+  1. Draft your report & create your data visualizations
+  2. Click + hold "Drag Plot" to add your visualizations to your report
+  3. Always save your report for your own records:
+      * Save as HTML: <Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
+     * Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+  4. Click the "Finish Lesson" button below, download the PDF, and submit it to Canvas.
+  </div>
+</Collapse>
 
 *************************
 

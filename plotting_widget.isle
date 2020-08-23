@@ -1,0 +1,247 @@
+---
+title: Lesson
+author: John Doe
+description:
+keywords:
+date: 08/19/2020
+language: en-US
+state:
+    varX: dataset1.Major
+    varY: dataset1.Percent_students_satisfied_verysatisfied
+    fillColor: black
+    width: 800
+    height: 400
+    showGridy: false
+    showGridx: false
+    orientPlot: 'v'
+    plotType: 'bar'
+    plotText: ''
+    plotSort: ''
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+<DataTable
+  data={{"Major":dataset1.Major,
+  "Percent":dataset1.Percent_students_satisfied_verysatisfied}}
+/>
+
+# Plot Widget
+
+
+<Panel>
+### Choose the type of plot you want to generate.
+
+<SelectInput
+    defaultValue={'Bar plot'}
+    options={['Bar plot','Line plot']}
+    onChange={( value ) =>  {
+        if ( value === 'Bar plot' ) {
+            lesson.setState({
+                plotType: 'bar'
+            });
+        } else {
+            lesson.setState({
+                plotType: 'line'
+            });
+        }
+    }}
+/>
+
+### Choose the orientation of your plot
+
+<SelectInput
+    defaultValue={'Vertical orientation'}
+    options={['Vertical orientation','Horizontal orientation']}
+    onChange={( value ) =>  {
+        if ( value === 'Vertical orientation' ) {
+            lesson.setState({
+                orientPlot: 'v',
+                varX: dataset1.Major,
+                varY: dataset1.Percent_students_satisfied_verysatisfied
+            });
+        } else {
+            lesson.setState({
+                orientPlot: 'h',
+                varX: dataset1.Percent_students_satisfied_verysatisfied,
+                varY: dataset1.Major
+            });
+        }
+    }}
+/>
+
+
+### Select the gridlines you want to show or hide
+
+<SelectInput
+    defaultValue={'Hide x gridlines'}
+    options={['Hide x gridlines','Show x gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide x gridlines' ) {
+            lesson.setState({
+                showGridx: false
+            });
+        } else {
+            lesson.setState({
+                showGridx: true
+            });
+        }
+    }}
+/>
+
+<SelectInput
+    defaultValue={'Hide y gridlines'}
+    options={['Hide y gridlines','Show y gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide y gridlines' ) {
+            lesson.setState({
+                showGridy: false
+            });
+        } else {
+            lesson.setState({
+                showGridy: true
+            });
+        }
+    }}
+/>
+
+### Show or hide annotations
+
+<SelectInput
+    defaultValue={'Hide annotations'}
+    options={['Hide annotations','Show x values', 'Show y values']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide annotations' ) {
+            lesson.setState({
+                plotText: ''
+            });
+        } if ( value === 'Show x values' ) {
+            lesson.setState({
+                plotText: lesson.state.varX
+            });
+        } if ( value === 'Show y values' ) {
+           lesson.setState({
+                plotText: lesson.state.varY 
+        });
+        }
+    }}
+/>
+
+### Sort by x or y values
+
+<SelectInput
+    defaultValue={'Unsorted'}
+    options={['Unsorted','Sort x ascending', 'Sort x descending', 'Sort y ascending', 'Sort y descending']}
+    onChange={( value ) =>  {
+        if ( value === 'Unsorted' ) {
+            lesson.setState({
+                plotSort: ''
+            });
+        } if ( value === 'Sort x ascending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'x',
+    order: 'ascending'
+  }]
+            });
+        } if ( value === 'Sort x descending' ) {
+           lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'x',
+    order: 'descending'
+  }]
+        });
+        } if ( value === 'Sort y ascending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'y',
+    order: 'ascending'
+  }]
+            });
+        } if ( value === 'Sort y descending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'y',
+    order: 'descending'
+  }]
+            });
+
+        }
+    }}
+/>
+
+### Select the color of your lines or bars
+
+<ColorPicker onChange={(
+    newColor
+) =>  {
+    lesson.setState({
+        fillColor: newColor.hex
+    })
+}} />
+
+
+<Plotly 
+  data={[
+  {
+    x: lesson.state.varX,
+    y: lesson.state.varY,
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText,
+    textposition: 'auto',
+    transforms: lesson.state.plotSort,
+    marker: {
+        color: lesson.state.fillColor
+    }
+  }
+]}
+  layout={{
+      width: lesson.state.width,
+      height: lesson.state.height,
+      xaxis: {
+          showgrid: lesson.state.showGridx,
+          title: 'X-axis title'
+      },
+      yaxis: {
+        showgrid: lesson.state.showGridy
+      }
+  }}
+  editable={true}
+  draggable={true}
+  id="test_plot"
+/>
+
+<Dashboard onGenerate={( width, height ) => {
+    lesson.setState({
+        width,
+        height
+    });
+}}>
+
+### Set the dimensions of your plot.
+    <NumberInput
+        legend="Width"
+        defaultValue={lesson.state.width}
+        step={1}
+    />
+    <NumberInput
+        legend="Height"
+        defaultValue={lesson.state.height}
+        step={1}
+    />
+
+
+</Dashboard>
+
+</Panel>
+
+<ImageQuestion
+  question="Place your favorite plot in here"
+/>
