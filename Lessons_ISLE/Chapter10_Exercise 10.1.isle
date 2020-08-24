@@ -20,8 +20,8 @@ For the text samples below, use the editing tools to annotate the sentence(s) pe
   * Filling the Gap should be made BLUE
   * Sentences that don't appear to perform an introductory move should be left alone
 
-To submit your work, you must **click the submit button in the text editor:** <Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
-As always, remember to save each answer as a PDF for your own records: <Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+To submit your work, **click the submit button in the text editor:** <Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
+Remember to save each answer as a PDF for your own records: <Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
 
 <Pages>
 <div>
@@ -71,5 +71,5 @@ As always, remember to save each answer as a PDF for your own records: <Image sr
 ***************************************
 
 #### Don't forget to click the 'Finish Lesson' button below.
-##### Note that this PDF *will not* contain your formatting for the text above.
+##### Note that this PDF *will not* contain your formatting for the text above. To save a PDF with your formatting, you must use the button in the text editor above.
 <LessonSubmit />
