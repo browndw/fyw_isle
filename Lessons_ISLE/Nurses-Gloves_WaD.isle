@@ -7,8 +7,7 @@ date: 08/07/2020
 language: en-US
 state:
 require:
-    dataset_NG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
-    submit-button: "https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png"
+    datasetNG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
@@ -50,25 +49,10 @@ A strong report will include all of the relevant stories this data set can tell.
 
 **********************************
 
-<Collapse header="ISLE Submission Instructions">
-##### To complete this assignment, use the **report** function in the data explorer below:
-
-
-<div>
-  1. Draft your report & create your data visualizations
-  2. Click + hold "Drag Plot" to add your visualizations to your report
-  3. Click the submit button:<Image src='https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png' width="40" height="40" />
-  4. Always save your report for your own records:
-      * Save as HTML: <Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
-     * Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
-</div>
-</Collapse>
-
-**********************************
 ### Nurses Gloves Dataset
 
 <DataExplorer
-  data={dataset_NG}
+  data={datasetNG}
   categorical={["Nurse", "Years Experience"]}
   quantitative={["Before training", "1 month after training", "6 months after training"]}
   models={[]}
@@ -91,4 +75,25 @@ A strong report will include all of the relevant stories this data set can tell.
   tables={[]}
   transformer={false}
 />
+
+*************************
+
+<Collapse header="ISLE Submission Instructions">
+##### To complete this assignment, use the **report** function in the data explorer below:
+
+
+<div>
+  1. Draft your report & create your data visualizations
+  2. Click + hold "Drag Plot" to add your visualizations to your report
+  3. Always save your report for your own records:
+      * Save as HTML: <Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
+     * Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+  4. Click the "Finish Lesson" button below, download the PDF, and submit it to Canvas.
+  </div>
+</Collapse>
+
+*************************
+
+### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
 

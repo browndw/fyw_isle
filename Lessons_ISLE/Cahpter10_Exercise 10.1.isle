@@ -1,0 +1,119 @@
+---
+title: Chapter 10 - Exercise 10.1
+author: Mike Laudenbach
+description:
+keywords:
+date: 08/23/2020
+language: en-US
+state:
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Exercise 10.1 - Introductory Moves
+#### This is a DRAFT lesson! I'd like your take on which submission format we should commit to. Page 1 is different from Page 2 & 3 below. Which do you prefer? If we prefer Page 1, I'll move the instructions so that they appear above the pages. 
+
+<div algin="left"> ##### This exercise offers you a chance to practice identifying the introductory moves in different contexts. </div>
+
+<Pages>
+<div>
+For the text sample below, use the editing tools to annotate the sentence(s) performing these introductory moves:
+  * Significance should be **bold**
+  * Status Quo should be *italicized*
+  * The Gap should be made RED
+  * Filling the Gap should be made BLUE
+  * Sentences that don't appear to perform an introductory move should be left alone. 
+
+To submit your work, be sure to click the submit button: <Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
+
+##### Text Sample A is from a Chemical engineering Master's thesis:  
+<TextEditor voiceControl
+  defaultValue={`ZnO is a promising material for many applications in surface acoustic wave devices, [1] blue and UV light emitters[2], transparentelectrode [3], solar cell windows [4], photovoltaic devices [5], gas sensors [6], and room-temperature UV lasers [2]. Doping the ZnO crystal structure with Cu has significant effects on its electrical and optical properties. Previous research has reported that Cu-doped ZnO thin films in the ranges of 1–5% produced changes in the structural, optical, and magnetic properties of ZnO [7] while Cu-doping in the 2-9.9% range produced changes in electrical, piezoelectric properties [8]. However, earlier research has not studied the effect of very low-percentage Cu doping, which may have unique effects on properties of ZnO that are sensitive to very small changes. Therefore, this study describes the effect of Cu doping on the structural, electrical, optical, and optoelectronic properties of ZnO (ZnO:Cu) thin films for a doping range of 0.08–4%.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`}
+/>
+
+</div>  
+
+<div>
+##### Text Sample B is from an undergraduate research poster in Economics:
+Digital piracy is seen as a significant problem for the creative industries. Still, while there have been many academic studies showing that piracy hurts sales, there have been far fewer studies analyzing the effectiveness of anti-piracy measures in reversing this effect. This study attempts to address this question by analyzing how the HADOPI “three strikes” law in France affected digital music sales on the iTunes music store.
+
+##### From the excerpt above, copy and paste sentences to answer the following questions:
+<Pages>
+  <FreeTextQuestion
+    question="Which sentence(s) appear(s) to state SIGNIFICANCE?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to explain the STATUS QUO?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to state the GAP?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to FILL THE GAP?"
+    solution=""
+  />
+</Pages>
+
+
+
+
+</div>
+<div>
+##### Text Sample C is from a web usability journal: 
+Internet users can easily become lost within complex websites and need a way to quickly get back to previously visited locations. Hence the cyber breadcrumb trail was invented. The term "breadcrumb" derives its name from the Grimm’s fairy tale, Hansel and Gretel. Hansel left a trail of breadcrumbs through the woods as a strategy to find his way back home. Similarly, today’s websites provide a trail of textual “breadcrumb” links to help users revisit major categories of information. For example, the breadcrumb path for a leather chair on the Office Max website would be: Home > Furniture > Chairs > Leather Chairs. The location of the navigational path is often prominently placed in the upper left quarter of the website page. Breadcrumb trails help users browse and search for information, as well as provide paths back up the web hierarchy. Prior research has found that the availability of breadcrumb navigation bars resulted in more efficient site navigation and satisfaction (Bowler, et al. 2001; Maldaonado & Resnick, 2002). These studies, however, are limited by their use of simple site structures in a controlled experimental setting. In an attempt to better understand how users interact with breadcrumb navigation in a real-time online environment, we conducted a study to determine if participants use breadcrumbs when given a list of items to find on a major retail website.
+##### From the excerpt above, copy and paste sentences to answer the following questions:
+<Pages>
+  <FreeTextQuestion
+    question="Which sentence(s) appear(s) to state SIGNIFICANCE?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to explain the STATUS QUO?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to state the GAP?"
+    solution=""
+  />
+    <FreeTextQuestion
+    question="Which sentence(s) appear(s) to FILL THE GAP?"
+    solution=""
+  />
+</Pages>
+</div>
+</Pages>
+
+
+
+***************************************
+
+#### Another draft question: do we want these as free response questions? Or should we simply leave these questions here and cover them during class discussion? 
+<FreeTextQuestion
+  question="What stylistic differences do you see in these examples? What about their language is different? Does one seem more technical or generalist than another? How can you tell? Can you make any connections between these stylistic differences and the intended readers of these excerpts?"
+  solution=""
+/>
+
+
+
+
+***************************************
+
+#### Don't forget to click the 'Finish Lesson' button below.
+<LessonSubmit />

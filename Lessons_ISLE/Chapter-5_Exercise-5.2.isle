@@ -1,0 +1,70 @@
+---
+title: Chapter 05 Exercise 5.2
+author: Mike Laudenbach
+description:
+keywords:
+date: 06/12/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.2.csv"
+    
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Exercise 5.2 - 2012 Olympics Data
+
+
+### After reading Chapter 5, pages 9-12, please complete Exercise 5.2. 
+
+##### The purpose of this exercise is to help you understand the choices that writers can make to tell a different story with the same dataset.  
+
+The Table below shows selected data from the 2012 London summer Olympics. If your last name begins with
+  * A-H: Create a visualization that presents Cuba in the best possible light
+  * I-N: Create a visualization that presents Hungary in the best possible light
+  * O-Z: Create a visualization that presents China in the best possible light 
+
+Your visualization should follow the principles covered in Chapter 4. Experiment with presenting the data both credibly and less credibly. Experimenting with ways to manipulate numbers to support a specific purpose or story prepares you to see how others might make similar manipulations.
+
+***************************************
+Experiment with the data below. When you decide on your best visualization, drag it to the image question and click submit. Include a caption for your visualization as well, and remember to click submit. 
+<DataExplorer
+  data={dataset1}
+  categorical={["Country"]}
+  quantitative={["Population", "GDP", "Athletes", "Gold", "Silver", "Bronze"]}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a visualization that presents your assigned country in the best possible light:" />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization"
+            />
+        </div>]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+  editor={false}
+/>
+
+***************************************
+
+
+
+
+#### Don't forget to click the 'Finish Lesson' button below.
+<LessonSubmit />
