@@ -26,6 +26,9 @@ Revisit the data visualizations you created in Exercise 3.3. You can simply revi
 
 Then, on each of the four pages below, use the space provided to describe how you would revise each visual to better follow these best practices. Use the checklist on page 19 of Chapter 4 to guide you. If you decide that a visualization does not need revision, explain why.  
 
+**Remember to click 'Submit' after entering your answer!**
+
+
 <Pages>
     <div>
         <FreeTextQuestion
@@ -62,6 +65,9 @@ Then, on each of the four pages below, use the space provided to describe how yo
 
 For each of these data sets, create a visualization that tells the most compelling story. Refer to the checklist on page 19 of Chapter 4 to ensure that your visualization follows all of the best practices. Be prepared to describe and defend your design choices in class discussion.
 
+**Remember to click 'Submit' after entering your answer!**
+
+
 <Pages>
 <div>
 ### Dataset A: This data was collected to answer the question of which fuel type is safest for the environment. The EUG2000 fuel is currently available while SEGO fuel is an experimental alkylate blend for small motors
@@ -70,6 +76,14 @@ For each of these data sets, create a visualization that tells the most compelli
   data={dataset_a}
   categorical={['Fuel_type', 'Catalyst']}
   quantitative={['Emissions_grams_Co2_per_gallon']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -89,11 +103,9 @@ For each of these data sets, create a visualization that tells the most compelli
   tests={[]}
   tables={[]}
   transformer={false}
+  editor={false}
 />
 
-<FreeTextQuestion
-  question="Enter your caption for the visualization above"
-/>
 </div>
 
 <div>
@@ -103,6 +115,14 @@ For each of these data sets, create a visualization that tells the most compelli
   data={dataset_b}
   categorical={['Surface_type', 'Miles_per_hour']}
   quantitative={['Coefficient_friction']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -122,11 +142,9 @@ For each of these data sets, create a visualization that tells the most compelli
   tests={[]}
   tables={[]}
   transformer={false}
+  editor={false}
 />
 
-<FreeTextQuestion
-  question="Enter your caption for the visualization above"
-/>
 </div>
 
 </Pages>

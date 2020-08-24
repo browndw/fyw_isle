@@ -29,6 +29,11 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 On each of the 6 pages below, analyze the caption and determine whether it is adequate as it stands or if it needs more information. If it needs more information, specify how the caption should be revised.
 
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
 <Pages>
     <div>
         <FreeTextQuestion
@@ -73,16 +78,16 @@ On each of the 6 pages below, analyze the caption and determine whether it is ad
 
 
 <Collapse
-  header="Exercise 3.2"
+  header="Exercise 3.3"
 >
 
 **The purpose of this exercise is to give you practice in creating strong data visualizations.**
 
-For each of the four datasets, create a data visualization that tells a compelling story. You may choose to represent the data with a graph or leave it in a table, but be sure to design your visualization to emphasize the story you want to tell. 
+For each of the four datasets, create a data visualization that tells a compelling story. You may choose to represent the data with a graph or a table, but be sure to design your visualization to emphasize the story you want to tell. 
 
 Your visualizations should include 
 * Clearly labeled axes 
-* Readable and easily understandable legends
+* Readable and easily understandable legends (if applicable)
 * Captions that contain 
     - The word “figure” or “table” followed by a number and a colon 
     - Clearly explained units of measurement
@@ -91,15 +96,32 @@ Your visualizations should include
 
 Be prepared to describe and defend your design choices in class discussion.
 
+*For a reminder about how to create plots and drag them into the 'Question' field, watch this brief video.*
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Answering-Image-Questions.mp4"
+  controls={true}
+/>
+
+**Remember to click 'Submit' after entering your answer!**
+
+
 
 <Pages>
 <div>
+
 ### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
 
 <DataExplorer
   data={dataset1}
   categorical={['Major']}
   quantitative={['Percent_students_satisfied_verysatisfied']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -119,11 +141,9 @@ Be prepared to describe and defend your design choices in class discussion.
   tests={[]}
   tables={[]}
   transformer={false}
+  editor={false}
 />
 
-<FreeTextQuestion
-  question="Enter your caption for the visualization above"
-/>
 </div>
 
 <div>
@@ -133,6 +153,14 @@ Be prepared to describe and defend your design choices in class discussion.
   data={dataset2}
   categorical={['Month', 'City']}
   quantitative={['Kilowatts_per_hour']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -152,8 +180,8 @@ Be prepared to describe and defend your design choices in class discussion.
   tests={[]}
   tables={[]}
   transformer={false}
-/><FreeTextQuestion
-  question="Enter your caption for the visualization above"
+  editor={false}
+  
 />
 </div>
 
@@ -164,6 +192,14 @@ Be prepared to describe and defend your design choices in class discussion.
   data={dataset3}
   categorical={['Type']}
   quantitative={['Number_brands_analyzed', 'Average_Cals', 'Average_Sodium_mgs']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -183,8 +219,7 @@ Be prepared to describe and defend your design choices in class discussion.
   tests={[]}
   tables={[]}
   transformer={false}
-/><FreeTextQuestion
-  question="Enter your caption for the visualization above"
+  editor={false}
 />
 </div>
 
@@ -195,6 +230,14 @@ Be prepared to describe and defend your design choices in class discussion.
   data={dataset4}
   categorical={['Interval', 'Helmet_Type']}
   quantitative={['Percentage_athlete_concussions']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -214,8 +257,7 @@ Be prepared to describe and defend your design choices in class discussion.
   tests={[]}
   tables={[]}
   transformer={false}
-/><FreeTextQuestion
-  question="Enter your caption for the visualization above"
+  editor={false}
 />
 </div>
 </Pages>
