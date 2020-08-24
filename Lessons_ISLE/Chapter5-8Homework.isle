@@ -309,17 +309,17 @@ Using this fog warning paragraph as a model, write a paragraph interpreting the 
 
 
 Using the fog warning paragraph as a model once again, pick one of the visualizations from Chapter 4 listed below and write a paragraph interpreting the data.
-* Table 4.2: Homicide rates by state
-* Table 4.3: Efficiency scores for different compressors
-* Figure 4.3b: Friction for shoe tread widths
-* Figure 4.6: Sales by employee in two different divisions
-* Table 4.6b: Task speeds in different browsers
-* Figure 4.6c: Graduation rates for Polish and Slovak students
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_Table-4.2.jpg" >Table 4.2: Homicide rates by state</Link>
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_Table-4.3.png" >Table 4.3: Efficiency scores for different compressors</Link>
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_figure-4.3b.png" >Figure 4.3b: Friction for shoe tread widths</Link>
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_Figure-4.6.png" >Figure 4.6: Sales by employee in two different divisions</Link>
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_Table-4.6b.png" >Table 4.6b: Task speeds in different browsers</Link>
+* <Link href="https://isle.stat.cmu.edu/WAD-proseed_8.1_Figure-4.6c.png" >Figure 4.6c: Graduation rates for Polish and Slovak students</Link>
 
 **Remember to click 'Submit' after entering your answer!**
 
 
-<Pages>
+
   <div>
    <FreeTextQuestion
      question="Write the name of the  Chapter 4 visualization you chose. Then, write your one-paragraph interpretation."
@@ -329,7 +329,7 @@ Using the fog warning paragraph as a model once again, pick one of the visualiza
   </div>
   
   
-</Pages>
+
 
 </Collapse>
 

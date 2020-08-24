@@ -31,30 +31,30 @@ On each of the four pages below, study the data visualization. Then, write one c
 
 <Pages>
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_a.png" width="500" height="300"
-/>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_a.png" width="500" height="300"
+/></div>
 
 <FreeTextQuestion
     question="CAPTION: Percentage of adults who feel secure sharing private data via different communication channels."  
 />
     </div>
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_b.png"  width="500" height="285"
-/>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_b.png"  width="500" height="285"
+/></div>
 
 <FreeTextQuestion
     question="CAPTION: Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
 />
     </div>
 <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_c.png"  width="500" height="285" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_c.png"  width="500" height="285" /></div>
 
 <FreeTextQuestion
     question="CAPTION: Times to complete three different virtual store functions by adults over 60 years and under 30 years."
 />
     </div>
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_d.png"  width="500" height="170" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_d.png"  width="500" height="170" /></div>
 
 <FreeTextQuestion
     question="CAPTION: Average hours studied per week, GPA, and degree completion of students in three different majors."
@@ -85,7 +85,7 @@ For each example that you rate less than “completely credible,” indicate whi
 
 <Pages>
   <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: Male students answered more questions correctly than their female peers"
@@ -106,7 +106,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: The number of units sold increased from 2014 - 2017."
@@ -128,7 +128,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: Racist attitudes toward dating appear to have improved slightly since 2008."
@@ -150,7 +150,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-        <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" />
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: Revenue has steadily increased over the last decade."
@@ -172,7 +172,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-       <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" />
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: Shorter women receive more unsolicited emails than taller women (especially women above 5’10”) while the opposite trend is true for men."
@@ -194,7 +194,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-       <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" />
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: Gasoline prices dropped by over one-third between 2012-2015."
@@ -216,7 +216,7 @@ For each example that you rate less than “completely credible,” indicate whi
     </div>
 
     <div>
-       <Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" />
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" /></div>
 
 <MultipleChoiceQuestion
     question="CAPTION: According to the OKCupid database, women are nearly twice as likely as men to believe that the earth is bigger than the sun."
