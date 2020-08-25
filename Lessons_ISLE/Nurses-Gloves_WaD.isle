@@ -12,7 +12,8 @@ server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
 # Nurses' Gloves Assignment 
-#### This assignment gives you a chance to practice writing a persuasive and clear story about a simple data set using the IMRD format.  This story should contain a good visualization.
+<div align="left">#### This assignment gives you a chance to practice writing a persuasive and clear story about a simple data set using the IMRD format.  This story should contain a good visualization.</div>
+
 **********************************
 
 <Collapse header='Context'>
@@ -94,6 +95,6 @@ A strong report will include all of the relevant stories this data set can tell.
 
 *************************
 
-<div align="left">### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit. </div>
+<div align="left">#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit. </div>
 <LessonSubmit />
 
