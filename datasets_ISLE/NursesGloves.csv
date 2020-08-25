@@ -1,24 +1,70 @@
-Nurse,Years Experience,Before training,1 month after training,6 months after training,,,
-1,4 or more,1,3,2,,,
-2,under 4,2,3,3,,,
-3,under 4,3,3,3,,,
-4,4 or more,2,3,1,,,
-5,4 or more,1,2,0,,,
-6,under 4,0,2,2,,,
-7,4 or more,1,3,2,,,
-8,4 or more,3,3,2,,,
-9,under 4,3,3,3,,,
-10,4 or more,0,2,1,,,
-11,under 4,2,3,3,,,
-12,under 4,2,3,3,,,
-13,under 4,3,3,3,,,
-14,4 or more,0,3,1,,,
-15,4 or more,0,2,1,,,
-16,4 or more,1,3,2,,,
-17,under 4,2,3,3,,,
-18,4 or more,0,3,1,,,
-19,4 or more,1,3,2,,,
-20,under 4,2,3,3,,,
-21,under 4,1,3,3,,,
-22,under 4,2,3,3,,,
-23,4 or more,0,2,0,,,
+Nurse,Years Experience,Observation period,Number of times observed wearing gloves
+1,4 or more,Before training,1
+2,under 4,Before training,2
+3,under 4,Before training,3
+4,4 or more,Before training,2
+5,4 or more,Before training,1
+6,under 4,Before training,0
+7,4 or more,Before training,1
+8,4 or more,Before training,3
+9,under 4,Before training,3
+10,4 or more,Before training,0
+11,under 4,Before training,2
+12,under 4,Before training,2
+13,under 4,Before training,3
+14,4 or more,Before training,0
+15,4 or more,Before training,0
+16,4 or more,Before training,1
+17,under 4,Before training,2
+18,4 or more,Before training,0
+19,4 or more,Before training,1
+20,under 4,Before training,2
+21,under 4,Before training,1
+22,under 4,Before training,2
+23,4 or more,Before training,0
+1,4 or more,1 month after training,3
+2,under 4,1 month after training,3
+3,under 4,1 month after training,3
+4,4 or more,1 month after training,3
+5,4 or more,1 month after training,2
+6,under 4,1 month after training,2
+7,4 or more,1 month after training,3
+8,4 or more,1 month after training,3
+9,under 4,1 month after training,3
+10,4 or more,1 month after training,2
+11,under 4,1 month after training,3
+12,under 4,1 month after training,3
+13,under 4,1 month after training,3
+14,4 or more,1 month after training,3
+15,4 or more,1 month after training,2
+16,4 or more,1 month after training,3
+17,under 4,1 month after training,3
+18,4 or more,1 month after training,3
+19,4 or more,1 month after training,3
+20,under 4,1 month after training,3
+21,under 4,1 month after training,3
+22,under 4,1 month after training,3
+23,4 or more,1 month after training,2
+1,4 or more,6 months after training,2
+2,under 4,6 months after training,3
+3,under 4,6 months after training,3
+4,4 or more,6 months after training,1
+5,4 or more,6 months after training,0
+6,under 4,6 months after training,2
+7,4 or more,6 months after training,2
+8,4 or more,6 months after training,2
+9,under 4,6 months after training,3
+10,4 or more,6 months after training,1
+11,under 4,6 months after training,3
+12,under 4,6 months after training,3
+13,under 4,6 months after training,3
+14,4 or more,6 months after training,1
+15,4 or more,6 months after training,1
+16,4 or more,6 months after training,2
+17,under 4,6 months after training,3
+18,4 or more,6 months after training,1
+19,4 or more,6 months after training,2
+20,under 4,6 months after training,3
+21,under 4,6 months after training,3
+22,under 4,6 months after training,3
+23,4 or more,6 months after training,0

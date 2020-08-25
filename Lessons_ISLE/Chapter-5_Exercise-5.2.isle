@@ -17,9 +17,9 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 ### After reading Chapter 5, pages 9-12, please complete Exercise 5.2. 
 
-##### The purpose of this exercise is to help you understand the choices that writers can make to tell a different story with the same dataset.  
+<div align="left">#### The purpose of this exercise is to help you understand the choices that writers can make to tell a different story with the same dataset.</div>
 
-The Table below shows selected data from the 2012 London summer Olympics. If your last name begins with
+The Data Explorer below shows selected data from the <Link href="https://isle.stat.cmu.edu/WAD-proseed_2012_olympics_data.png" >2012 London summer Olympics.</Link> If your last name begins with
   * A-H: Create a visualization that presents Cuba in the best possible light
   * I-N: Create a visualization that presents Hungary in the best possible light
   * O-Z: Create a visualization that presents China in the best possible light 
@@ -27,7 +27,33 @@ The Table below shows selected data from the 2012 London summer Olympics. If you
 Your visualization should follow the principles covered in Chapter 4. Experiment with presenting the data both credibly and less credibly. Experimenting with ways to manipulate numbers to support a specific purpose or story prepares you to see how others might make similar manipulations.
 
 ***************************************
-Experiment with the data below. When you decide on your best visualization, drag it to the image question and click submit. Include a caption for your visualization as well, and remember to click submit. 
+##### Experiment with the data below. When you decide on your best visualization, drag it to the image question and click submit. Include a caption for your visualization as well.
+<FlippableCard button="Click here for a video demonstration"
+  cardStyles={{
+  "container": {
+    "width": "100%"},
+}}
+>
+<div>
+Tips for adding new variables:
+  1. From the Data Explorer toolbox, click "Transform"
+  2. Select the top button: "Interactions, Transformations (e.g., sqrt), Functions"
+  3. Select variables from the "Quantitative" and "Categorical" drop down menus
+  4. Click the "/"
+ to perform division 
+    4a. For example, the expression for "Gold medals per capita" as a new variable would look like this: **"datum.Gold / datum.Population"**
+  5. Set the name of your new variable
+  6. Click "Create new variable"
+</div><VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_5.2_Demo_ISLE.mp4"
+  controls={true}
+/>
+</FlippableCard>
+
+
+
+
+<br />
+<br />
 <DataExplorer
   data={dataset1}
   categorical={["Country"]}
@@ -57,9 +83,9 @@ Experiment with the data below. When you decide on your best visualization, drag
 ]}
   tests={[]}
   tables={[]}
-  transformer={false}
   editor={false}
 />
+
 
 ***************************************
 

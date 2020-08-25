@@ -1,5 +1,5 @@
 ---
-title: Nurses Gloves Assignment
+title: Nurses' Gloves Assignment
 author: Mike Laudenbach
 description:
 keywords:
@@ -7,11 +7,11 @@ date: 08/07/2020
 language: en-US
 state:
 require:
-    datasetNG: "https://isle.stat.cmu.edu/draft-WaD-proseed_NursesGloves.csv"
+    datasetNG: "https://isle.stat.cmu.edu/WAD-proseed_NursesGloves.csv"
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
-# Nurses Gloves Assignment 
+# Nurses' Gloves Assignment 
 #### This assignment gives you a chance to practice writing a persuasive and clear story about a simple data set using the IMRD format.  This story should contain a good visualization.
 **********************************
 
@@ -53,8 +53,8 @@ A strong report will include all of the relevant stories this data set can tell.
 
 <DataExplorer
   data={datasetNG}
-  categorical={["Nurse", "Years Experience"]}
-  quantitative={["Before training", "1 month after training", "6 months after training"]}
+  categorical={["Nurse", "Years Experience", "Observation period"]}
+  quantitative={["Number of times observed wearing gloves"]}
   models={[]}
   plots={[
   "Bar Chart",
@@ -94,6 +94,6 @@ A strong report will include all of the relevant stories this data set can tell.
 
 *************************
 
-### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<div align="left">### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit. </div>
 <LessonSubmit />
 
