@@ -6,6 +6,28 @@ keywords:
 date: 06/12/2020
 language: en-US
 state:
+    varX1: dataset1.Major
+    varY1: dataset1.Percent_students_satisfied_verysatisfied
+    varX2: dataset2.Month
+    varY2: dataset2.Kilowatts_per_hour
+    varX13: dataset3.Type
+    varY13: dataset3.Type
+    varX23: dataset3.Average_Cals
+    varY23: dataset3.Average_Sodium_mgs
+    varX4: dataset4.Helmet_Type
+    varY4: dataset4.Percentage_athlete_concussions
+    varZ4: dataset4.Interval
+    fillColor: black
+    width: 800
+    height: 400
+    showGridy: false
+    showGridx: false
+    orientPlot: 'v'
+    plotType: 'bar'
+    plotText: ''
+    plotText1: ''
+    plotText2: ''
+    plotSort: ''
 require:
     dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
     dataset2: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_b.csv"
@@ -106,159 +128,878 @@ Be prepared to describe and defend your design choices in class discussion.
 
 
 <Pages>
-<div>
-
+    <div>
 ### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
 
-<DataExplorer
+<DataTable
   data={dataset1}
-  categorical={['Major']}
-  quantitative={['Percent_students_satisfied_verysatisfied']}
-  questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization for this data." />
-            <FreeTextQuestion
-                question="Enter your caption for the visualization."
-            />
-        </div>
-  ]}
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
-  editor={false}
 />
+
+<Panel>
+### Choose the type of plot you want to generate.
+
+<SelectInput
+    defaultValue={'Bar plot'}
+    options={['Bar plot','Line plot']}
+    onChange={( value ) =>  {
+        if ( value === 'Bar plot' ) {
+            lesson.setState({
+                plotType: 'bar'
+            });
+        } else {
+            lesson.setState({
+                plotType: 'line'
+            });
+        }
+    }}
+/>
+
+### Choose the orientation of your plot
+
+<SelectInput
+    defaultValue={'Vertical orientation'}
+    options={['Vertical orientation','Horizontal orientation']}
+    onChange={( value ) =>  {
+        if ( value === 'Vertical orientation' ) {
+            lesson.setState({
+                orientPlot: 'v',
+                varX1: dataset1.Major,
+                varY1: dataset1.Percent_students_satisfied_verysatisfied
+            });
+        } else {
+            lesson.setState({
+                orientPlot: 'h',
+                varX1: dataset1.Percent_students_satisfied_verysatisfied,
+                varY1: dataset1.Major
+            });
+        }
+    }}
+/>
+
+
+### Select the gridlines you want to show or hide
+
+<SelectInput
+    defaultValue={'Hide x gridlines'}
+    options={['Hide x gridlines','Show x gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide x gridlines' ) {
+            lesson.setState({
+                showGridx: false
+            });
+        } else {
+            lesson.setState({
+                showGridx: true
+            });
+        }
+    }}
+/>
+
+<SelectInput
+    defaultValue={'Hide y gridlines'}
+    options={['Hide y gridlines','Show y gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide y gridlines' ) {
+            lesson.setState({
+                showGridy: false
+            });
+        } else {
+            lesson.setState({
+                showGridy: true
+            });
+        }
+    }}
+/>
+
+### Show or hide annotations
+
+<SelectInput
+    defaultValue={'Hide annotations'}
+    options={['Hide annotations','Show x values', 'Show y values']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide annotations' ) {
+            lesson.setState({
+                plotText: ''
+            });
+        } if ( value === 'Show x values' ) {
+            lesson.setState({
+                plotText: lesson.state.varX1
+            });
+        } if ( value === 'Show y values' ) {
+           lesson.setState({
+                plotText: lesson.state.varY1 
+        });
+        }
+    }}
+/>
+
+### Sort by x or y values
+
+<SelectInput
+    defaultValue={'Unsorted'}
+    options={['Unsorted','Sort x ascending', 'Sort x descending', 'Sort y ascending', 'Sort y descending']}
+    onChange={( value ) =>  {
+        if ( value === 'Unsorted' ) {
+            lesson.setState({
+                plotSort: ''
+            });
+        } if ( value === 'Sort x ascending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'x',
+    order: 'ascending'
+  }]
+            });
+        } if ( value === 'Sort x descending' ) {
+           lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'x',
+    order: 'descending'
+  }]
+        });
+        } if ( value === 'Sort y ascending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'y',
+    order: 'ascending'
+  }]
+            });
+        } if ( value === 'Sort y descending' ) {
+            lesson.setState({
+                plotSort: [{
+    type: 'sort',
+    target: 'y',
+    order: 'descending'
+  }]
+            });
+
+        }
+    }}
+/>
+
+### Select the color of your lines or bars
+
+<ColorPicker onChange={(
+    newColor
+) =>  {
+    lesson.setState({
+        fillColor: newColor.hex
+    })
+}} />
+
+<Dashboard onGenerate={( width, height ) => {
+    lesson.setState({
+        width,
+        height
+    });
+}}>
+
+### Set the dimensions of your plot.
+    <NumberInput
+        legend="Width"
+        defaultValue={lesson.state.width}
+        step={1}
+    />
+    <NumberInput
+        legend="Height"
+        defaultValue={lesson.state.height}
+        step={1}
+    />
+
+
+</Dashboard>
+
+<Plotly 
+  data={[
+  {
+    x: lesson.state.varX1,
+    y: lesson.state.varY1,
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText,
+    textposition: 'auto',
+    transforms: lesson.state.plotSort,
+    marker: {
+        color: lesson.state.fillColor
+    }
+  }
+]}
+  layout={{
+      width: lesson.state.width,
+      height: lesson.state.height,
+      xaxis: {
+          showgrid: lesson.state.showGridx,
+          title: 'X-axis title'
+      },
+      yaxis: {
+        showgrid: lesson.state.showGridy
+      }
+  }}
+  editable={true}
+  draggable={true}
+  id="test_plot1"
+/>
+</Panel>
+
+<div>
+  <ImageQuestion question="Create a data visualization for this data." />
+</div>
 
 </div>
 
 <div>
 ### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. 
 
-<DataExplorer
+<DataTable
   data={dataset2}
-  categorical={['Month', 'City']}
-  quantitative={['Kilowatts_per_hour']}
-  questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization for this data." />
-            <FreeTextQuestion
-                question="Enter your caption for the visualization."
-            />
-        </div>
-  ]}
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
-  editor={false}
-  
 />
+
+<Panel>
+
+### Choose the type of plot you want to generate.
+
+<SelectInput
+    defaultValue={'Bar plot'}
+    options={['Bar plot','Line plot']}
+    onChange={( value ) =>  {
+        if ( value === 'Bar plot' ) {
+            lesson.setState({
+                plotType: 'bar'
+            });
+        } else {
+            lesson.setState({
+                plotType: 'line'
+            });
+        }
+    }}
+/>
+
+### Choose the orientation of your plot
+
+<SelectInput
+    defaultValue={'Vertical orientation'}
+    options={['Vertical orientation','Horizontal orientation']}
+    onChange={( value ) =>  {
+        if ( value === 'Vertical orientation' ) {
+            lesson.setState({
+                orientPlot: 'v',
+                varX2: dataset2.Month,
+                varY2: dataset2.Kilowatts_per_hour
+            });
+        } else {
+            lesson.setState({
+                orientPlot: 'h',
+                varX2: dataset2.Kilowatts_per_hour,
+                varY2: dataset2.Month
+            });
+        }
+    }}
+/>
+
+
+### Select the gridlines you want to show or hide
+
+<SelectInput
+    defaultValue={'Hide x gridlines'}
+    options={['Hide x gridlines','Show x gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide x gridlines' ) {
+            lesson.setState({
+                showGridx: false
+            });
+        } else {
+            lesson.setState({
+                showGridx: true
+            });
+        }
+    }}
+/>
+
+<SelectInput
+    defaultValue={'Hide y gridlines'}
+    options={['Hide y gridlines','Show y gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide y gridlines' ) {
+            lesson.setState({
+                showGridy: false
+            });
+        } else {
+            lesson.setState({
+                showGridy: true
+            });
+        }
+    }}
+/>
+
+### Show or hide annotations
+
+<SelectInput
+    defaultValue={'Hide annotations'}
+    options={['Hide annotations','Show x values', 'Show y values']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide annotations' ) {
+            lesson.setState({
+                plotText: ''
+            });
+        } if ( value === 'Show x values' ) {
+            lesson.setState({
+                plotText: lesson.state.varX2
+            });
+        } if ( value === 'Show y values' ) {
+           lesson.setState({
+                plotText: lesson.state.varY2 
+        });
+        }
+    }}
+/>
+
+### Sort by x or y values
+
+<SelectInput
+    defaultValue={'Unsorted'}
+    options={['Unsorted','Sort x ascending', 'Sort x descending', 'Sort y ascending', 'Sort y descending']}
+    onChange={( value ) =>  {
+        if ( value === 'Unsorted' ) {
+            lesson.setState({
+                plotSort: ''
+            });
+        } if ( value === 'Sort x ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort x descending' ) {
+           lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'descending'
+  }
+        });
+        } if ( value === 'Sort y ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort y descending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'descending'
+  }
+            });
+
+        }
+    }}
+/>
+
+<Dashboard onGenerate={( width, height ) => {
+    lesson.setState({
+        width,
+        height
+    });
+}}>
+
+### Set the dimensions of your plot.
+    <NumberInput
+        legend="Width"
+        defaultValue={lesson.state.width}
+        step={1}
+    />
+    <NumberInput
+        legend="Height"
+        defaultValue={lesson.state.height}
+        step={1}
+    />
+
+</Dashboard>
+
+<Plotly 
+  data={[
+  {
+    x: lesson.state.varX2,
+    y: lesson.state.varY2,
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText,
+    textposition: 'auto',
+    transforms: [lesson.state.plotSort, {type: 'groupby', groups: dataset2.City}]
+  }
+]}
+  layout={{
+      width: lesson.state.width,
+      height: lesson.state.height,
+      xaxis: {
+          showgrid: lesson.state.showGridx,
+          title: 'X-axis title'
+      },
+      yaxis: {
+        showgrid: lesson.state.showGridy
+      }
+  }}
+  editable={true}
+  draggable={true}
+  id="test_plot2"
+/>
+</Panel>
+
+<div>
+  <ImageQuestion question="Create a data visualization for this data." />
+</div>
+
 </div>
 
 <div>
 ### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. 
 
-<DataExplorer
+<DataTable
   data={dataset3}
-  categorical={['Type']}
-  quantitative={['Number_brands_analyzed', 'Average_Cals', 'Average_Sodium_mgs']}
-  questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization for this data." />
-            <FreeTextQuestion
-                question="Enter your caption for the visualization."
-            />
-        </div>
-  ]}
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
-  editor={false}
 />
+
+<Panel>
+
+### Choose the type of plot you want to generate.
+
+<SelectInput
+    defaultValue={'Bar plot'}
+    options={['Bar plot','Line plot']}
+    onChange={( value ) =>  {
+        if ( value === 'Bar plot' ) {
+            lesson.setState({
+                plotType: 'bar'
+            });
+        } else {
+            lesson.setState({
+                plotType: 'line'
+            });
+        }
+    }}
+/>
+
+### Choose the orientation of your plot
+
+<SelectInput
+    defaultValue={'Vertical orientation'}
+    options={['Vertical orientation','Horizontal orientation']}
+    onChange={( value ) =>  {
+        if ( value === 'Vertical orientation' ) {
+            lesson.setState({
+                orientPlot: 'v',
+                varX13: dataset3.Type,
+                varY13: dataset3.Average_Cals,
+                varX23: dataset3.Type,
+                varY23: dataset3.Average_Sodium_mgs
+            });
+        } else {
+            lesson.setState({
+                orientPlot: 'h',
+                varX13: dataset3.Average_Cals,
+                varY13: dataset3.Type,
+                varX23: dataset3.Average_Sodium_mgs,
+                varY23: dataset3.Type
+            });
+        }
+    }}
+/>
+
+### Select the gridlines you want to show or hide
+
+<SelectInput
+    defaultValue={'Hide x gridlines'}
+    options={['Hide x gridlines','Show x gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide x gridlines' ) {
+            lesson.setState({
+                showGridx: false
+            });
+        } else {
+            lesson.setState({
+                showGridx: true
+            });
+        }
+    }}
+/>
+
+<SelectInput
+    defaultValue={'Hide y gridlines'}
+    options={['Hide y gridlines','Show y gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide y gridlines' ) {
+            lesson.setState({
+                showGridy: false
+            });
+        } else {
+            lesson.setState({
+                showGridy: true
+            });
+        }
+    }}
+/>
+
+### Show or hide annotations
+
+<SelectInput
+    defaultValue={'Hide annotations'}
+    options={['Hide annotations','Show x values', 'Show y values']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide annotations' ) {
+            lesson.setState({
+                plotText1: '',
+                plotText2: ''
+            });
+        } if ( value === 'Show x values' ) {
+            lesson.setState({
+                plotText1: lesson.state.varX13,
+                plotText2: lesson.state.varX23
+            });
+        } if ( value === 'Show y values' ) {
+           lesson.setState({
+                plotText1: lesson.state.varY13,
+                plotText2: lesson.state.varY23 
+        });
+        }
+    }}
+/>
+
+### Sort by x or y values
+
+<SelectInput
+    defaultValue={'Unsorted'}
+    options={['Unsorted','Sort x ascending', 'Sort x descending', 'Sort y ascending', 'Sort y descending']}
+    onChange={( value ) =>  {
+        if ( value === 'Unsorted' ) {
+            lesson.setState({
+                plotSort: ''
+            });
+        } if ( value === 'Sort x ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort x descending' ) {
+           lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'descending'
+  }
+        });
+        } if ( value === 'Sort y ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort y descending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'descending'
+  }
+            });
+        }
+    }}
+/>
+
+<Dashboard onGenerate={( width, height ) => {
+    lesson.setState({
+        width,
+        height
+    });
+}}>
+
+### Set the dimensions of your plot.
+    <NumberInput
+        legend="Width"
+        defaultValue={lesson.state.width}
+        step={1}
+    />
+    <NumberInput
+        legend="Height"
+        defaultValue={lesson.state.height}
+        step={1}
+    />
+
+</Dashboard>
+
+<Plotly 
+  data={[
+  {
+    x: lesson.state.varX13,
+    y: lesson.state.varY13,
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText1,
+    textposition: 'auto',
+    transforms: [lesson.state.plotSort],
+    name: 'Average_Cals'
+  },
+  {
+    x: lesson.state.varX23,
+    y: lesson.state.varY23,
+    xaxis:'x2',
+    yaxis:'y2',
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText2,
+    textposition: 'auto',
+    transforms: [lesson.state.plotSort],
+    name:'Average_Sodium_mgs'
+  }
+]}
+  layout={{
+      width: lesson.state.width,
+      height: lesson.state.height,
+      grid:{rows:1, columns:2, pattern: 'independent'},
+      xaxis: {
+          anchor: "x",
+          showgrid: lesson.state.showGridx},
+      yaxis: {
+          anchor: "y",
+        showgrid: lesson.state.showGridy},
+      xaxis2: {
+        anchor: "x2",
+        showgrid: lesson.state.showGridx
+      },
+      yaxis2: {
+        anchor: "y2",
+        showgrid: lesson.state.showGridy}  
+  }}
+  editable={true}
+  draggable={true}
+  id="test_plot3"
+/>
+
+</Panel>
+
+<div>
+  <ImageQuestion question="Create a data visualization for this data." />
+</div>
+
 </div>
 
 <div>
 ### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. 
 
-<DataExplorer
+<DataTable
   data={dataset4}
-  categorical={['Interval', 'Helmet_Type']}
-  quantitative={['Percentage_athlete_concussions']}
-  questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization for this data." />
-            <FreeTextQuestion
-                question="Enter your caption for the visualization."
-            />
-        </div>
-  ]}
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
-  editor={false}
 />
+
+<Panel>
+
+### Choose the type of plot you want to generate.
+
+<SelectInput
+    defaultValue={'Bar plot'}
+    options={['Bar plot','Line plot']}
+    onChange={( value ) =>  {
+        if ( value === 'Bar plot' ) {
+            lesson.setState({
+                plotType: 'bar'
+            });
+        } else {
+            lesson.setState({
+                plotType: 'line'
+            });
+        }
+    }}
+/>
+
+### Choose the orientation of your plot
+
+<SelectInput
+    defaultValue={'Vertical orientation'}
+    options={['Vertical orientation','Horizontal orientation']}
+    onChange={( value ) =>  {
+        if ( value === 'Vertical orientation' ) {
+            lesson.setState({
+                orientPlot: 'v',
+                varX4: dataset4.Interval,
+                varY4: dataset4.Percentage_athlete_concussions
+            });
+        } else {
+            lesson.setState({
+                orientPlot: 'h',
+                varY4: dataset4.Interval,
+                varX4: dataset4.Percentage_athlete_concussions
+            });
+        }
+    }}
+/>
+
+
+### Select the gridlines you want to show or hide
+
+<SelectInput
+    defaultValue={'Hide x gridlines'}
+    options={['Hide x gridlines','Show x gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide x gridlines' ) {
+            lesson.setState({
+                showGridx: false
+            });
+        } else {
+            lesson.setState({
+                showGridx: true
+            });
+        }
+    }}
+/>
+
+<SelectInput
+    defaultValue={'Hide y gridlines'}
+    options={['Hide y gridlines','Show y gridlines']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide y gridlines' ) {
+            lesson.setState({
+                showGridy: false
+            });
+        } else {
+            lesson.setState({
+                showGridy: true
+            });
+        }
+    }}
+/>
+
+### Show or hide annotations
+
+<SelectInput
+    defaultValue={'Hide annotations'}
+    options={['Hide annotations','Show x values', 'Show y values']}
+    onChange={( value ) =>  {
+        if ( value === 'Hide annotations' ) {
+            lesson.setState({
+                plotText: ''
+            });
+        } if ( value === 'Show x values' ) {
+            lesson.setState({
+                plotText: lesson.state.varX4
+            });
+        } if ( value === 'Show y values' ) {
+           lesson.setState({
+                plotText: lesson.state.varY4
+        });
+        }
+    }}
+/>
+
+### Sort by x or y values
+
+<SelectInput
+    defaultValue={'Unsorted'}
+    options={['Unsorted','Sort x ascending', 'Sort x descending', 'Sort y ascending', 'Sort y descending']}
+    onChange={( value ) =>  {
+        if ( value === 'Unsorted' ) {
+            lesson.setState({
+                plotSort: ''
+            });
+        } if ( value === 'Sort x ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort x descending' ) {
+           lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'x',
+    order: 'descending'
+  }
+        });
+        } if ( value === 'Sort y ascending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'ascending'
+  }
+            });
+        } if ( value === 'Sort y descending' ) {
+            lesson.setState({
+                plotSort: {
+    type: 'sort',
+    target: 'y',
+    order: 'descending'
+  }
+            });
+        }
+    }}
+/>
+
+<Dashboard onGenerate={( width, height ) => {
+    lesson.setState({
+        width,
+        height
+    });
+}}>
+
+### Set the dimensions of your plot.
+    <NumberInput
+        legend="Width"
+        defaultValue={lesson.state.width}
+        step={1}
+    />
+    <NumberInput
+        legend="Height"
+        defaultValue={lesson.state.height}
+        step={1}
+    />
+
+</Dashboard>
+
+<Plotly 
+  data={[
+  {
+    x: lesson.state.varX4,
+    y: lesson.state.varY4,
+    type: lesson.state.plotType,
+    orientation: lesson.state.orientPlot,
+    text: lesson.state.plotText,
+    textposition: 'auto',
+    transforms: [{type: 'groupby', groups: dataset4.Helmet_Type}, lesson.state.plotSort]
+  }
+]}
+  layout={{
+      width: lesson.state.width,
+      height: lesson.state.height,
+      xaxis: {
+          showgrid: lesson.state.showGridx,
+          title: 'X-axis title'
+      },
+      yaxis: {
+        showgrid: lesson.state.showGridy
+      }
+  }}
+  editable={true}
+  draggable={true}
+  id="test_plot4"
+/>
+</Panel>
+
+<div>
+  <ImageQuestion question="Create a data visualization for this data." />
+</div>
+
 </div>
 </Pages>
 
