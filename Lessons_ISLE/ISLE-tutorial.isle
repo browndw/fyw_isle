@@ -1,5 +1,6 @@
 ---
 title: ISLE Tutorial
+author: Mike Laudenbach
 require:
     heartdisease: "https://isle.heinz.cmu.edu/data-explorers_heartdisease.json"
     heartdiseaseInfo: "https://isle.heinz.cmu.edu/data-explorers_heartdisease_info.json"
@@ -11,7 +12,11 @@ removeStatusBar: true
 
 <div align="left">##### Welcome to ISLE! There are a few different features that we will be using throughout the semester. Watch the video below to see how to use these features, as well as how to **submit your work.**</div>
 
-Video
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_ISLE-tutorial.mp4"
+  controls={true}
+/>
+
+
 
 The following sections appear in the video. You do **not** need to complete these questions unless you would like to practice.
 *********************************************
