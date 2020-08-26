@@ -86,15 +86,17 @@ A strong report will include all of the relevant stories this data set can tell.
 <div>
   1. Draft your report & create your data visualizations
   2. Click + hold "Drag Plot" to add your visualizations to your report
-  3. Always save your report for your own records:
-      * Save as HTML: <Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
-     * Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
-  4. Click the "Finish Lesson" button below, download the PDF, and submit it to Canvas.
+  3. When your draft is complete, **click the submit button in the data explorer:**<Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
+  4. Always save your report for your own records:
+      4a. Save as HTML:<Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
+      4b. Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+  5. Submit the PDF to Canvas.
   </div>
 </Collapse>
 
 *************************
 
-<div align="left">#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit. </div>
+<div align="left">#### Don't forget to click the 'Finish Lesson' button below. 
+##### Note that this PDF *will not* contain your formatting for the text above. To save a PDF with your formatting, you must use the button in the report editor above. </div>
 <LessonSubmit />
 
