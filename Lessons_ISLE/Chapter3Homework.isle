@@ -6,17 +6,6 @@ keywords:
 date: 06/12/2020
 language: en-US
 state:
-    varX1: dataset1.Major
-    varY1: dataset1.Percent_students_satisfied_verysatisfied
-    varX2: dataset2.Month
-    varY2: dataset2.Kilowatts_per_hour
-    varX13: dataset3.Type
-    varY13: dataset3.Type
-    varX23: dataset3.Average_Cals
-    varY23: dataset3.Average_Sodium_mgs
-    varX4: dataset4.Helmet_Type
-    varY4: dataset4.Percentage_athlete_concussions
-    varZ4: dataset4.Interval
     fillColor: black
     width: 800
     height: 400
@@ -127,11 +116,6 @@ Your visualizations should include
 
 Be prepared to describe and defend your design choices in class discussion.
 
-*For a reminder about how to create plots and drag them into the 'Question' field, watch this brief video.*
-<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Answering-Image-Questions.mp4"
-  controls={true}
-/>
-
 **Remember to click 'Submit' after entering your answer!**
 
 
@@ -141,7 +125,7 @@ Be prepared to describe and defend your design choices in class discussion.
 ### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
 
 <DataTable
-  data={dataset1}
+  data={global.dataset1}
 />
 
 <Panel>
@@ -374,8 +358,8 @@ Be prepared to describe and defend your design choices in class discussion.
 <Plotly 
   data={[
   {
-    x: lesson.state.varX1,
-    y: lesson.state.varY1,
+    x: lesson.state.varX1 || dataset1.Major,
+    y: lesson.state.varY1 || dataset1.Percent_students_satisfied_verysatisfied,
     type: lesson.state.plotType,
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText,
@@ -415,7 +399,7 @@ Be prepared to describe and defend your design choices in class discussion.
 ### Dataset 2: This data was collected to answer the question of how much energy is used (measured in average kilowatts per hour) in two equivalent buildings in different parts of the United States. 
 
 <DataTable
-  data={dataset2}
+  data={global.dataset2}
 />
 
 <Panel>
@@ -660,8 +644,8 @@ Be prepared to describe and defend your design choices in class discussion.
 <Plotly 
   data={[
   {
-    x: lesson.state.varX2,
-    y: lesson.state.varY2,
+    x: lesson.state.varX2 || dataset2.Month,
+    y: lesson.state.varY2 || dataset2.Kilowatts_per_hour,
     type: lesson.state.plotType,
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText,
@@ -698,7 +682,7 @@ Be prepared to describe and defend your design choices in class discussion.
 ### Dataset 3: This data was collected to answer the question of which type of hotdog is healthiest. Hotdogs were analyzed for both calories and sodium content. 
 
 <DataTable
-  data={dataset3}
+  data={global.dataset3}
 />
 
 <Panel>
@@ -964,8 +948,8 @@ Be prepared to describe and defend your design choices in class discussion.
 <Plotly 
   data={[
   {
-    x: lesson.state.varX13,
-    y: lesson.state.varY13,
+    x: lesson.state.varX13 || dataset3.Type,
+    y: lesson.state.varY13 || dataset3.Average_Cals,
     type: lesson.state.plotType,
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText1,
@@ -974,8 +958,8 @@ Be prepared to describe and defend your design choices in class discussion.
     name: 'Average_Cals'
   },
   {
-    x: lesson.state.varX23,
-    y: lesson.state.varY23,
+    x: lesson.state.varX23 || dataset3.Type,
+    y: lesson.state.varY23 || dataset3.Average_Sodium_mgs,
     xaxis:'x2',
     yaxis:'y2',
     type: lesson.state.plotType,
@@ -1021,7 +1005,7 @@ Be prepared to describe and defend your design choices in class discussion.
 ### Dataset 4: This data was collected to answer the question of whether the “revolution” football helmet reduces concussion severity compared to standard helmets. The table represents the “Return to play” rates of football athletes experiencing a concussion while wearing the two types of helmet. 
 
 <DataTable
-  data={dataset4}
+  data={global.dataset4}
 />
 
 <Panel>
@@ -1266,8 +1250,8 @@ Be prepared to describe and defend your design choices in class discussion.
 <Plotly 
   data={[
   {
-    x: lesson.state.varX4,
-    y: lesson.state.varY4,
+    x: lesson.state.varX4 || dataset4.Helmet_Type,
+    y: lesson.state.varY4 || dataset4.Percentage_athlete_concussions, 
     type: lesson.state.plotType,
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText,
