@@ -28,6 +28,15 @@ state:
     plotText1: ''
     plotText2: ''
     plotSort: ''
+    xlower: ''
+    xupper: ''
+    ylower: ''
+    yupper: ''
+    xlower2: ''
+    xupper2: ''
+    ylower2: ''
+    yupper2: ''
+    group: ''
 require:
     dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
     dataset2: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_b.csv"
@@ -118,6 +127,11 @@ Your visualizations should include
 
 Be prepared to describe and defend your design choices in class discussion.
 
+*For a reminder about how to create plots and drag them into the 'Question' field, watch this brief video.*
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Answering-Image-Questions.mp4"
+  controls={true}
+/>
+
 **Remember to click 'Submit' after entering your answer!**
 
 
@@ -171,10 +185,57 @@ Be prepared to describe and defend your design choices in class discussion.
     }}
 />
 
+### Set the value range of your plot.
+
+<Container>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of X"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xlower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of X"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xupper: value});
+        }}
+    />
+    </Col>
+  </Row>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of Y"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({ylower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of Y"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({yupper: value});
+        }}
+    />
+    </Col>
+  </Row>  
+</Container>
 
 ### Select the gridlines you want to show or hide
 
-<SelectInput
+<Container>
+  <Row>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide x gridlines'}
     options={['Hide x gridlines','Show x gridlines']}
     onChange={( value ) =>  {
@@ -189,8 +250,9 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-<SelectInput
+    </Col>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide y gridlines'}
     options={['Hide y gridlines','Show y gridlines']}
     onChange={( value ) =>  {
@@ -205,6 +267,10 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
+    </Col>
+  </Row>
+
+</Container>
 
 ### Show or hide annotations
 
@@ -303,8 +369,6 @@ Be prepared to describe and defend your design choices in class discussion.
         defaultValue={lesson.state.height}
         step={1}
     />
-
-
 </Dashboard>
 
 <Plotly 
@@ -323,29 +387,27 @@ Be prepared to describe and defend your design choices in class discussion.
   }
 ]}
   layout={{
-      width: lesson.state.width,
-      height: lesson.state.height,
-      xaxis: {
-          showgrid: lesson.state.showGridx,
-          title: 'X-axis title'
-      },
-      yaxis: {
-        showgrid: lesson.state.showGridy
-      }
-  }}
-  editable={true}
+  "width": lesson.state.width,
+  "height": lesson.state.height,
+  "xaxis": {
+    "showgrid": lesson.state.showGridx,
+    "title": "X-axis title",
+    "range": [lesson.state.xlower, lesson.state.xupper]
+  },
+  "yaxis": {
+    "showgrid": lesson.state.showGridy,
+    "range": [lesson.state.ylower, lesson.state.yupper]
+  }
+}}  editable={true}
   draggable={true}
   id="test_plot1"
 />
+
 </Panel>
 
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-<FreeTextQuestion
-  question="Enter your caption for your visualization."
-  solution=""
-/>
 
 </div>
 
@@ -398,10 +460,77 @@ Be prepared to describe and defend your design choices in class discussion.
     }}
 />
 
+### Set the value range of your plot.
+<Container>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of X"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({xlower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of X"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({xupper: value});
+        }}
+    />
+    </Col>
+  </Row>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of Y"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({ylower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of Y"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({yupper: value});
+        }}
+    />
+    </Col>
+  </Row>  
+</Container>
+
+### Choose group variable
+
+<SelectInput
+    defaultValue={'None'}
+    options={['None','City', 'Month']}
+    onChange={( value ) =>  {
+        if ( value === 'City' ) {
+            lesson.setState({
+                group: dataset2.City
+            });
+        } else if ( value === 'Month' ) {
+            lesson.setState({
+                group: dataset2.Month
+            });
+        } else
+        lesson.setState({
+                group: ''
+            });
+    }}
+/>
 
 ### Select the gridlines you want to show or hide
 
-<SelectInput
+<Container>
+  <Row>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide x gridlines'}
     options={['Hide x gridlines','Show x gridlines']}
     onChange={( value ) =>  {
@@ -416,8 +545,9 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-<SelectInput
+    </Col>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide y gridlines'}
     options={['Hide y gridlines','Show y gridlines']}
     onChange={( value ) =>  {
@@ -432,6 +562,10 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
+    </Col>
+  </Row>
+
+</Container>
 
 ### Show or hide annotations
 
@@ -532,7 +666,7 @@ Be prepared to describe and defend your design choices in class discussion.
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText,
     textposition: 'auto',
-    transforms: [lesson.state.plotSort, {type: 'groupby', groups: dataset2.City}]
+    transforms: [lesson.state.plotSort, {type: 'groupby', groups: lesson.state.group}]
   }
 ]}
   layout={{
@@ -540,10 +674,12 @@ Be prepared to describe and defend your design choices in class discussion.
       height: lesson.state.height,
       xaxis: {
           showgrid: lesson.state.showGridx,
-          title: 'X-axis title'
+          title: 'X-axis title',
+          "range": [lesson.state.xlower, lesson.state.xupper]
       },
       yaxis: {
-        showgrid: lesson.state.showGridy
+        showgrid: lesson.state.showGridy,
+        "range": [lesson.state.ylower, lesson.state.yupper]
       }
   }}
   editable={true}
@@ -555,10 +691,7 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-<FreeTextQuestion
-  question="Enter your caption for your visualization."
-  solution=""
-/>
+
 </div>
 
 <div>
@@ -614,9 +747,92 @@ Be prepared to describe and defend your design choices in class discussion.
     }}
 />
 
+### Set the value range of your plot.
+<Container>
+  <Row>
+    <Col md={3}>
+       <NumberInput
+        legend="Lower limit of X in Figure 1"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xlower: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+         <NumberInput
+        legend="Upper limit of X in Figure 1"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xupper: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+       <NumberInput
+        legend="Lower limit of X in Figure 2"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xlower2: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+         <NumberInput
+        legend="Upper limit of X in Figure 2"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({xupper2: value});
+        }}
+    />
+    </Col>
+  </Row>
+  <Row>
+    <Col md={3}>
+       <NumberInput
+        legend="Lower limit of Y in Figure 1"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({ylower: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+         <NumberInput
+        legend="Upper limit of Y in Figure 1"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({yupper: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+       <NumberInput
+        legend="Lower limit of Y in Figure 2"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({ylower: value});
+        }}
+    />
+    </Col>
+    <Col md={3}>
+         <NumberInput
+        legend="Upper limit of Y in Figure 2"
+        step={0.1}
+        onChange={(value) =>  {
+                lesson.setState({yupper: value});
+        }}
+    />
+    </Col>
+  </Row>  
+</Container>
+
 ### Select the gridlines you want to show or hide
 
-<SelectInput
+<Container>
+  <Row>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide x gridlines'}
     options={['Hide x gridlines','Show x gridlines']}
     onChange={( value ) =>  {
@@ -631,8 +847,9 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-<SelectInput
+    </Col>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide y gridlines'}
     options={['Hide y gridlines','Show y gridlines']}
     onChange={( value ) =>  {
@@ -647,6 +864,10 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
+    </Col>
+  </Row>
+
+</Container>
 
 ### Show or hide annotations
 
@@ -793,10 +1014,7 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-<FreeTextQuestion
-  question="Enter your caption for your visualization."
-  solution=""
-/>
+
 </div>
 
 <div>
@@ -848,10 +1066,78 @@ Be prepared to describe and defend your design choices in class discussion.
     }}
 />
 
+### Set the value range of your plot.
+<Container>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of X"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({xlower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of X"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({xupper: value});
+        }}
+    />
+    </Col>
+  </Row>
+  <Row>
+    <Col md={6}>
+       <NumberInput
+        legend="Lower limit of Y"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({ylower: value});
+        }}
+    />
+    </Col>
+    <Col md={6}>
+         <NumberInput
+        legend="Upper limit of Y"
+        step={1}
+        onChange={(value) =>  {
+                lesson.setState({yupper: value});
+        }}
+    />
+    </Col>
+  </Row>  
+</Container>
+
+### Choose group variable
+
+<SelectInput
+    defaultValue={'None'}
+    options={['None','Helmet type', 'Interval']}
+    onChange={( value ) =>  {
+        if ( value === 'Helmet type' ) {
+            lesson.setState({
+                group: dataset4.Helmet_Type
+            });
+        } else if ( value === 'Interval' ) {
+            lesson.setState({
+                group: dataset4.Interval
+            });
+        } 
+        else
+        lesson.setState({
+                group: ''
+            });
+    }}
+/>
 
 ### Select the gridlines you want to show or hide
 
-<SelectInput
+<Container>
+  <Row>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide x gridlines'}
     options={['Hide x gridlines','Show x gridlines']}
     onChange={( value ) =>  {
@@ -866,8 +1152,9 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-<SelectInput
+    </Col>
+    <Col md={6}>
+      <SelectInput
     defaultValue={'Hide y gridlines'}
     options={['Hide y gridlines','Show y gridlines']}
     onChange={( value ) =>  {
@@ -882,6 +1169,10 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
+    </Col>
+  </Row>
+
+</Container>
 
 ### Show or hide annotations
 
@@ -981,7 +1272,7 @@ Be prepared to describe and defend your design choices in class discussion.
     orientation: lesson.state.orientPlot,
     text: lesson.state.plotText,
     textposition: 'auto',
-    transforms: [{type: 'groupby', groups: dataset4.Helmet_Type}, lesson.state.plotSort]
+    transforms: [{type: 'groupby', groups: lesson.state.group}, lesson.state.plotSort]
   }
 ]}
   layout={{
@@ -989,10 +1280,12 @@ Be prepared to describe and defend your design choices in class discussion.
       height: lesson.state.height,
       xaxis: {
           showgrid: lesson.state.showGridx,
-          title: 'X-axis title'
+          title: 'X-axis title',
+          "range": [lesson.state.xlower, lesson.state.xupper]
       },
       yaxis: {
-        showgrid: lesson.state.showGridy
+        showgrid: lesson.state.showGridy,
+        "range": [lesson.state.ylower, lesson.state.yupper]
       }
   }}
   editable={true}
@@ -1004,10 +1297,7 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-<FreeTextQuestion
-  question="Enter your caption for your visualization."
-  solution=""
-/>
+
 </div>
 </Pages>
 
