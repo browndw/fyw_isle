@@ -19,8 +19,8 @@ For the text samples below, use the editing tools to annotate the sentence(s) pe
   * The Gap should be made RED
   * Filling the Gap should be made BLUE
   * Sentences that don't appear to perform an introductory move should be left alone
-<br />To edit the font color, click the button that looks like a painter's palette: <Image src="https://isle.stat.cmu.edu/76-107_font_color_button.png" width="35" height="35"/>
-
+<br />To edit the font color, click the button that looks like a painter's palette:<Image src="https://isle.stat.cmu.edu/76-107_font_color_button.png" width="35" height="35"/>
+<br />
 
 <TextEditor voiceControl
   defaultValue={`<b>Text Sample A is from a Chemical engineering Master's thesis:</b> 
