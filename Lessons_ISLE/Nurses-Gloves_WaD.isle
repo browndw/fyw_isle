@@ -14,6 +14,8 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 # Nurses' Gloves Assignment 
 <div align="left">#### This assignment gives you a chance to practice writing a persuasive and clear story about a simple data set using the IMRD format.  This story should contain a good visualization.</div>
 
+<div align="left">##### Submission intructions are different for this assignment - see below</div>
+
 **********************************
 
 <Collapse header='Context'>
@@ -39,18 +41,19 @@ A strong report will include all of the relevant stories this data set can tell.
 </Collapse>
 
 <Collapse header="Report sections (IMRD)">
-  Your report should have the following sections:
+  Use the **report editor** in the data explorer below to complete this assignment. Your report should have the following sections:
     * **Abstract**:  Approximately one sentence for each IMRD section.
     * **Introduction**: Approximately one paragraph that explains the motivations for your research question.  You should describe why the topic is important, what is known, and what is unknown, and what question your report will answer.
     * **Methods**: Include subheadings for participants and observation procedures.  You may include additional subheadings if you feel your audience will find them helpful.
     * **Results**: Include at least one visualization that tells an effective story.  Your visualizations must be clear and compelling and able to stand alone (i.e., captions, labels, etc. should clarify how to read the visualization).  Each visualization should be accompanied by text that tells its story and provides additional information that helps readers understand the results. 
     * **Discussion**: Restate the main findings and explain what they mean for your audience.  Also discuss any problems with the data or procedures and if there are remaining questions that should be investigated with future studies.
 
+You will write this report in pieces. As long as you click the submit button (see intructions below), ISLE will save your work in the report editor.
 </Collapse>
 
 **********************************
 
-### Nurses Gloves Dataset
+### Nurses' Gloves Dataset
 
 <DataExplorer
   data={datasetNG}
@@ -80,23 +83,19 @@ A strong report will include all of the relevant stories this data set can tell.
 *************************
 
 <Collapse header="ISLE Submission Instructions">
-##### To complete this assignment, use the **report** function in the data explorer below:
+##### To complete this assignment, use the **report editor** in the data explorer:
 
 
 <div>
   1. Draft your report & create your data visualizations
   2. Click + hold "Drag Plot" to add your visualizations to your report
-  3. When your draft is complete, **click the submit button in the data explorer:**<Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
+  3. When your draft is complete, **click the submit button in the data explorer. This will save your work in the report editor:**<Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
   4. Always save your report for your own records:
-      4a. Save as HTML:<Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
-      4b. Save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
-  5. Submit the PDF to Canvas.
+      4a. If you prefer, you *could* choose to save as HTML:<Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
+      4b. You **must** save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+  5. **Submit the PDF of your report to Canvas to receive credit.**
   </div>
 </Collapse>
 
 *************************
-
-<div align="left">#### Don't forget to click the 'Finish Lesson' button below. 
-##### Note that this PDF *will not* contain your formatting for the text above. To save a PDF with your formatting, you must use the button in the report editor above. </div>
-<LessonSubmit />
 

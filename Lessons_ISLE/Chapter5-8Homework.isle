@@ -19,6 +19,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 
 ***************************************
+
 <Collapse
   header="Exercise 5.1"
 >
@@ -51,7 +52,7 @@ Create your first data visualization and accompanying data story here.
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
             <FreeTextQuestion
-                question="Enter your caption for the visualization."
+                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
             />
         </div>
   ]}
@@ -90,7 +91,7 @@ Create your second data visualization and accompanying data story here.
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
             <FreeTextQuestion
-                question="Enter your caption for the visualization."
+                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
             />
         </div>
   ]}
@@ -128,7 +129,7 @@ Create your third data visualization and accompanying data story here.
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
             <FreeTextQuestion
-                question="Enter your caption for the visualization."
+                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
             />
         </div>
   ]}
