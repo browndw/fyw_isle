@@ -169,51 +169,6 @@ Be prepared to describe and defend your design choices in class discussion.
     }}
 />
 
-### Set the value range of your plot.
-
-<Container>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of X"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xlower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of X"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xupper: value});
-        }}
-    />
-    </Col>
-  </Row>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of Y"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({ylower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of Y"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({yupper: value});
-        }}
-    />
-    </Col>
-  </Row>  
-</Container>
-
 ### Select the gridlines you want to show or hide
 
 <Container>
@@ -354,7 +309,7 @@ Be prepared to describe and defend your design choices in class discussion.
         step={1}
     />
 </Dashboard>
-
+<div style={{ position: 'relative' }} >
 <Plotly 
   data={[
   {
@@ -386,7 +341,7 @@ Be prepared to describe and defend your design choices in class discussion.
   draggable={true}
   id="test_plot1"
 />
-
+</div>
 </Panel>
 
 <div>
@@ -443,50 +398,6 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-### Set the value range of your plot.
-<Container>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of X"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({xlower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of X"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({xupper: value});
-        }}
-    />
-    </Col>
-  </Row>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of Y"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({ylower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of Y"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({yupper: value});
-        }}
-    />
-    </Col>
-  </Row>  
-</Container>
 
 ### Choose group variable
 
@@ -640,7 +551,7 @@ Be prepared to describe and defend your design choices in class discussion.
     />
 
 </Dashboard>
-
+<div style={{ position: 'relative' }} >
 <Plotly 
   data={[
   {
@@ -669,7 +580,7 @@ Be prepared to describe and defend your design choices in class discussion.
   editable={true}
   draggable={true}
   id="test_plot2"
-/>
+/></div>
 </Panel>
 
 <div>
@@ -730,86 +641,6 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-### Set the value range of your plot.
-<Container>
-  <Row>
-    <Col md={3}>
-       <NumberInput
-        legend="Lower limit of X in Figure 1"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xlower: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-         <NumberInput
-        legend="Upper limit of X in Figure 1"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xupper: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-       <NumberInput
-        legend="Lower limit of X in Figure 2"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xlower2: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-         <NumberInput
-        legend="Upper limit of X in Figure 2"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({xupper2: value});
-        }}
-    />
-    </Col>
-  </Row>
-  <Row>
-    <Col md={3}>
-       <NumberInput
-        legend="Lower limit of Y in Figure 1"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({ylower: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-         <NumberInput
-        legend="Upper limit of Y in Figure 1"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({yupper: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-       <NumberInput
-        legend="Lower limit of Y in Figure 2"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({ylower: value});
-        }}
-    />
-    </Col>
-    <Col md={3}>
-         <NumberInput
-        legend="Upper limit of Y in Figure 2"
-        step={0.1}
-        onChange={(value) =>  {
-                lesson.setState({yupper: value});
-        }}
-    />
-    </Col>
-  </Row>  
-</Container>
 
 ### Select the gridlines you want to show or hide
 
@@ -944,6 +775,7 @@ Be prepared to describe and defend your design choices in class discussion.
     />
 
 </Dashboard>
+<div style={{ position: 'relative' }} >
 
 <Plotly 
   data={[
@@ -992,7 +824,7 @@ Be prepared to describe and defend your design choices in class discussion.
   draggable={true}
   id="test_plot3"
 />
-
+</div>
 </Panel>
 
 <div>
@@ -1049,50 +881,6 @@ Be prepared to describe and defend your design choices in class discussion.
         }
     }}
 />
-
-### Set the value range of your plot.
-<Container>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of X"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({xlower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of X"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({xupper: value});
-        }}
-    />
-    </Col>
-  </Row>
-  <Row>
-    <Col md={6}>
-       <NumberInput
-        legend="Lower limit of Y"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({ylower: value});
-        }}
-    />
-    </Col>
-    <Col md={6}>
-         <NumberInput
-        legend="Upper limit of Y"
-        step={1}
-        onChange={(value) =>  {
-                lesson.setState({yupper: value});
-        }}
-    />
-    </Col>
-  </Row>  
-</Container>
 
 ### Choose group variable
 
@@ -1246,7 +1034,7 @@ Be prepared to describe and defend your design choices in class discussion.
     />
 
 </Dashboard>
-
+<div style={{ position: 'relative' }} >
 <Plotly 
   data={[
   {
@@ -1275,7 +1063,7 @@ Be prepared to describe and defend your design choices in class discussion.
   editable={true}
   draggable={true}
   id="test_plot4"
-/>
+/></div>
 </Panel>
 
 <div>
