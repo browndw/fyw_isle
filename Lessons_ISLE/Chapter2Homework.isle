@@ -92,7 +92,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -113,7 +113,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -135,7 +135,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -157,7 +157,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -179,7 +179,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -201,7 +201,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
@@ -223,7 +223,7 @@ For each example that you rate less than “completely credible,” indicate whi
     answers={[
         {content:"4 = Completely credible", explanation:""},
         {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
+        {content:"2 = Mostly not credible", explanation:""},
         {content:"1 = Not credible", explanation:""}
     ]}
     solution={0}
