@@ -37,7 +37,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 # Chapter 3 Exercises
 
 
-### After reading Chapter 3, please complete Exercises 3.1 and 3.3, below. Simply click each exercise's button to see your assigned tasks. 
+### After reading Chapter 3, please complete Exercises 3.1 and 3.3, below. 
 
 
 ***************************************
@@ -348,6 +348,12 @@ Be prepared to describe and defend your design choices in class discussion.
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
 
+<FreeTextQuestion
+  question="Enter your caption for the visualization above."
+  solution=""
+/>
+
+
 </div>
 
 <div>
@@ -586,7 +592,10 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-
+<FreeTextQuestion
+  question="Enter your caption for the visualization above."
+  solution=""
+/>
 </div>
 
 <div>
@@ -830,7 +839,10 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-
+<FreeTextQuestion
+  question="Enter your caption for the visualization above."
+  solution=""
+/>
 </div>
 
 <div>
@@ -1069,7 +1081,10 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
-
+<FreeTextQuestion
+  question="Enter your caption for the visualization above."
+  solution=""
+/>
 </div>
 </Pages>
 
