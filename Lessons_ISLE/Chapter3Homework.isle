@@ -347,6 +347,11 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
+<FreeTextQuestion
+  question="Create a caption for this data visualization."
+  solution=""
+/>
+
 
 </div>
 
@@ -586,6 +591,11 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
+
+<FreeTextQuestion
+  question="Create a caption for this data visualization."
+  solution=""
+/>
 
 </div>
 
@@ -830,6 +840,10 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
+<FreeTextQuestion
+  question="Create a caption for this data visualization."
+  solution=""
+/>
 
 </div>
 
@@ -1069,6 +1083,10 @@ Be prepared to describe and defend your design choices in class discussion.
 <div>
   <ImageQuestion question="Create a data visualization for this data." />
 </div>
+<FreeTextQuestion
+  question="Create a caption for this data visualization."
+  solution=""
+/>
 
 </div>
 </Pages>
