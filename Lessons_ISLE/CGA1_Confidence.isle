@@ -104,9 +104,9 @@ Note that the default y-axis just reads "Count". Click on it and change the labe
 
 ### Now, suggest brief explanations for the patterns you found.
 
-You might think about the topics these disciplines engage, how they engage in research, and how represent knowledge.
+You might think about the topics these disciplines engage, how they engage in research, and how they represent knowledge.
 
-For this, we need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition restricing your search to specific disciplines (by checking the relevant box on the left).
+For this, we need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition to restricting your search to specific disciplines (by checking the relevant box on the left).
 
 To know what to search for, let's look at a table of counts. These are the frequencies of the top 10 phrases tagged by DocuScope as **ConfidenceHedged** and **ConfidenceHigh** and normalized per 10,000 tokens.
 

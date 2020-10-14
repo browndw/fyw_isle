@@ -1,0 +1,70 @@
+---
+title: "MICUSP Confidence"
+author: David Brown
+date: 07/01/2020
+state: null
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# ISLE Overview
+
+##### This page is meant to serve as a repository of video resources for ISLE. Click on the boxes below to view videos for the corresponding topic. 
+*************************
+<Collapse header="ISLE Question Types & Submitting Assignments">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Data Explorer & Report Editor">
+  keep it basic. toolbox, visualization options, dragging plots, etc.
+</Collapse>
+
+*************************
+
+<Collapse header="Creating Tables">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Bar Plots">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Line Plots">
+ 
+</Collapse>
+
+*************************
+
+<Collapse header="Box Plots">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Histograms">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Transforming Datasets in ISLE">
+  include filtering datasets as well
+</Collapse>
+
+*************************
+
+<Collapse header="Significance Tests (ANOVA)">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="T-tests">
+  
+</Collapse>

@@ -27,8 +27,8 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 Imagine we have conducted a study of students in a class, recording the number of pens and pencils they are carrying on four different dates (*yes, this is a silly study*). Using this data, please do the following:
 
-* Create three different visualizations to illustrate three different stories you might tell about this data.
-* For each of these three visualizations, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories.
+* Create two different visualizations to illustrate three different stories you might tell about this data.
+* Then, choose one of these visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories.
 
 A helpful note: your audience is fellow students and instructors who want to learn more about students’ habits and practices. 
 
@@ -52,7 +52,7 @@ Create your first data visualization and accompanying data story here.
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
             <FreeTextQuestion
-                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
+                question="Enter a caption for your visualization."
             />
         </div>
   ]}
@@ -91,7 +91,7 @@ Create your second data visualization and accompanying data story here.
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
             <FreeTextQuestion
-                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
+                question="Enter a caption for your visualization."
             />
         </div>
   ]}
@@ -116,50 +116,13 @@ Create your second data visualization and accompanying data story here.
   transformer={false}
   editor={false}
 />
-</div>
-
-<div>
-### Data Visualization 3:
-Create your third data visualization and accompanying data story here. 
-<DataExplorer
-  data={dataset1}
-  categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
-  quantitative={['Daily_pens_pencils_by_student']}
-  questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization for this data." />
-            <FreeTextQuestion
-                question="Enter a caption for your visualization. Then, write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
-            />
-        </div>
-  ]}
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
-  editor={false}
+</div></Pages>
+<FreeTextQuestion
+  question="Choose one of your visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
+  solution=""
 />
-</div>
-
-</Pages>
 
 </Collapse>
-
 
 
 <Collapse
@@ -369,7 +332,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -384,7 +346,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -399,7 +360,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -414,7 +374,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -429,7 +388,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -444,7 +402,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
@@ -459,7 +416,6 @@ Review the excerpt above and then answer each of the 7 questions below, indicati
         {content:"Providing reasons to explain trends unexpected results", explanation:""},
         {content:"Drawing conclusions from the data", explanation:""}
     ]}
-    solution={0}
     provideFeedback=""
 />
 </div>
