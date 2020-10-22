@@ -1,7 +1,7 @@
 ---
-title: "MICUSP Confidence"
-author: David Brown
-date: 07/01/2020
+title: "Using Qualitative Data"
+author: Mike Laudenbach
+date: 10/20/2020
 state: null
 require:
     micusp_conf: "https://isle.stat.cmu.edu/76-107_107_micusp_confidence.json"
@@ -12,72 +12,40 @@ server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
 
-# Exploring Expressions of Confidence
+# Using Qualitative Data
 
-##### The goal of this lesson is to introduce you to the datasets we'll be using for the CGA.
+<div align="left">##### In this lesson, you will practice using examples from the papers themselves to support your claims. 
+</div>
 
-###### For this exercise, we're going to investigate the ways which various academic disciples manage expressions of confidence.
+For this exercise, we'll use the data from <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
 
-Our broad research questions are the following: 
-* Which disciplines are more tolerant of or prone to expressing high confidence: *it is clear that...*, *the obvious response...*, *the data show...* 
-* And which ones are more prone to hedging: *this may indicate...*, *one potential solution...*, *the data suggest...*
+<Collapse header="Why and how we use Qualitative Data">
+  
+### **Chapter 6** in the textbook discusses the different kinds of qualitative data in detail. **Chapter 8**, which covers results sections, mentions how qualitative data is used to **supplement** or elaborate on our data stories with additional information.
 
-******************************
+Whenever we report our quantitative analysis of a data set, we want to contextualize our results *within the data itself* to show the reader what these results look like. Qualitative data (such as quotations, observations, photographs, or descriptions) help readers **zoom in** on the quantitative findings.
 
-<Collapse header="Language & Genre">
+In this case, we're working with pieces of student writing, so our qualitative data will concists of quotes/excerpts from the papers.
 
-The data we'll be investigating come from  <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+Here's an example from a CGA in this course. Here, the student is elaborating the use of metadiscourse (the word "also") in a creative writing piece and a biology report:
 
-We, then, tagged that data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a> categorizes words and phrases into rhetorical categories. For example, in some <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> or text-types (like much of the writing done in universities), abstract and technical language serve an important function. DocuScope groups all these words into a category called **ExpertVocabulary**. Here is an excerpt from an upper-level student paper, with the AcademicTerms identified by DocuScope in bold:
+*When used in “Return to Soumi,” two of the three instances of “also” being used is when showing emotion. For example, “I was sad to leave the history of the farm, yet also relieved...,” and “Upon hearing my aunt’s comments, my cheeks grew red and I became very angry yet also sad.” In “Global Reproductive Strategies of Tursiops and Stenella (Family Delphinidae),” “also” is used when introducing new evidence to support a claim. Some examples are “There is also evidence that females may directly choose a mate,” and “They also found that a comparable percentage of whitebelly spinners and eastern spinners were accidentally captured in nets."*
 
-* With this **equation**, the initial conditions, and the **experimentally** determined **natural frequency** and damping **ratio**, we can know the under-damped vibration **as a function of** time, and, thus, the exact **behavior** of the floorboard.
-
-There are  <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">16 DocuScope categories</a> (or what are called "clusters"):
-
-1. Character Types
-1. Citation Authority
-1. Citation Controversy
-1. Citation Hedged
-1. Citation Neutral
-1. Confidence Hedged
-1. Confidence High
-1. Confidence Low
-1. Expert Vocabulary
-1. Information Comparison
-1. Information Quantities
-1. Methods/Results/Discussion
-1. Purpose/Plan
-1. Reader Directed Metadiscourse
-1. Reader Directed Metadiscourse (First Person)
-1. Reasoning
-
-The results you see in the data tables are normalized counts of tokens (words/phrases) in a given document. These counts are normalized per 100 tokens. So, a value of 1.25 for ConfidenceHedged means that 1.25 of every 100 tokens in the document fall under the ConfidenceHedged category. 
-
-For this excercise, we'll only be looking at ConfidenceHigh and ConfidenceHedged.
+**Metadiscourse is language that functions as traffic signs, orienting and directing readers. What does the above excerpt reveal about the different uses of metadiscourse in these two genres?**
 </Collapse>
 
+
 *************************
-<Collapse header="CGA Exercise 1: MICUSP">
+***Need to change the data table to Citation language and edit from here down.
+<Collapse header="Citation Language in MICUSP">
 <Pages>
-### Let's start with a quick survey.<MultipleChoiceSurvey
-    anonymous
-    id="MICUSPHighSurvey"
-    question="In which discipline is ConfidenceHigh the most frequent?"
-    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/><MultipleChoiceSurvey
-    anonymous
-    id="MICUSPHedgedSurvey"
-    question="In which discipline is ConfidenceHedged the most frequent?"
-    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
 <div>
-### Now we'll check the data. 
 
-Below is a data table with columns for the normalized frequencies of ConfidenceHigh and ConfidenceHedged for each paper.
+Below is a data table with columns for the normalized frequencies of CitationAuthority, CitationHedged, CitationNeutral, and CitationControversy for each paper.
 
-There is also a column identifying the academic discipline.
+There is also a column identifying the academic discipline. You can create filtered datasets by academic discipline. 
 
-We're going to make plots showing the average (or mean) for ConfidenceHigh and ConfidenceHedged by PaperDiscipline.
-
-To make these plots:
+To make  plots:
 
 1. Click 'Show Toolbox'
 1. Find the 'Plots' menu and select 'Bar Chart'
@@ -87,10 +55,6 @@ To make these plots:
 1. 'Summary function' should be 'Mean'
 1. Order the bars either by ascending or descending frequency
 1. Finally, click 'Generate'
-
-Your plot should appear in the 'Output'. You can hide the toolbox and use the toggle option for a fullscreen view of your plot.
-
-Generate plots for both ConfidenceHedged and ConfidenceHigh.
 
 <Gate banner={<h3>Please sign in with your account...</h3>} user >
     <DataExplorer 
@@ -141,13 +105,13 @@ Now let's trying repeating the process with the <a href="https://www.english-cor
 
 Rather than being categorized by discipline, these data are divided into text-types:
 1. Academic
-2. Fiction
-3. Magazine
-4. Newspaper
-5. Spoken
-6. Blogs
-7. Television/Movies
-8. Web
+1. Fiction
+1. Magazine
+1. Newspaper
+1. Spoken
+1. Blogs
+1. Television/Movies
+1. Web
 
 ### Once again, let's do a quick survey.
 

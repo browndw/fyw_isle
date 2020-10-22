@@ -77,10 +77,39 @@ You will write this report in pieces. As long as you click the submit button (se
 ]}
   tests={[]}
   tables={[]}
-  transformer={false}
 />
 
 *************************
+<Collapse header="Tips for Transforming the Data Explorer">
+  
+
+
+<FlippableCard button="Click here for a video demonstration"
+  cardStyles={{
+  "container": {
+    "width": "100%"},
+}}
+>
+<div>
+Tips for adding new variables:
+  1. From the Data Explorer toolbox, click "Transform"
+  2. Select the top button: "Interactions, Transformations (e.g., sqrt), Functions"
+  3. Select variables from the "Quantitative"  drop down menus
+    3a. The categorical variable "Country" is not numerical
+  4. Click an operator: +, -, * (multiplication), / (division)
+    4a. For example, the expression for "Gold medals per capita" as a new variable would look like this: **"datum.Gold / datum.Population"**
+    4b. Or, the expression for "Total Medals" would look like this: **"datum.Gold + datum.Silver + datum.Bronze"**
+  5. Set the name of your new variable
+  6. Click "Create new variable"
+  7. Feel free to experiment with the variables you create! 
+</div><VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_exercise-5.1.mp4"
+  controls={true}
+/>
+</FlippableCard>
+</Collapse>
+
+*************************
+
 
 <Collapse header="ISLE Submission Instructions">
 ##### To complete this assignment, use the **report editor** in the data explorer:
