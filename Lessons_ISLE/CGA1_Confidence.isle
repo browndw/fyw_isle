@@ -18,7 +18,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 ###### For this exercise, we're going to investigate the ways which various academic disciples manage expressions of confidence.
 
-Our broad research questions are the following: 
+Our broad research questions for this exercise are the following: 
 * Which disciplines are more tolerant of or prone to expressing high confidence: *it is clear that...*, *the obvious response...*, *the data show...* 
 * And which ones are more prone to hedging: *this may indicate...*, *one potential solution...*, *the data suggest...*
 
@@ -57,6 +57,38 @@ For this excercise, we'll only be looking at ConfidenceHigh and ConfidenceHedged
 </Collapse>
 
 *************************
+
+<Collapse header="Confidence, High & Hedged: An Overview">
+
+The data we'll be investigating for this assignment comes from  two sources:
+* <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+* <Link href="https://www.english-corpora.org/coca/" >the Corpus of Contemporary American English</Link>
+
+We have tagged this MICUSP and COCA data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a>, which categorizes words and phrases into rhetorical categories. One cluster of rhetorical categories DocuScope uses has to do with how much confidence a writer expresses. For example, in <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> of academic writing, expert scholars often have to balance sounding very confident in their findings with acknowledging doubt and uncertainty. DocuScope groups confidence-related language into several categories, two of which we'll explore today:
+* **ConfidenceHigh**, or language that signals high confidence and certainty
+* **ConfidenceHedged**, or language that signals uncertainty and acknowledges doubt.
+
+If this sounds familiar, it should: Chapter 8 (pages 3-4) introduced you to the idea that verbs can show different degrees of confidence, as the figure below shows:
+
+<Image src="https://isle.stat.cmu.edu/76-107-A1-DeJeu_Confidence-High-Hedged.png" alt="Enter description"
+  height={300}
+  width={600}
+/>
+
+This is the kind of confidence difference that DocuScope captures in its confidence categories.
+
+
+Here are two excerpts, with ConfidenceHigh and ConfidenceHedged language bolded
+
+* *ConfidenceHigh*: "It is **very certain**, at any rate, that some of the basic properties of particles -- such as their location in space -- exist only on a contingency basis."
+
+* *ConfidenceHedged*: "Although this would imply that clover is still a better competitor, it is **possible** that there are other confounding factors which gave the fescue a similar competitive effect in the presence and absence of Rhizobium. "
+
+
+</Collapse>
+
+**************************
+
 <Collapse header="CGA Exercise 1: MICUSP">
 <Pages>
 ### Let's start with a quick survey.<MultipleChoiceSurvey
@@ -109,23 +141,10 @@ Note that the default y-axis just reads "Count". Click on it and change the labe
 </div>
 <div>
 
-### Now, suggest brief explanations for the patterns you found.
-
-You might think about the topics these disciplines engage, how they engage in research, and how they represent knowledge.
-
-For this, we need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition to restricting your search to specific disciplines (by checking the relevant box on the left).
-
-To know what to search for, let's look at a table of counts. These are the frequencies of the top 10 phrases tagged by DocuScope as **ConfidenceHedged** and **ConfidenceHigh** and normalized per 10,000 tokens.
-
-<DataTable
-    data={micusp_ngrams}
-        categorical={['Token','DSCat']}
-        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
-/>
-
+### Report the data and consider the results against your hypothesis
 
 <FreeTextQuestion
-    question="What might account for the discipline that realizes the highest frequencies of both Hedged and High Confidence? As part of your answer, include an example (short quotation) from at least one MICUSP paper."
+    question="Which disciplines tend to use high confidence, and which tend to use hedging? Does this match your expectations? Why might we be seeing these patterns?"
 />
 </div>
 </Pages>
@@ -190,20 +209,11 @@ Generate plots for both ConfidenceHedged and ConfidenceHigh.
 </Gate>
 </div>
 <div> 
-### Finally, explain a pattern.
+### Report the data and consider the differences between text types 
 
-First, consult some counts of Hedged and High confidence tokens. Note that these are normalized per million tokens.
-
-<DataTable
-    data={coca_ngrams}
-        categorical={['Token','DSCat']}
-        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
-/>
-
-Then, search the <a href="https://www.english-corpora.org/coca" target="_blank">Corpus of Contemporary American English (COCA)</a> for a token or tokens of interest.
 
 <FreeTextQuestion
-    question="What might account for the text-type that realizes the lowest frequencies of both Hedged and High Confidence? As part of your answer, include an example (short quotation) from at least one COCA text. Note that your example could come from a different text-type to illustrate contrast."
+    question="Which text-types tend to use high/headged confidence? Does this match your expectations? What might account for the text-type that realizes the lowest frequencies of both Hedged and High Confidence?"
 />
 </div>
 </Pages>
