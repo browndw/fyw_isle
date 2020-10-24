@@ -1,7 +1,7 @@
 ---
-title: "MICUSP Confidence"
-author: David Brown
-date: 07/01/2020
+title: ISLE Video Resources
+author: Michael Laudenbach
+date: 10/23/2020
 state: null
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
@@ -12,13 +12,25 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ##### This page is meant to serve as a repository of video resources for ISLE. Click on the boxes below to view videos for the corresponding topic. 
 *************************
 <Collapse header="ISLE Question Types & Submitting Assignments">
-  
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Question-Types_ISLE.mp4"
+  controls={true}
+/>
 </Collapse>
 
 *************************
 
-<Collapse header="Data Explorer & Report Editor">
-  keep it basic. toolbox, visualization options, dragging plots, etc.
+<Collapse header="Report Editor & Submitting Reports">
+  <VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Report-Editor_ISLE.mp4"
+  controls={true}
+/>
+</Collapse>
+
+*************************
+
+<Collapse header="Filtering & Transforming Datasets">
+  <VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Transforming-data_ISLE.mp4"
+  controls={true}
+/>
 </Collapse>
 
 *************************
@@ -51,11 +63,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
   
 </Collapse>
 
-*************************
 
-<Collapse header="Transforming Datasets in ISLE">
-  include filtering datasets as well
-</Collapse>
 
 *************************
 
