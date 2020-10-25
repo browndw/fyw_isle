@@ -2,6 +2,7 @@
 title: Chapter 03 Homework
 author: Emily DeJeu
 description:
+hideProgressBar: true
 keywords:
 date: 06/12/2020
 language: en-US

@@ -2,6 +2,7 @@
 title: Exercises 5.1 & 8.1
 author: Michael Laudenbach
 description:
+hideProgressBar: true
 keywords:
 date: 10/23/2020
 language: en-US

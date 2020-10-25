@@ -3,6 +3,7 @@ title: "Exploring MICUSP through DocuScope"
 author: David West Brown
 date: 09/04/2020
 state:
+hideProgressBar: true
 require:
     micusp_counts: "https://isle.stat.cmu.edu/WAD-proseed_micusp_ds_norm.csv"
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]

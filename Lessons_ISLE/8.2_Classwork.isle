@@ -2,6 +2,7 @@
 title: 8.2 - Classwork
 author: Mike Laudenbach
 description:
+hideProgressBar: true
 keywords:
 date: 10/23/2020
 language: en-US
