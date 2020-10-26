@@ -14,7 +14,7 @@ license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 
 # CGA Sandbox
 
-This is not an assignment. Rather it is a place for you to explore the data available to your for the CGA assignment.
+This is not an assignment. Rather it is a place for you to explore the data available to you for the CGA assignment.
 
 ## DocuScope
 For more information about the **DocuScope** categories, see <a href="https://docs.google.com/document/d/1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE/edit?usp=sharing" target="_blank">this handout</a>.
@@ -48,12 +48,12 @@ Now we can use that filtered data to create a boxplot:
 1. Go to "Show Toolbox".
 1. Under plots, select "Box Plot".
 1. For the variable, choose "AcademicTerms".
-1. Group by "PaperPiscipline".
+1. Group by "PaperDiscipline".
 1. And "Generate".
 
 If you're ambitious, you can also create your own categories by using the "Transform" option to combine or rename categories. For example, you could group disciplines under Humanities, Sciences, and Social Sciences, for example.
 
-### MICUSP Data.
+### MICUSP Data - MICUSP Corpus tagged with DocuScope
 
 This same data <a href="https://drive.google.com/open?id=1-CDZzCWKJcxJ4WjicuNge-RBVbh483ekFAfsz_lxgLw" target="_blank">is here</a>, if you would prefer to conduct your own experiments outside of the ISLE environment.
 
