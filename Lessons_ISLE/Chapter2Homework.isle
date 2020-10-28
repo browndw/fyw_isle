@@ -223,7 +223,7 @@ id="2.2_7"
 
 <MultipleChoiceSurvey
 anonymous
-id="2.2_7"
+id="2.2_8"
     question="CAPTION: The five-year graduation rates of students at two area universities. Students at University Z are much more likely to graduate within five years than students at University A."
     answers={[
         "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
