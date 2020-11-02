@@ -102,7 +102,6 @@ To create visualizations, click "Show Toolbox". From there, you can create table
   "Range"
 ]}
   tests={[]}
-  tables={[]}
   transformer={false}
   editor={false}
 />
@@ -141,7 +140,6 @@ To create visualizations, click "Show Toolbox". From there, you can create table
   "Range"
 ]}
   tests={[]}
-  tables={[]}
   transformer={false}
   editor={false}
 />
