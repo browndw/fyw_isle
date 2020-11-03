@@ -5,9 +5,12 @@ date: 10/20/2020
 hideProgressBar: true
 state: null
 require:
+    micusp_conf: "https://isle.stat.cmu.edu/76-107_107_micusp_confidence.json"
+    coca_conf: "https://isle.stat.cmu.edu/76-107_107_coca_confidence.json"
     micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
     coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"
     micusp_ngrams: "https://isle.stat.cmu.edu/76-107_107_micusp_25_ngrams.json"
+    coca_ngrams: "https://isle.stat.cmu.edu/76-107_107_coca_confidence_ngrams.json"
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
