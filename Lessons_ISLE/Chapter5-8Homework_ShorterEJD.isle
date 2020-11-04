@@ -1,0 +1,513 @@
+---
+title: Chapter 05 and 08 Homework
+author: Emily DeJeu
+description:
+keywords:
+date: 06/12/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.1.csv"
+    
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 5 & 8 Exercises: 5.1, 8.1, & 8.2
+
+
+### After reading Chapter 5, pages 1-8, and all of Chapter 8, please complete Exercises 5.1, 8.2, and 8.2, below. Simply click each exercise's button to see your assigned tasks. 
+
+
+***************************************
+
+<Collapse
+  header="Exercise 5.1"
+>
+**The purpose of this exercise is to help you learn that manipulating data in different ways creates different data stories.**
+
+Imagine we have conducted a study of students in a class, recording the number of pens and pencils they are carrying on four different dates (*yes, this is a silly study*). Using this data, please do the following:
+
+* Create two different visualizations to illustrate three different stories you might tell about this data.
+* Then, choose one of these visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories.
+
+A helpful note: your audience is fellow students and instructors who want to learn more about students’ habits and practices. 
+
+You can create data plots, of course. You can also create data tables via the statistics tab. Just be sure that the data visualizations you create tell a clear story.  Be sure that each of your visualizations has a complete caption and that axes are labeled. Follow the design principles from Chapter 4, and be prepared to defend your design choices in class. 
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+<Pages>
+
+<div>
+### Data Visualization 1:
+Create your first data visualization and accompanying data story here. 
+<DataExplorer
+  data={dataset1}
+  categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
+  quantitative={['Daily_pens_pencils_by_student']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter a caption for your visualization."
+            />
+        </div>
+  ]}
+  
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  editor={false}
+/>
+</div>
+
+<div>
+### Data Visualization 2:
+Create your second data visualization and accompanying data story here. 
+<DataExplorer
+  data={dataset1}
+  categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
+  quantitative={['Daily_pens_pencils_by_student']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter a caption for your visualization."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+  editor={false}
+/>
+</div></Pages>
+<FreeTextQuestion
+  question="Choose one of your visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
+  solution=""
+/>
+
+</Collapse>
+
+
+<Collapse
+  header="Exercise 8.1"
+>
+
+**The purpose of this exercise is to give you practice with putting your data stories in writing.**
+
+### 8.1 -- PART I: Using wordchoice to express confidence
+
+It is important to distinguish between **factual statements *about* the data** and **more debatable conclusions that we draw *from* the data**. The paragraphs in your results section should usually move from factual statements to less factual (though reasonable) conclusions about the data. Your verb choices should change to reflect your confidence in the data.
+
+Remember this OKCupd graph on Twitter users and relationship lengths from Chapter 2? 
+
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Twitter_plot.png"  width="500" height="500" /></div>
+
+Each of the 5 pages below contains a statement about this OKCupd data plot. For each statement, select the verb that you think best completes the sentence, making sure that the verb expresses a level of confident you think is appropriate for the statement. You can also indicate that you think the statement is just too far-fetched to be reasonable, even with a tentative verb.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+<Pages>
+
+<div>
+<MultipleChoiceQuestion
+    question="1. Figure 8.1 _____ daily Twitter users average shorter relationships than others."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""},
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="2. Figure 8.1 _____ that Twitter use causes shorter relationships."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="3. Figure 8.1 _____ that older users tend to have longer relationships than younger users."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="4. Figure 8.1 ______ that relationships lengthen with age."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="5. Figure 8.1 ______ that older people have more stable relationships."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+
+</Pages>
+
+******************************************************
+
+### 8.1 -- PART II: Writing a data story in paragraphs
+
+The fog warning paragraph below also appears in Chapter 8, on page 3.
+
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Fog-Warning-System.png"  width="600" height="220" /></div>
+
+Using this fog warning paragraph as a model, write a paragraph interpreting the OKCupid Twitter users plot from Part I. Skip the sentence with the significance test, but be sure to (1) state the main story of the OKCupid Twitter plot, (2) support it with data; (3) state the secondary story and support it with data, and (4) suggest reasons for the finding. If there is a clearly logical conclusion to draw from this data, state it in this paragraph.
+
+**Remember to click 'Submit' after entering your answer!**
+
+<FreeTextQuestion
+  question="Write your one-paragraph interpretation here."
+  solution=""
+/>
+
+
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+  
+  
+
+
+</Collapse>
+
+<Collapse
+  header="Exercise 8.2"
+>
+  
+**The purpose of this exercise is to prepare you to weave data stories in order to write a full results section.**
+
+### 8.2 -- Analyzing a Results Section
+
+Revist the excerpt of "Improving Instructor Ethos Through Document Design" on page 10 of Chapter 8. You should read this excerpt carefully and be very familiar with it, as it will prove very useful for you as you work toward writing your own results section. 
+
+Below is the first half of this excerpt, with each sentence numbered:
+
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Instructor-Ethos-Doc-Design-Excerpt.png" alt="E"
+  height={800}  width={800}
+/>
+
+
+
+
+Review the excerpt above and then answer each of the 7 questions below, indicating what each numbered sentence is doing in the excerpt. 
+
+**Remember to click 'Submit' after entering your answer!**
+
+<Pages>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 1 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 2 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 3 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 4 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 5 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 6 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Sentence 7 is primarily..."
+    answers={[
+        {content:"Introducing the data visualization and data stories", explanation:""},
+        {content:"Supporting data stories by noting specific data points or trends or reporting statistical tests", explanation:""},
+        {content:"Supplementing the visualization with additional information", explanation:""},
+        {content:"Providing reasons to explain trends unexpected results", explanation:""},
+        {content:"Drawing conclusions from the data", explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+</Pages>
+
+Now that you've analyzed the sentence-level arguments that this excerpt is making, let's analyze the excerpt's overall organizational structure and cohesion.
+
+Below is a summarized, condensed version of the entire excerpt, with headings, subheadings, and topic sentences numbrered. 
+
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Instructor-Ethos-Doc-Design-OrgStructure.png" alt=""
+  height={700}  width={800}
+/>
+
+Review the excerpt above, and revisit the full excerpt on page 10 of Chapter 8 if necessary. Then, answer each of the 7 questions below. 
+
+**Remember to click 'Submit' after entering your answer!**
+
+<Pages>
+
+<div>
+<MultipleChoiceQuestion
+    question="Read sentences 3 and 4. Together, these sentences are..."
+    answers={[
+        {content:"showing a simple continuation of the same data story", explanation:""},
+        {content:"showing a more complex or specific continuation of the same data story", explanation:""},
+        {content:"showing a break or contradiction of data stories", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+<div>
+<MultipleChoiceQuestion
+    question="Read sentences 4 and 5. Together, these sentences are..."
+    answers={[
+        {content:"showing a simple continuation of the same data story", explanation:""},
+        {content:"showing a more complex or specific continuation of the same data story", explanation:""},
+        {content:"showing a break or contradiction of data stories", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+<div>
+<MultipleChoiceQuestion
+    question="Compare sentences 6 and 7 to sentences 2-5. Sentences 6 and 7 are..."
+    answers={[
+        {content:"showing a simple continuation of the  data story told in sentences 2-5", explanation:""},
+        {content:"showing a more complex or specific continuation of the  data story in sentences 2-5", explanation:""},
+        {content:"showing a break or contradiction of data story in sentences 2-5", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Read sentences 7 and 8. Together, these sentences are..."
+     answers={[
+        {content:"showing a simple continuation of the same data story", explanation:""},
+        {content:"showing a more complex or specific continuation of the same data story", explanation:""},
+        {content:"showing a break or contradiction of data stories", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="Read sentences 8 and 9. Together, these sentences are..."
+     answers={[
+        {content:"showing a simple continuation of the same data story", explanation:""},
+        {content:"showing a more complex or specific continuation of the same data story", explanation:""},
+        {content:"showing a break or contradiction of data stories", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+<div>
+<MultipleChoiceQuestion
+    question="Review the headings (sentence 1) and subheadings (sentences 2 and 6). Which of the following best describes the overall organizational structure of this excerpt?"
+     answers={[
+        {content:"It moves from general to specific.", explanation:""},
+        {content:"It moves from specific to general.", explanation:""},
+        {content:"It moves from quantitative to qualitative.", explanation:""},
+        {content:"It moves from most to least interesting.", explanation:""},
+        {content:"It has a different organizational structure, which I will describe below.", explanation:""},
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+</div>
+
+<FreeTextQuestion
+  question="If you selected 'different organizational structure' the previous question, please explain your thinking here."
+  solution=""
+/>
+
+</Pages>
+</Collapse>
+
+
+
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. You must upload the PDF and the links to receive credit for your work on this lesson.
+<LessonSubmit />

@@ -1,0 +1,318 @@
+---
+title: "Exploring Expert Vocabulary in MICUSP"
+author: Emily DeJeu
+date: 09/13/2020
+state:
+require:
+  micusp_counts: "https://isle.stat.cmu.edu/WAD-proseed_micusp_ds_norm.csv"
+  coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Practice Analysis:
+## Analyzing Expert Vocabulary in MICUSP
+
+<Collapse header="Overview of Language & Genre">
+
+The data we'll be investigating come from  <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+
+We tagged this data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a>, which categorizes words and phrases into rhetorical categories. For example, in some <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> or text-types (like much of the writing done in universities), abstract and technical language serve an important function. DocuScope groups all these words into a category called **ExpertVocabulary**. Here is an excerpt from an upper-level student paper, with the AcademicTerms identified by DocuScope in bold:
+
+* With this **equation**, the initial conditions, and the **experimentally** determined **natural frequency** and damping **ratio**, we can know the under-damped vibration **as a function of** time, and, thus, the exact **behavior** of the floorboard.
+
+There are  <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">16 DocuScope categories</a> (or what are called "clusters"):
+
+1. Character Types
+1. Citation Authority
+1. Citation Controversy
+1. Citation Hedged
+1. Citation Neutral
+1. Confidence Hedged
+1. Confidence High
+1. Confidence Low
+1. Expert Vocabulary
+1. Information Comparison
+1. Information Quantities
+1. Methods/Results/Discussion
+1. Purpose/Plan
+1. Reader Directed Metadiscourse
+1. Reader Directed Metadiscourse (First Person)
+1. Reasoning
+
+For this in-class assignment, we'll explore Expert Vocabulary as a variable of interest.
+</Collapse>
+
+<Collapse header="Exploring Expert Vocabulary in MICUSP">
+The data in the Explorer below include normalized counts of DocuScope categories for each of the <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a> files.
+
+If you need to lookup what some of these categories mean, you can refer to the descriptions <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">here</a>.
+
+The data also include metadata, which allow you to compare not only disciplines, but also paper types, native speaker status (NS = "native speaker", NNS = "non-native speaker"), student level (undergraduate or graduate), and gender.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+          
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  editor={false}
+    />
+</Gate>
+
+***********************************
+
+#### Let's try out some of the Data Explorer functions.
+
+We'll begin by creating a filtered data set:
+1. Under PaperDiscipline, select "Biology".
+1. Repeat the process for "English".
+1. Then below the Explorer, click "Create filtered dataset".
+
+**Note that at any point, you can click the red X to restore the original data set, or to delete this filtered data set and create a new one.**
+
+<Collapse header="Mean & Standard Deviation">
+Now let's generate some basic statistics:
+1. Go to "Show Toolbox".
+1. Under "Statistics", select "Mean" and "Standard Deviation".
+1. For the variable, choose "ExpertVocabulary".
+1. Group by "PaperDiscipline".
+1. And "Generate".
+
+**Briefly review what <a href="https://statistics.laerd.com/statistical-guides/measures-of-spread-standard-deviation.php" target="_blank">mean and standard deviation</a> can tell us about differences between groups.**
+
+<FreeTextQuestion
+  question="What are the means and standard deviations you generated telling us about Expert Vocabulary in these disciplines?"
+  solution="Enter solution"
+/>
+
+
+</Collapse>
+<Collapse header="Boxplot"> 
+Next, we can use the filtered data to create a boxplot:
+1. Go to "Show Toolbox".
+1. Under plots, select "Box Plot".
+1. For the variable, choose "ExpertVocabulary".
+1. Group by "PaperPiscipline".
+1. And "Generate".
+
+**Briefly review what <a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/descriptive-statistics/box-plot" target="_blank">boxplots</a> show us about data.**
+
+<FreeTextQuestion
+  question="What is the boxplot you created telling us about Expert Vocabularly in these diciplines?"
+  solution="Enter solution"
+/>
+
+</Collapse>
+
+<Collapse header="Histogram">
+Next, let's make a different kind of plot -- a histogram. For this, we'll keep our same filtered dataset:
+1. From the Toolbox, select "Histogram" from the Plot menu.
+1. For the Variable, select "ExpertVocabulary".
+1. For "Group By", select "PaperDiscipline".
+1. And check "Overlay Density".
+1. And "Generate".
+
+**Briefly review what <a href="https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/graphs/histogram/interpret-the-results/key-results" target="_blank">histograms</a> can tell us about data.**
+
+<FreeTextQuestion
+  question="What is the histogram you created telling us about Expert Vocabulary in these disciplines?"
+  solution="Enter solution"
+/>
+
+</Collapse>
+
+<Collapse header="Statistical Significance (ANOVA)">
+Based on what we've generated so far, would you predict that there is a **statistically significant difference** between Biology and English in their frequencies of **Expert Vocabulary**?
+
+**Let's find out.**
+
+For this, we'll use <a href="https://howecoresearch.blogspot.com/2019/01/using-analysis-of-variance-anova-in.html" target="_blank">Analysis of Variance (ANOVA)</a>.
+
+Again, we'll keep our same filtered dataset:
+1. From the Toolbox, select "One-Way ANOVA" from the Test menu.
+1. For the Variable, select "ExpertVocabulary".
+1. For the Grouping Variable, select "PaperDiscipline"
+1. And "Calculate".
+
+If you carry out a hypothesis test, **be sure** <a href="http://statistics-help-for-students.com/How_do_I_report_a_1_way_between_subjects_ANOVA_in_APA_style.htm#.Xo5Ox257nOQ" target="_blank">to report your results correctly</a>.
+
+<FreeTextQuestion
+  question="Is there a significant difference between Expert Vocabulary usage in Biology and English papers? How do you know?"
+  solution="Enter solution"
+/>
+ </Collapse> 
+
+</Collapse>
+
+
+
+<Collapse header="Generating Your Own Findings">
+So far, we've focused only on comparing Expert Vocabulary in two disciplines: Biology and English. Now that you know how to do that, you are ready to branch out and discover your own findings about Expert Vocabulary in other disciplines and fields, as well as how Expert Vocabulary usage is similar or different across demographic categories like gender, speaker status, and student level. 
+
+Your job now is to generate three new findings. Click through each of the three pages below and follow the directions shown. 
+
+<Pages>
+
+<div>
+### Visualization #1: Expert Vocabulary In Academic Disciplines
+We've compared Expert Vocabulary across two different disciplines: English and Biology. Now, compare them across new disciplines. You can choose two or more to compare, or you can compare Expert Vocabulary across all MICUSP disciplines. Create a plot, and then write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
+<DataExplorer
+    data={coca_counts}
+    categorical={['TextID','TextType','SubType']}
+    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Write a few sentences summarizing the trend you see and explaining what this trend suggests about the different discourse communities and genres shown in your plot."
+            />
+        </div>
+  ]}
+  
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  editor={false}
+/>
+</div>
+
+<div>
+### Visualization #2: Expert Vocabulary In Disciplinary Fields
+Another way to understand disciplinary variation is to group disciplines into broader disciplinary fields. For this visualization, you're going to use the 'Transform' tab to create a new variable, one which groups each of MICUSP's 16 disciplines into four big disciplinary fields:
+
+* Humanities - English, History, Classical Studies, Philosophy
+* Social Science - Economics, Education, Linguistics, Nursing, Political Science, Psychology, Sociology
+* Natural Science - Biology, Physics, Natural Resources & Environment, 
+* Engineering - Civil & Environmental Engineering, Industrial & Operations Engineering, Mechanical Engineering
+
+Watch <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN9_2/view?usp=sharing" >this brief video</Link> for instructions about how to transform the data and create this new 'Disciplinary Fields' variable.
+
+
+Once you've made your transformation, create a plot that compares the use of Expert Vocabulary across these four discipinary fields. Then, write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
+
+<DataExplorer
+    data={coca_counts}
+    categorical={['TextID','TextType','SubType']}
+    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Write a few sentences summarizing the trend you see and explaining what this trend suggests about the different discourse communities and genres shown in your plot."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+  editor={false}
+/>
+</div>
+
+<div>
+### Visualization #3: Expert Vocabulary by Gender, Speaker Status, or Student Level
+Now, it's time to think about how **demographic variables**, like gender, speaker status, or student level, might also play a role in how Expert Vocabulary is used in differet academic disciplines. 
+
+Create a plot in which you focus on one of these three demographic variables. You can create a filtered data set again, if you want to focus on just a few disciplines, or you can transform the data once again into a broader group of disciplinary fields. 
+
+Below your plot, write a few sentences summarizing the trend you see and explaining what this trend suggests about the different discourse communities and genres shown in your plot. **Remember: differences are interesting, but so are similarities!** If you see a similarity, it probably suggests a feature of academic discourse that is broadly true, regardless of academic disipline or demographic categories. 
+
+<DataExplorer
+    data={coca_counts}
+    categorical={['TextID','TextType','SubType']}
+    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Write a few sentences summarizing the trend you see and explaining what this trend suggests about the different discourse communities and genres shown in your plot."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  transformer={false}
+  editor={false}
+/>
+</div>
+
+</Pages>
+
+
+
+</Collapse>
+
+
+
+*******************************************
+
+
+
+#### Don't forget to click the 'Finish Lesson' button below, download your PDF, and submit it to Canvas.
+
+<LessonSubmit />
