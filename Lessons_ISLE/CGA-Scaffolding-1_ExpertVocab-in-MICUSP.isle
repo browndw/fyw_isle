@@ -174,10 +174,12 @@ Your job now is to generate three new findings. Click through each of the three 
 <div>
 ### Visualization #1: Expert Vocabulary In Academic Disciplines
 We've compared Expert Vocabulary across two different disciplines: English and Biology. Now, compare them across new disciplines. You can choose two or more to compare, or you can compare Expert Vocabulary across all MICUSP disciplines. Create a plot, and then write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
-<DataExplorer
-    data={coca_counts}
-    categorical={['TextID','TextType','SubType']}
-    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+<DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+
   questions={[
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
@@ -203,8 +205,8 @@ We've compared Expert Vocabulary across two different disciplines: English and B
   "Max",
   "Range"
 ]}
-  tests={[]}
-  tables={[]}
+  
+  
   editor={false}
 />
 </div>
@@ -223,10 +225,12 @@ Watch <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN
 
 Once you've made your transformation, create a plot that compares the use of Expert Vocabulary across these four discipinary fields. Then, write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
 
-<DataExplorer
-    data={coca_counts}
-    categorical={['TextID','TextType','SubType']}
-    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+<DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+
   questions={[
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
@@ -235,6 +239,7 @@ Once you've made your transformation, create a plot that compares the use of Exp
             />
         </div>
   ]}
+  
   models={[]}
   plots={[
   "Bar Chart",
@@ -251,9 +256,8 @@ Once you've made your transformation, create a plot that compares the use of Exp
   "Max",
   "Range"
 ]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
+  
+  
   editor={false}
 />
 </div>
@@ -266,10 +270,12 @@ Create a plot in which you focus on one of these three demographic variables. Yo
 
 Below your plot, write a few sentences summarizing the trend you see and explaining what this trend suggests about the different discourse communities and genres shown in your plot. **Remember: differences are interesting, but so are similarities!** If you see a similarity, it probably suggests a feature of academic discourse that is broadly true, regardless of academic disipline or demographic categories. 
 
-<DataExplorer
-    data={coca_counts}
-    categorical={['TextID','TextType','SubType']}
-    quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+<DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+
   questions={[
         <div>
             <ImageQuestion question="Create a data visualization for this data." />
@@ -278,6 +284,7 @@ Below your plot, write a few sentences summarizing the trend you see and explain
             />
         </div>
   ]}
+  
   models={[]}
   plots={[
   "Bar Chart",
@@ -294,9 +301,8 @@ Below your plot, write a few sentences summarizing the trend you see and explain
   "Max",
   "Range"
 ]}
-  tests={[]}
-  tables={[]}
-  transformer={false}
+  
+  
   editor={false}
 />
 </div>
