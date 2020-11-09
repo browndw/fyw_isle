@@ -68,8 +68,8 @@ Refer to the <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15
     <DataExplorer 
         id="micusp_counts"
         data={micusp_counts}
-        categorical={['PaperID','PaperDiscipline']}
-        quantitative={['ConfidenceHedged','ConfidenceHigh']}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
         editor={false}
         questions={[
         <div>
