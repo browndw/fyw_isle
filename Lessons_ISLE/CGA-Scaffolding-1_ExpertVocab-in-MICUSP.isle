@@ -4,7 +4,7 @@ author: Emily DeJeu
 date: 09/13/2020
 state:
 require:
-  micusp_counts: "https://isle.stat.cmu.edu/WAD-proseed_micusp_ds_norm.csv"
+  micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
   coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
@@ -55,24 +55,6 @@ The data also include metadata, which allow you to compare not only disciplines,
         categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
         quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
           
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  tests={[]}
-  tables={[]}
   editor={false}
     />
 </Gate>
@@ -105,18 +87,17 @@ Now let's generate some basic statistics:
 
 
 </Collapse>
-<Collapse header="Boxplot"> 
-Next, we can use the filtered data to create a boxplot:
+<Collapse header="Barplot"> 
+Next, we can use the filtered data to create a bar plot:
 1. Go to "Show Toolbox".
-1. Under plots, select "Box Plot".
-1. For the variable, choose "ExpertVocabulary".
-1. Group by "PaperPiscipline".
+1. Under plots, select "Bar Chart" and "Function Evaluated for a Variable."
+1. For the variable, choose "PaperDiscipline".
+1. On the x-axis, select "ExpertVocabulary".
 1. And "Generate".
 
-**Briefly review what <a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/descriptive-statistics/box-plot" target="_blank">boxplots</a> show us about data.**
 
 <FreeTextQuestion
-  question="What is the boxplot you created telling us about Expert Vocabularly in these diciplines?"
+  question="What is the bar plot you created telling us about Expert Vocabularly in these diciplines?"
   solution="Enter solution"
 />
 
@@ -189,23 +170,7 @@ We've compared Expert Vocabulary across two different disciplines: English and B
         </div>
   ]}
   
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
-  
+
   
   editor={false}
 />
@@ -240,22 +205,6 @@ Once you've made your transformation, create a plot that compares the use of Exp
         </div>
   ]}
   
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
   
   
   editor={false}
@@ -285,22 +234,6 @@ Below your plot, write a few sentences summarizing the trend you see and explain
         </div>
   ]}
   
-  models={[]}
-  plots={[
-  "Bar Chart",
-  "Pie Chart",
-  "Histogram",
-  "Box Plot",
-  "Line Plot",
-  "Scatterplot"
-]}
-  statistics={[
-  "Mean",
-  "Median",
-  "Min",
-  "Max",
-  "Range"
-]}
   
   
   editor={false}

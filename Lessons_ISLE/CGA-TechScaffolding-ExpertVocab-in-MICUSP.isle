@@ -173,7 +173,7 @@ Your job now is to generate three new findings. Click through each of the three 
 
 <div>
 ### Visualization #1: Expert Vocabulary In Academic Disciplines
-We've compared Expert Vocabulary across two different disciplines: English and Biology. Now, compare them across new disciplines. You can choose two or more to compare, or you can compare Expert Vocabulary across all MICUSP disciplines. Create a plot, and then write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
+We've compared Expert Vocabulary across two different disciplines: English and Biology. Now, compare them across new disciplines. You can use what you learned about creating filtered datasets to compare two new disciplines, or you can compare Expert Vocabulary across all MICUSP disciplines. Create a plot, and then write a few sentences summarizing the trend you see and explaining what this trends suggests about the different discourse communities shown in your plot.  
 <DataExplorer
     data={coca_counts}
     categorical={['TextID','TextType','SubType']}
