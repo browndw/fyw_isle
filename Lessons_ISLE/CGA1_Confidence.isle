@@ -89,7 +89,7 @@ Here are two excerpts, with ConfidenceHigh and ConfidenceHedged language bolded
 
 **************************
 
-<Collapse header="CGA Exercise 1: MICUSP">
+<Collapse header="Exercise 1: MICUSP">
 <Pages>
 ### Let's start with a quick survey.<MultipleChoiceSurvey
     anonymous
@@ -143,15 +143,34 @@ Note that the default y-axis just reads "Count". Click on it and change the labe
 
 ### Report the data and consider the results against your hypothesis
 
+We need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition restricing your search to specific disciplines (by checking the relevant box on the left).
+
+Of course, we can't effectively search the MICUSP papers until we know what kind of ConfidenceHigh and ConfidenceHedged language to search for. To help you zero in on sample phrases you can search, we've made the table of counts below. This table shows the frequencies of the top 10 phrases tagged by DocuScope as **ConfidenceHedged** and **ConfidenceHigh** and normalized per 10,000 tokens. To explore how these phrases show up in actual papers in MICSUP, <Link href="http://micusp.elicorpora.info" target="_blank" >search them in the MICUSP interface.</Link>
+
+*Note: the MICUSP interface is very intuitive -- just about everything is clickable. Play around a little and you should be able to easily narrow your search to two disciplines.*
+ 
+
+As you skim excerpts from papers, think about why papers in different disciplines use ConfidenceHigh and ConfidenceHedged language differently. You might think about the topics these disciplines frequently take up, how they engage in research, and how they represent knowledge.
+
+Finally, once you've explored sample patterns in MICUSP papers, answer the question below the table.
+
+<DataTable
+    data={micusp_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+
+
 <FreeTextQuestion
-    question="Which disciplines tend to use high confidence, and which tend to use hedging? Does this match your expectations? Why might we be seeing these patterns?"
+    question="Pick two  disciplines that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each discipline's discourse community (i.e. the kinds of things they study, their methods of study, the kind of knowledge they are trying to make, etc.). Support your answer with a textual excerpt from each discipline, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the MICUSP interface.)"
 />
 </div>
 </Pages>
 </Collapse>
 
 ***********************
-<Collapse header="CGA Exercise 2: COCA">
+<Collapse header="Exercise 2: COCA">
 <Pages>
 <div>
 ### Same thing but with COCA
@@ -211,9 +230,20 @@ Generate plots for both ConfidenceHedged and ConfidenceHigh.
 <div> 
 ### Report the data and consider the differences between text types 
 
+First, consult some counts of Hedged and High confidence tokens, which are shown in the table below. Note that these are normalized per million tokens (the MICUSP confidence tokens, by contrast, were normalized per 10,000 tokens).
+
+<DataTable
+    data={coca_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+Then, search the <a href="https://www.english-corpora.org/coca" target="_blank">Corpus of Contemporary American English (COCA)</a> for a token or tokens of interest. As with the MICUSP exercise, your goal here is to think about why particular genres or text-types signal confidence differently.
+
+*Note: searching the COCA interace isn't quite as intuitive as searching the MICUSP interface. <Link href="https://canvas.cmu.edu/courses/18194/pages/navigating-coca" >**Use this guide to help you search**</Link>.*
 
 <FreeTextQuestion
-    question="Which text-types tend to use high/headged confidence? Does this match your expectations? What might account for the text-type that realizes the lowest frequencies of both Hedged and High Confidence?"
+    question="Pick two text-types that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each text-type's discourse community (i.e. the kinds of topics community members are interested in, their target reading audience, their goals in writing, etc.). Support your answer with a textual excerpt from each text type, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the COCA interface.)"
 />
 </div>
 </Pages>
