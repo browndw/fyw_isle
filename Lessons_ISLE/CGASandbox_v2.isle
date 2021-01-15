@@ -1,0 +1,148 @@
+---
+title: "CGA Sandbox"
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+date: 08/04/2020
+state:
+require:
+    micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
+    coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"
+    micusp_ngrams: "https://isle.stat.cmu.edu/76-107_107_micusp_25_ngrams.json"
+    coca_ngrams: "https://isle.stat.cmu.edu/76-107_107_coca_25_ngrams.json"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# CGA Sandbox
+
+This is not an assignment. Rather it is a place for you to explore the data available to your for the CGA assignment. 
+
+The first four boxes below offer reminders about how to generate visualizations and build your CGA argument. The final two boxes contain the full MICUSP & COCA data -- including n-gram lists -- that you'll need to create your visualizations.
+
+******************************************
+
+<Collapse header = "About DocuScope & MICUSP">
+
+The Michigan Corpus of Upper-level Student Papers <Link href="https://elicorpora.info/" >(MICUSP)</Link>is a collection of around 830 A-grade papers (roughly 2.6 million words) from a range of disciplines across four academic divisions (Humanities and Arts, Social Sciences, Biological and Health Sciences, Physical Sciences) of the University of Michigan, Ann Arbor. MICUSP was created by a team of researchers and students at the U-M English Language Institute. <Link href="http://www.helsinki.fi/varieng/CoRD/corpora/MICUSP/" >(source)</Link>
+
+For more information about the **DocuScope** categories, see <a href="https://docs.google.com/document/d/1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE/edit?usp=sharing" target="_blank">this handout</a>.
+
+For a general description see <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">this description</a>.
+
+To cite **DocuScope** (which you *should*), use <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=he+Power+of+Words%3A+Unveiling+the+Speaker+and+Writer%27s+Hidden+Craft&btnG=" target="_blank">this reference</a> or <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Teaching+textual+awareness+with+DocuScope%3A+Using+corpus-driven+tools+and+reflection+to+support+students%27+written+decision-making&btnG=" target="_blank">this one</a>.
+</Collapse>
+
+<Collapse header = "Plotting and Testing the Data">
+
+The Data Explorer enables you to do lots of things. Here are some that are most likely to be useful:
+
+* **Barplots of means**, which we've generated already. For our data, we place categorical variables on the x-axis (like disciplines) and the mean of a continuous variable (like the frequency of a DocuScope category) along the y-axis.
+* <a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/descriptive-statistics/box-plot" target="_blank">**Boxplots**</a>, which can help us understand not only means (as with the barplot), but also how much variance there is. 
+* Similarly a <a href="https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/graphs/histogram/interpret-the-results/key-results" target="_blank">**histograms**</a> can provide important information about how data is distributed. When you create a <a href="https://statisticsbyjim.com/basics/histograms" target="_blank">histogram</a>, you will want to filter the number of categories you're looking at. For example, if you are interested in disciplinary variation, you would want to create a filtered data set of two or three disciplines.
+* What if you want to know whether any differences you're observing are statistically significant? If you want to compare categories (discipline, gender, text-type, etc.), you could conduct a t-test if you're comparing two groups (like Biology and English) or Analysis of Variance (ANOVA) if you want to compare more than two groups (in the **Test** menu). To learn more about these texts, check  <a href="https://raybiotech.com/learning-center/t-test-anova/" target="_blank">this link</a> or <a href="https://www.statisticshowto.com/probability-and-statistics/t-test/" target="_blank">this one</a>.
+* If you carry out a hypothesis test, **be sure** <a href="http://statistics-help-for-students.com/How_do_I_report_a_1_way_between_subjects_ANOVA_in_APA_style.htm#.Xo5Ox257nOQ" target="_blank">to report your results correctly</a>:
+<VideoPlayer url="https://www.youtube.com/watch?v=fQI3Xr9xMBI" />
+</Collapse>
+
+<Collapse header = "Filtering and Transforming Data">
+Let's run through an reminder of how to create a filtered data set:
+1. Under **PaperDiscipline**, select "Biology".
+1. Repeat the process for "English".
+1. Then below the Explorer, click "Create filtered dataset".
+
+Now we can use that filtered data to create a boxplot:
+1. Go to "Show Toolbox".
+1. Under plots, select "Box Plot".
+1. For the variable, choose "AcademicTerms".
+1. Group by "PaperPiscipline".
+1. And "Generate".
+
+You can also create your own variables by using the "Transform" option to combine or rename categories. For example, you could group disciplines under into broader disciplinary fields. <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN9_2/view?usp=sharing" >Review this video </Link>for a reminder of how to create new variables. 
+</Collapse>
+
+<Collapse header = "Integrating Qualitative Evidence">
+It's great to learn high-level trends about language use across academic disciplines and/or text-types...but it's also helpful to actually see what those differences look like in excerpts of sample texts. 
+
+In order to support the arguments you will make about why particular disciplines or text-types use language in particular ways, you'll need to offer some examples from texts. These examples can be short stretches of text (i.e. phrases) or longer, multi-sentence excerpts. The goal of using the excerpt is to show how a particular DocuScope variable (like ConfidenceHedged or Expert Vocabulary) is being used in a sample text. In your CGA paper, you should actually **highlight (or bold, or underline)** the sample language in your excerpt, the way this DocuScope categories page does when it offers examples.
+
+Here's an example of how to integrate a textual excerpt into a paragraph, in order to support a data trend. The trend is shown in red. The interpretation is shown in orange. The use of qualitative evidence to support the  interpretation is shown in green.
+
+<Image src="https://isle.stat.cmu.edu/76-107-A2-DeJeu_Screen Shot 2020-10-23 at 8.04.58 PM.png" alt="Enter description"
+  height={400}
+  width={1000}
+/>
+
+If you're wondering how to find textual excerpts that will support your arguments, good news: we have pulled out the most popular words and phrases (or "tokens") in MICUSP and have organized them by their DocuScope categories. You can see the entire MICUSP token spreadsheet <Link href="https://docs.google.com/spreadsheets/d/1beunPfDrXEOygcptW7UEIVkmujfMWxwee7AZNkSdXVw/edit#gid=0" >here.</Link>
+
+Watch <Link href="https://drive.google.com/file/d/1GWpcXYa_hvOzzaR0e-HPZege_bJ16D31/view?usp=sharing" >this video</Link> for information on how to sort and filter this spreadsheet (ignore all references to the COCA wordlist). Once you know how to sort and filter based on the DocuScope variables you care about, you'll have a long list of sample words and phrases you can search in MICUSP, which is a fast way to find sample text excerpts to use in your CGA report.
+
+
+</Collapse>
+
+*******************************************
+
+<Collapse header = "The MICUSP Data Set">
+
+
+This same data <a href="https://drive.google.com/open?id=1-CDZzCWKJcxJ4WjicuNge-RBVbh483ekFAfsz_lxgLw" target="_blank">is here</a>, if you would prefer to conduct your own experiments outside of the ISLE environment.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+    />
+</Gate>
+
+Counts of words or phrases that DocuScope has tagged in <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a> appear in the table below. The data include:
+* **Token**, which shows a word or phrase. You can plug these into the search field of the MICUSP interface to locate relevant excerpts or quotations to support your quantitative results.
+* **DSCat**, which is the DocuScope category the token falls under.
+* **TokenCount**, which is the raw count of the token.
+* **DocCount**, which is the the number of documents the feature appears in.
+* **FreqNorm**, which is the normalized frequency of the token. For MICUSP the counts have been normalized **per ten thousand tokens** to match the web-based interface.
+* **DocNorm**, which is the percentage of documents the feature appears in.
+
+So *or* is a ReaderDirectedMetadisourse feature. It occurs 7379 times in the MICUSP papers and in 772 different documents. It appears 31.06 times per ten thousand words and in 93.24% of texts.
+
+Note that this last number could potentially be helpful in identifying useful tokens. Under some circumstances it might be interesting to look at widely distributed feature like *or*. But a token like *women* might tell you something about a specific subset of text, since (while having a high frequency) occurs in only 19.69% of the papers.
+
+Note, too, this table includes **only the top 25 tokens** in each category. The full data <a href="https://drive.google.com/open?id=1beunPfDrXEOygcptW7UEIVkmujfMWxwee7AZNkSdXVw" target="_blank">is here</a>.
+
+When you generate plots you like, click the Camera icon on the Output window to save your plot as a .png. 
+
+<DataTable
+    data={micusp_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+</Collapse>
+
+<Collapse header="The COCA Data set">
+### COCA Data.
+
+The COCA Data Explorer is below. You can use it in the same way as the MICUSP data. Note that this data set is much larger. COCA contains over 1 billion word tokens.
+
+The data below was randomly sampled from the full data set, balancing for text-type and year. The data on ISLE contain counts from 12,000 texts.
+
+A larger sample <a href="https://drive.google.com/open?id=122Y_3TqsQoSAfBxnkpFVOyeucRdPF-X7vIKXMXV1zqI" target="_blank">is here</a>, if you would prefer to conduct your own experiments outside of the ISLE environment.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="coca_counts"
+        data={coca_counts}
+        categorical={['TextID','TextType','SubType']}
+        quantitative={['Year','CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+    />
+</Gate>
+
+Like the MICUSP table, <a href="https://www.english-corpora.org/coca" target="_blank">the COCA</a> table includes **only the top 25 tokens** in each category. The full data <a href="https://drive.google.com/open?id=1P8i7POpqL40EGrQ90ekZUxa01fxxCrHQpTX1UundGgA" target="_blank">is here</a>.
+
+Also, these counts have been normalized **per one million tokens**, to match the COCA web-based interface.
+
+<DataTable
+    data={coca_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+</Collapse>
