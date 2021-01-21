@@ -1,27 +1,247 @@
 ---
-title: Exercise 2.1 Review
-author: David Brown
-date: 16/01/2020
+title: Chapter 02 Homework
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+date: 22/03/2020
 language: en-US
 state:
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
 
-# Exercise 2.1 Review
+# Chapter 2 Exercises
 
-### For homework, you were asked to write one complete sentence that communicates the main story for each visualization.
 
-### With a partner, compare responses and compose one together that best represents your interpretation.
+### After reading Chapter 2, please complete Exercises 2.1 and 2.2, below. Simply click each exercise's button to see your assigned tasks.
 
-<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_1_a.jpg" alt="A. Percentage of adults who feel secure sharing private data via different communication channels" />
+
+*************************************
+
+<Collapse
+header="Exercise 2.1">
+  
+
+
+#### Exercise 2.1
+**The goal of this exercise is to give you practice telling stories about data.** Below you will find four data visualizations accompanied by captions that describe, but do not tell a story about, the visualization’s content.
+
+On each of the four pages below, study the data visualization. Then, write one complete sentence that communicates its main story. Finally, if the visualization has multiple stories, write an additional one or two sentences communicating these secondary stories.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+<Pages>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_a.png" width="500" height="300"
+/></div>
 
 <FreeTextQuestion
-    question="A. Percentage of adults who feel secure sharing private data via different communication channels."  
+    question="CAPTION: Percentage of adults who feel secure sharing private data via different communication channels."  
 />
-
-<Image src="https://isle.stat.cmu.edu/76-107_exercise_02_1_b.jpg" alt="Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine." />
+    </div>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_b.png"  width="500" height="285"
+/></div>
 
 <FreeTextQuestion
-    question="Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
+    question="CAPTION: Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
 />
+    </div>
+<div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_c.png"  width="500" height="285" /></div>
+
+<FreeTextQuestion
+    question="CAPTION: Times to complete three different virtual store functions by adults over 60 years and under 30 years."
+/>
+    </div>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_d.png"  width="500" height="170" /></div>
+
+<FreeTextQuestion
+    question="CAPTION: Average hours studied per week, GPA, and degree completion of students in three different majors."
+/>
+    </div>
+
+</Pages>
+
+</Collapse>
+
+<Collapse
+header="Exercise 2.2">
+
+#### Exercise 2.2
+**The goal of this exercise is to generate good questions about what is and is not credible in discussing data.** Focus on your understanding and on raising good questions rather than obsessing over whether you are obtaining the “correct” answer.
+
+On each of 7 pages below, study the data visualization and read the corresponding caption. Then, rate each data story on a scale of 1-4 for how credible it is. 
+* 4 = Very credible 
+* 3 = Mostly credible 
+* 2 = Mostly not credible 
+* 1 = Not at all credible 
+
+For each example that you rate less than “completely credible,” indicate which of the four principles above it seems to violate (note: some may violate multiple principles).
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+<Pages>
+  <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: Male students answered more questions correctly than their female peers"
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: The number of units sold increased from 2014 - 2017."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: Racist attitudes toward dating appear to have improved slightly since 2008."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: Revenue has steadily increased over the last decade."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: Shorter women receive more unsolicited emails than taller women (especially women above 5’10”) while the opposite trend is true for men."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: Gasoline prices dropped by over one-third between 2012-2015."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" /></div>
+
+<MultipleChoiceQuestion
+    question="CAPTION: According to the OKCupid database, women are nearly twice as likely as men to believe that the earth is bigger than the sun."
+    answers={[
+        {content:"4 = Completely credible", explanation:""},
+        {content:"3 = Mostly credible", explanation:""},
+        {content:"2 = Mostly note credible", explanation:""},
+        {content:"1 = Not credible", explanation:""}
+    ]}
+    solution={0}
+    provideFeedback=""
+/>
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+  
+</Pages>
+
+</Collapse>
+
+*********************************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />

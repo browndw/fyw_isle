@@ -1,0 +1,74 @@
+---
+title: Chapter 1 - Intro
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description: null
+keywords: null
+hideProgressBar: true
+date: 08/27/2020
+language: en-US
+state: null
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+
+---
+
+# Chapter 1 - Introduction
+
+<div align="left">### The purpose of this lesson is to introduce you to basic concepts in Writing about Data, and to ensure that ISLE is working properly on your device. It will not count as a homework grade, but you should be prepared to discuss your answers in class. </div>
+
+
+##### All ISLE lessons should be completed **after** reading the assigned pages from the textbook.
+
+*******************************
+
+Click the boxes below to expand the window and view the questions.
+
+<Collapse header="ISLE Tutorial">
+<div align="left"> ##### Watch this quick video to familiarize yourself with ISLE. You can refer to this video throughout the course. </div> 
+  <VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_ISLE-tutorial.mp4" controls="true" />
+  
+</Collapse>
+
+<Collapse header="Discussion Questions">
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Challenger-memo_Wad_1.png"
+  height={500}  width={600} 
+/></div>
+
+
+
+<FreeTextQuestion
+  question="Look at the memo in Figure 1.2 and locate the places where the MTI engineers signal problems with the O-ring seal.  Why do you think NASA officials failed to realize the importance of this data?  What could the engineers have done to better communicate problems with the seal without sounding alarmist or emotional?"
+  solution=""
+/>
+
+********************************
+
+  
+</Collapse>
+
+<Collapse header="Exercise 1.1">
+<div align="left">##### Consider the following statistic and consider how you might revise it to support a different purpose or audience: "21.3% of women and 12.7% of men have experienced depression in their lifetime." </div>
+
+<Pages>
+<FreeTextQuestion
+  question="1. How might you rewrite this statistic to encourage a woman’s organization to support depression research?"
+  solution=""
+/>
+<FreeTextQuestion
+  question="2. What if you wanted to encourage more research into men’s experiences of depression?"
+  solution=""
+/><FreeTextQuestion
+  question="3. How might you rewrite it to minimize the importance of depression?"
+  solution=""
+/><FreeTextQuestion
+  question="4. Are any of your revisions more or less trustworthy than others? Do any cast doubt on your credibility?"
+  solution=""
+/>
+</Pages>
+</Collapse>
+
+***************************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas, but this assignment will not count for a grade.
+<LessonSubmit />

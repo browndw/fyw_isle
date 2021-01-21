@@ -1,0 +1,123 @@
+---
+title: "CGA - Using Qualitative Data"
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+date: 10/20/2020
+hideProgressBar: true
+state: null
+require:
+    micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
+    coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"
+    micusp_ngrams: "https://isle.stat.cmu.edu/76-107_107_micusp_25_ngrams.json"
+    coca_ngrams: "https://isle.stat.cmu.edu/76-107_107_coca_confidence_ngrams.json"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# Using Qualitative Data
+
+<div align="left">##### In this lesson, you will practice using examples from the papers themselves to support your claims. 
+</div>
+
+For this exercise, we'll use the data from <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a> to explore DocuScope's Citation categories.
+
+**************************
+
+<Collapse header = "Integrating Qualitative Evidence from MICUSP">
+
+In order to support the arguments you will make about why particular disciplines or text-types use language in particular ways, you'll need to offer some examples from texts. These examples can be short stretches of text (i.e. phrases) or longer, multi-sentence excerpts. The goal of using the excerpt is to show how a particular DocuScope variable (like ConfidenceHedged or Expert Vocabulary) is being used in a sample text. In your CGA paper, you should actually **highlight (or bold, or underline)** the sample language in your excerpt, the way this DocuScope categories page does when it offers examples.
+
+Here's an example of how to integrate a textual excerpt into a paragraph, in order to support a data trend. The trend is shown in red. The interpretation is shown in orange. The use of qualitative evidence to support the  interpretation is shown in green.
+
+<Image src="https://isle.stat.cmu.edu/76-107-A2-DeJeu_Screen Shot 2020-10-23 at 8.04.58 PM.png" alt="Enter description"
+  height={400}
+  width={1000}
+/>
+
+If you're wondering how to find textual excerpts that will support your arguments, good news: we have pulled out the most popular words and phrases (or "tokens") in MICUSP and have organized them by their DocuScope categories. You can see the entire MICUSP token spreadsheet <Link href="https://docs.google.com/spreadsheets/d/1beunPfDrXEOygcptW7UEIVkmujfMWxwee7AZNkSdXVw/edit#gid=0" >here.</Link>
+
+Watch <Link href="https://drive.google.com/file/d/1GWpcXYa_hvOzzaR0e-HPZege_bJ16D31/view?usp=sharing" >this video</Link> for information on how to sort and filter this spreadsheet. Once you know how to sort and filter based on the DocuScope variables you care about, you'll have a long list of sample words and phrases you can search in MICUSP, which is a fast way to find sample text excerpts to use in your CGA report.
+</Collapse>
+<Collapse header="Why and how we use Qualitative Data">
+  
+### **Chapter 6** in the textbook discusses the different kinds of qualitative data in detail. **Chapter 8**, which covers results sections, mentions how qualitative data is used to **supplement** or elaborate on our data stories with additional information.
+
+Whenever we report our quantitative analysis of a data set, we want to contextualize our results *within the data itself* to show the reader what these results look like. Qualitative data (such as quotations, observations, photographs, or descriptions) help readers **zoom in** on the quantitative findings.
+
+In this case, we're working with pieces of student writing, so our qualitative data will concists of quotes/excerpts from the papers.
+
+Here's an example from a CGA in this course. Here, the student is elaborating the use of metadiscourse (the word "also") in a creative writing piece and a biology report:
+
+*When used in “Return to Soumi,” two of the three instances of “also” being used is when showing emotion. For example, “I was sad to leave the history of the farm, yet also relieved...,” and “Upon hearing my aunt’s comments, my cheeks grew red and I became very angry yet also sad.” In “Global Reproductive Strategies of Tursiops and Stenella (Family Delphinidae),” “also” is used when introducing new evidence to support a claim. Some examples are “There is also evidence that females may directly choose a mate,” and “They also found that a comparable percentage of whitebelly spinners and eastern spinners were accidentally captured in nets."*
+
+**Metadiscourse is language that functions as traffic signs, orienting and directing readers. What does the above excerpt reveal about the different uses of metadiscourse in these two genres?**
+</Collapse>
+
+
+*************************
+
+<Collapse header="Citation Language in MICUSP">
+
+<div>
+**Note that you can follow this same process for COCA using the CGA Sandbox.**
+
+Below is a data table containing the DocuScope counts for MICUSP. Filter the data table to explore CitationAuthority, CitationHedged, CitationNeutral, or CitationControversy, or different combinations of these categories. 
+
+Refer to the <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">16 DocuScope categories</a> for descriptions of citation language.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="micusp_counts"
+        data={micusp_counts}
+        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
+        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+        editor={false}
+        questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization." />
+            <FreeTextQuestion
+                question="Enter a caption for your visualization."
+            />
+        </div>
+        
+  ]}
+    />
+</Gate>
+
+</div>
+<div>
+
+### Now, suggest brief explanations for the patterns you found.
+
+You might think about the topics these disciplines engage, how they engage in research, and how they represent knowledge.
+
+For this, we need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition to restricting your search to specific disciplines (by checking the relevant box on the left).
+
+To know what to search for, let's look at a table of token counts below. These are the frequencies of words and phrases tagged by DocuScope and normalized per 10,000 tokens.
+
+Filter the data table by 'DSCat' (DocuScope Category) to identify the tokens that DocuScope has tagged as Citation language (across the four citation categories).
+
+Search for these tokens on the MICUSP site to find qualitative data that supports your results. 
+
+<DataTable
+    data={micusp_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+
+<FreeTextQuestion
+    question="Write a short results paragraph that 1) reports the data story in your visualization and 2) includes an example (short quotation) from *at least one* MICUSP paper."
+/>
+</div>
+
+**Always be sure to explain what your quotation/excerpt means for the discourse community you're discussing. Just as you would be sure to state your interpretation of *quantitative* data to your reader, so too should you state that interpretation clearly for *qualitative* data.**
+
+</Collapse>
+
+
+
+
+*************************
+
+#### Don't forget to click the 'Finish Lesson' button below and to submit the PDF to Canvas.
+<LessonSubmit />

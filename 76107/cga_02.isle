@@ -1,88 +1,255 @@
 ---
-title: "Exploring MICUSP through DocuScope"
-author: David West Brown
-date: 09/04/2020
-state:
+title: "MICUSP Confidence"
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+date: 07/01/2020
+state: null
 require:
-    micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
+    micusp_conf: "https://isle.stat.cmu.edu/76-107_107_micusp_confidence.json"
+    coca_conf: "https://isle.stat.cmu.edu/76-107_107_coca_confidence.json"
+    micusp_ngrams: "https://isle.stat.cmu.edu/76-107_107_micusp_confidence_ngrams.json"
+    coca_ngrams: "https://isle.stat.cmu.edu/76-107_107_coca_confidence_ngrams.json"
+server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
 
-# MICUSP DocuScope Data
+# Exploring Expressions of Confidence
 
-The data in the Explorer below include normalized counts of DocuScope categories for each of the <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a> files.
+##### The goal of this lesson is to introduce you to the datasets we'll be using for the CGA.
 
-If you need to lookup what some of these categories mean, you can refer to the descriptions <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">here</a>.
+###### For this exercise, we're going to investigate the ways which various academic disciples manage expressions of confidence.
 
-The data also include metadata, which allow you to compare not only disciplines, but also paper types, native speaker status, student level, and gender.
+Our broad research questions for this exercise are the following: 
+* Which disciplines are more tolerant of or prone to expressing high confidence: *it is clear that...*, *the obvious response...*, *the data show...* 
+* And which ones are more prone to hedging: *this may indicate...*, *one potential solution...*, *the data suggest...*
 
-Let's try out some of the Data Explorer functions.
+******************************
 
-We'll begin by creating a filtered data set:
-1. Under PaperDiscipline, select "Biology".
-1. Repeat the process for "English".
-1. Then below the Explorer, click "Create filtered dataset".
+<Collapse header="Language & Genre">
 
-Now let's generate some basic statistics:
-1. Go to "Show Toolbox".
-1. Select "Mean" and "Standard Deviation".
-1. For the variable, choose "ExpertVocabulary".
-1. Group by "PaperDiscipline".
-1. And "Generate".
+The data we'll be investigating come from  <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
 
-**What do <a href="https://statistics.laerd.com/statistical-guides/measures-of-spread-standard-deviation.php" target="_blank">these numbers</a> tell us about Expert Vocabulary in these two disciplines?**
+We, then, tagged that data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a> categorizes words and phrases into rhetorical categories. For example, in some <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> or text-types (like much of the writing done in universities), abstract and technical language serve an important function. DocuScope groups all these words into a category called **ExpertVocabulary**. Here is an excerpt from an upper-level student paper, with the AcademicTerms identified by DocuScope in bold:
 
-Next, we can use the filtered data to create a boxplot:
-1. Go to "Show Toolbox".
-1. Under plots, select "Box Plot".
-1. For the variable, choose "ExpertVocabulary".
-1. Group by "PaperPiscipline".
-1. And "Generate".
+* With this **equation**, the initial conditions, and the **experimentally** determined **natural frequency** and damping **ratio**, we can know the under-damped vibration **as a function of** time, and, thus, the exact **behavior** of the floorboard.
 
-**What is the <a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/descriptive-statistics/box-plot" target="_blank">boxplot</a> showing?**
+There are  <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15JmduZE_ocWzLjDjaFYE" target="_blank">16 DocuScope categories</a> (or what are called "clusters"):
 
-Next, let's make a different kind of plot -- a histogram. For this, we'll keep our same filtered dataset:
-1. From the Toolbox, select "Histogram" from the Plot menu.
-1. For the Variable, select "ExpertVocabulary".
-1. For "Group By", select "PaperDiscipline".
-1. And check "Overlay Density".
-1. And "Generate".
+1. Character Types
+1. Citation Authority
+1. Citation Controversy
+1. Citation Hedged
+1. Citation Neutral
+1. Confidence Hedged
+1. Confidence High
+1. Confidence Low
+1. Expert Vocabulary
+1. Information Comparison
+1. Information Quantities
+1. Methods/Results/Discussion
+1. Purpose/Plan
+1. Reader Directed Metadiscourse
+1. Reader Directed Metadiscourse (First Person)
+1. Reasoning
 
-**What is this <a href="https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/graphs/histogram/interpret-the-results/key-results" target="_blank">histogram</a> showing?**
+The results you see in the data tables are normalized counts of tokens (words/phrases) in a given document. These counts are normalized per 100 tokens. So, a value of 1.25 for ConfidenceHedged means that 1.25 of every 100 tokens in the document fall under the ConfidenceHedged category. 
 
-Based on what we've generated so far, would you predict that there is a **statistically significant difference** between Biology and English in their frequencies of **Expert Vocabulary**?
+For this excercise, we'll only be looking at ConfidenceHigh and ConfidenceHedged.
+</Collapse>
 
-**Let's find out.**
+*************************
 
-For this, we'll use <a href="https://howecoresearch.blogspot.com/2019/01/using-analysis-of-variance-anova-in.html" target="_blank">Analysis of Variance (ANOVA)</a>.
+<Collapse header="Confidence, High & Hedged: An Overview">
 
-Again, we'll keep our same filtered dataset:
-1. From the Toolbox, select "One-Way ANOVA" from the Test menu.
-1. For the Variable, select "ExpertVocabulary".
-1. For the Grouping Variable, select "PaperDiscipline"
-1. And "Calculate".
+The data we'll be investigating for this assignment comes from  two sources:
+* <a href="http://micusp.elicorpora.info" target="_blank">the Michigan Corpus of Upper-Level Student Papers (MICUSP)</a>.
+* <Link href="https://www.english-corpora.org/coca/" >the Corpus of Contemporary American English</Link>
 
-If you carry out a hypothesis test, **be sure** <a href="http://statistics-help-for-students.com/How_do_I_report_a_1_way_between_subjects_ANOVA_in_APA_style.htm#.Xo5Ox257nOQ" target="_blank">to report your results correctly</a>.
+We have tagged this MICUSP and COCA data with a tool called <a href="https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html" target="_blank">DocuScope</a>, which categorizes words and phrases into rhetorical categories. One cluster of rhetorical categories DocuScope uses has to do with how much confidence a writer expresses. For example, in <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/genre_and_medium.html" target="_blank">genres</a> of academic writing, expert scholars often have to balance sounding very confident in their findings with acknowledging doubt and uncertainty. DocuScope groups confidence-related language into several categories, two of which we'll explore today:
+* **ConfidenceHigh**, or language that signals high confidence and certainty
+* **ConfidenceHedged**, or language that signals uncertainty and acknowledges doubt.
+
+If this sounds familiar, it should: Chapter 8 (pages 3-4) introduced you to the idea that verbs can show different degrees of confidence, as the figure below shows:
+
+<Image src="https://isle.stat.cmu.edu/76-107-A1-DeJeu_Confidence-High-Hedged.png" alt="Enter description"
+  height={300}
+  width={600}
+/>
+
+This is the kind of confidence difference that DocuScope captures in its confidence categories.
+
+
+Here are two excerpts, with ConfidenceHigh and ConfidenceHedged language bolded
+
+* *ConfidenceHigh*: "It is **very certain**, at any rate, that some of the basic properties of particles -- such as their location in space -- exist only on a contingency basis."
+
+* *ConfidenceHedged*: "Although this would imply that clover is still a better competitor, it is **possible** that there are other confounding factors which gave the fescue a similar competitive effect in the presence and absence of Rhizobium. "
+
+
+</Collapse>
+
+**************************
+
+<Collapse header="Exercise 1: MICUSP">
+<Pages>
+### Let's start with a quick survey.<MultipleChoiceSurvey
+    anonymous
+    id="MICUSPHighSurvey"
+    question="In which discipline is ConfidenceHigh the most frequent?"
+    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/><MultipleChoiceSurvey
+    anonymous
+    id="MICUSPHedgedSurvey"
+    question="In which discipline is ConfidenceHedged the most frequent?"
+    answers={[ 'Biology','Civil and Environmental Engineering','Classical Studies','Economics','Education','English','History','Industrial and Operational Engineering','Linguistics','Mechanical Engineering','Natural Resources','Nursing','Philosophy','Physics','Political Science','Psychology','Sociology' ]}/>
+<div>
+### Now we'll check the data. 
+
+Below is a data table with columns for the normalized frequencies of ConfidenceHigh and ConfidenceHedged for each paper.
+
+There is also a column identifying the academic discipline.
+
+We're going to make plots showing the average (or mean) for ConfidenceHigh and ConfidenceHedged by PaperDiscipline.
+
+To make these plots:
+
+1. Click 'Show Toolbox'
+1. Find the 'Plots' menu and select 'Bar Chart'
+1. From 'Bars represent' select 'Function evaluated for variable'
+1. From 'Variable' select 'PaperDiscipline'
+1. From 'y-axis' select one of the DocuScope categories
+1. 'Summary function' should be 'Mean'
+1. Order the bars either by ascending or descending frequency
+1. Finally, click 'Generate'
+
+Your plot should appear in the 'Output'. You can hide the toolbox and use the toggle option for a fullscreen view of your plot.
+
+Generate plots for both ConfidenceHedged and ConfidenceHigh.
 
 <Gate banner={<h3>Please sign in with your account...</h3>} user >
     <DataExplorer 
-        id="micusp_counts"
-        data={micusp_counts}
-        categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
-        quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
+        id="micusp_conf"
+        data={micusp_conf}
+        categorical={['PaperID','PaperDiscipline']}
+        quantitative={['ConfidenceHedged','ConfidenceHigh']}
     />
 </Gate>
 
-**Below the Explorer click "Restore original dataset"**
+### Format your plot.
 
-With your breakout group, create a plot that you think helps to illustrate/explain some pattern of variation in the MICUSP data. This could be related to discipline (like the Biology vs. English), but you might also explore patterns among other categories like paper type.
+The counts you're seeing represent a percentage of the total tokens in each text. The term *token* is a technical term denoting the language unit being counted.
 
-If you're amibitious, you can also create your own categories by using the "Transform" option to combine or rename categories. For example, you could group disciplines under Humanities, Sciences, and Social Sciences, for example.
+Note that the default y-axis just reads "Count". Click on it and change the label to one that is accurate.
+</div>
+<div>
 
-Feel free to try out different things. And be open to the unexpected. Sometimes an interesting result is one where you find similarity when you're expecting difference.
+### Report the data and consider the results against your hypothesis
 
-When you settle on something you think is interesting, submit a description and interpretation in the space below.
+We need to consult the orignial data -- the <a href="http://micusp.elicorpora.info" target="_blank">MICUSP papers</a>. Using the interface, you can search for words and phrases, in addition restricing your search to specific disciplines (by checking the relevant box on the left).
+
+Of course, we can't effectively search the MICUSP papers until we know what kind of ConfidenceHigh and ConfidenceHedged language to search for. To help you zero in on sample phrases you can search, we've made the table of counts below. This table shows the frequencies of the top 10 phrases tagged by DocuScope as **ConfidenceHedged** and **ConfidenceHigh** and normalized per 10,000 tokens. To explore how these phrases show up in actual papers in MICSUP, <Link href="http://micusp.elicorpora.info" target="_blank" >search them in the MICUSP interface.</Link>
+
+*Note: the MICUSP interface is very intuitive -- just about everything is clickable. Play around a little and you should be able to easily narrow your search to two disciplines.*
+ 
+
+As you skim excerpts from papers, think about why papers in different disciplines use ConfidenceHigh and ConfidenceHedged language differently. You might think about the topics these disciplines frequently take up, how they engage in research, and how they represent knowledge.
+
+Finally, once you've explored sample patterns in MICUSP papers, answer the question below the table.
+
+<DataTable
+    data={micusp_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+
 
 <FreeTextQuestion
-    question="Write a description of your visualization and explain why you think it's interesting and what you think it shows."
+    question="Pick two  disciplines that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each discipline's discourse community (i.e. the kinds of things they study, their methods of study, the kind of knowledge they are trying to make, etc.). Support your answer with a textual excerpt from each discipline, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the MICUSP interface.)"
 />
+</div>
+</Pages>
+</Collapse>
+
+***********************
+<Collapse header="Exercise 2: COCA">
+<Pages>
+<div>
+### Same thing but with COCA
+
+Now let's trying repeating the process with the <a href="https://www.english-corpora.org/coca" target="_blank">Corpus of Contemporary American English (COCA)</a>.
+
+Rather than being categorized by discipline, these data are divided into text-types:
+1. Academic
+2. Fiction
+3. Magazine
+4. Newspaper
+5. Spoken
+6. Blogs
+7. Television/Movies
+8. Web
+
+### Once again, let's do a quick survey.
+
+<MultipleChoiceSurvey
+    anonymous
+    id="COCAHighSurvey"
+    question="In which discipline is ConfidenceHigh the most frequent?"
+    answers={[ 'Academic','Fiction','Magazine','Newspaper','Spoken','Blogs','Web' ]}/>
+
+
+<MultipleChoiceSurvey
+    anonymous
+    id="COCAHedgedSurvey"
+    question="In which discipline is ConfidenceHedged the most frequent?"
+    answers={[ 'Academic','Fiction','Magazine','Newspaper','Spoken','Blogs','Web' ]}/>
+
+</div>
+<div>
+### Now, let's make the same plot as before.
+
+1. Click 'Show Toolbox'
+1. Find the 'Plots' menu and select 'Bar Chart'
+1. From 'Bars represent' select 'Function evaluated for variable'
+1. From 'Variable' select 'TextType'
+1. 'Summary function' should be 'Mean'
+1. Order the bars either by ascending or descending frequency
+1. Finally, click 'Generate'
+
+Your plot should appear in the 'Output'. You can hide the toolbox and use the toggle option for a fullscreen view of your plot.
+
+Generate plots for both ConfidenceHedged and ConfidenceHigh.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer 
+        id="coca_conf"
+        data={coca_conf}
+        categorical={['TextID','TextType']}
+        quantitative={['ConfidenceHedged','ConfidenceHigh']}
+    />
+</Gate>
+</div>
+<div> 
+### Report the data and consider the differences between text types 
+
+First, consult some counts of Hedged and High confidence tokens, which are shown in the table below. Note that these are normalized per million tokens (the MICUSP confidence tokens, by contrast, were normalized per 10,000 tokens).
+
+<DataTable
+    data={coca_ngrams}
+        categorical={['Token','DSCat']}
+        quantitative={['TokenCount','DocCount','FreqNorm','DocNorm']}
+/>
+
+Then, search the <a href="https://www.english-corpora.org/coca" target="_blank">Corpus of Contemporary American English (COCA)</a> for a token or tokens of interest. As with the MICUSP exercise, your goal here is to think about why particular genres or text-types signal confidence differently.
+
+*Note: searching the COCA interace isn't quite as intuitive as searching the MICUSP interface. <Link href="https://canvas.cmu.edu/courses/18194/pages/navigating-coca" >**Use this guide to help you search**</Link>.*
+
+<FreeTextQuestion
+    question="Pick two text-types that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each text-type's discourse community (i.e. the kinds of topics community members are interested in, their target reading audience, their goals in writing, etc.). Support your answer with a textual excerpt from each text type, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the COCA interface.)"
+/>
+</div>
+</Pages>
+</Collapse>
+
+*************************
+
+#### Don't forget to click the 'Finish Lesson' button below.
+<LessonSubmit />

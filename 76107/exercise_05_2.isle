@@ -1,0 +1,99 @@
+---
+title: Chapter 05 Exercise 5.2
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+keywords:
+hideProgressBar: true
+date: 06/12/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.2.csv"
+    
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Exercise 5.2 - 2012 Olympics Data
+
+
+### After reading Chapter 5, pages 9-12, please complete Exercise 5.2. 
+
+<div align="left">#### The purpose of this exercise is to help you understand the choices that writers can make to tell a different story with the same dataset.</div>
+
+The Data Explorer below shows selected data from the <Link href="https://isle.stat.cmu.edu/WAD-proseed_2012_olympics_data.png" >2012 London summer Olympics.</Link> If your last name begins with
+  * A-H: Create a visualization that presents Cuba in the best possible light
+  * I-N: Create a visualization that presents Hungary in the best possible light
+  * O-Z: Create a visualization that presents China in the best possible light 
+
+Your visualization should follow the principles covered in Chapter 4. Experiment with presenting the data both credibly and less credibly. Experimenting with ways to manipulate numbers to support a specific purpose or story prepares you to see how others might make similar manipulations.
+
+***************************************
+##### Experiment with the data below. When you decide on your best visualization, drag it to the image question and click submit. Include a caption for your visualization as well.
+<FlippableCard button="Click here for a video demonstration"
+  cardStyles={{
+  "container": {
+    "width": "100%"},
+}}
+>
+<div>
+Tips for adding new variables:
+  1. From the Data Explorer toolbox, click "Transform"
+  2. Select the top button: "Interactions, Transformations (e.g., sqrt), Functions"
+  3. Select variables from the "Quantitative"  drop down menus
+    3a. The categorical variable "Country" is not numerical
+  4. Click an operator: +, -, * (multiplication), / (division)
+    4a. For example, the expression for "Gold medals per capita" as a new variable would look like this: **"datum.Gold / datum.Population"**
+    4b. Or, the expression for "Total Medals" would look like this: **"datum.Gold + datum.Silver + datum.Bronze"**
+  5. Set the name of your new variable
+  6. Click "Create new variable"
+  7. Feel free to experiment with the variables you create! 
+</div><VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_exercise-5.1.mp4"
+  controls={true}
+/>
+</FlippableCard>
+
+
+
+
+<br />
+<br />
+<DataExplorer
+  data={dataset1}
+  categorical={["Country"]}
+  quantitative={["Population", "GDP", "Athletes", "Gold", "Silver", "Bronze"]}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a visualization that presents your assigned country in the best possible light:" />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization"
+            />
+        </div>]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+  editor={false}
+/>
+
+
+***************************************
+
+
+
+
+#### Don't forget to click the 'Finish Lesson' button below.
+<LessonSubmit />

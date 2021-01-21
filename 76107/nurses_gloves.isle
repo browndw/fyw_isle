@@ -1,0 +1,130 @@
+---
+title: Nurses' Gloves Assignment
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+keywords:
+date: 08/07/2020
+language: en-US
+state:
+require:
+    datasetNG: "https://isle.stat.cmu.edu/WAD-proseed_NursesGloves.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Nurses' Gloves Assignment 
+<div align="left">#### This assignment gives you a chance to practice writing a persuasive and clear story about a simple data set using the IMRD format.  This story should contain a good visualization.</div>
+
+<div align="left">##### Submission intructions are different for this assignment - see below</div>
+
+**********************************
+
+<Collapse header='Context'>
+
+You are working as an analyst for a hospital.  The hospital administration is concerned with preventing hospital-acquired (or nosocomial) infections in patients.  Nosocomial infections are new infections that patients pick up as a result of treatment in a hospital.  
+  
+One way to prevent nosocomial infections is for hospital personnel to use disposable gloves.  However, in practice many hospital personnel frequently neglect to wear gloves.  This increases the likelihood that they will transmit infections from one patient to another.
+
+One year ago, your hospital required all emergency room nurses to participate in an educational program designed to emphasize the importance of using gloves.  **Your hospital is now considering requiring this training for all hospital staff.  However, before mandating this training, hospital administration wants to see if it was effective in increasing protective glove use.**
+
+Without their knowledge, all 23 members of the emergency department's nursing staff were observed during vascular access procedures.  Each nurse was observed three times before the training, three times at approximately one month after the training, and three times at approximately six months after the training to see how often they wore gloves.  Each procedure by a nurse was counted as a separate observation.
+
+The data below shows the number of times each nurse was observed as wearing gloves (out of three observations) before, immediately after, and six months after the training.  In addition, the data includes the experience level of each nurse.  This data is also available in a CSV file on Canvas.
+
+</Collapse>
+
+<Collapse header="Your task">
+Your job is to help hospital administrators understand what this data means.  You should write a 1-2 page single-spaced report in IMRD format that tells the story of this data.  This report should include at least one effective table or figure that helps your reader quickly grasp whether or not the training was effective.  **Remember: you are answering the question of whether or not this training was effective.**
+
+A strong report will include all of the relevant stories this data set can tell.  In other words, when you analyze this simple data set, look at it from as many different perspectives as possible.  
+
+
+</Collapse>
+
+<Collapse header="Report sections (IMRD)">
+  Use the **report editor** in the data explorer below to complete this assignment. Your report should have the following sections:
+    * **Abstract**:  Approximately one sentence for each IMRD section.
+    * **Introduction**: Approximately one paragraph that explains the motivations for your research question.  You should describe why the topic is important, what is known, and what is unknown, and what question your report will answer.
+    * **Methods**: Include subheadings for participants and observation procedures.  You may include additional subheadings if you feel your audience will find them helpful.
+    * **Results**: Include at least one visualization that tells an effective story.  Your visualizations must be clear and compelling and able to stand alone (i.e., captions, labels, etc. should clarify how to read the visualization).  Each visualization should be accompanied by text that tells its story and provides additional information that helps readers understand the results. 
+    * **Discussion**: Restate the main findings and explain what they mean for your audience.  Also discuss any problems with the data or procedures and if there are remaining questions that should be investigated with future studies.
+
+You will write this report in pieces. As long as you click the submit button (see intructions below), ISLE will save your work in the report editor.
+</Collapse>
+
+**********************************
+
+### Nurses' Gloves Dataset
+
+<DataExplorer
+  data={datasetNG}
+  categorical={["Nurse", "Years Experience", "Observation period"]}
+  quantitative={["Number of times observed wearing gloves"]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  tables={[]}
+/>
+
+*************************
+<Collapse header="Tips for Transforming the Data Explorer">
+  
+
+
+<FlippableCard button="Click here for a video demonstration"
+  cardStyles={{
+  "container": {
+    "width": "100%"},
+}}
+>
+<div>
+Tips for adding new variables:
+  1. From the Data Explorer toolbox, click "Transform"
+  2. Select the top button: "Interactions, Transformations (e.g., sqrt), Functions"
+  3. Select variables from the "Quantitative"  drop down menus
+    3a. The categorical variable "Country" is not numerical
+  4. Click an operator: +, -, * (multiplication), / (division)
+    4a. For example, the expression for "Gold medals per capita" as a new variable would look like this: **"datum.Gold / datum.Population"**
+    4b. Or, the expression for "Total Medals" would look like this: **"datum.Gold + datum.Silver + datum.Bronze"**
+  5. Set the name of your new variable
+  6. Click "Create new variable"
+  7. Feel free to experiment with the variables you create! 
+</div><VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_exercise-5.1.mp4"
+  controls={true}
+/>
+</FlippableCard>
+</Collapse>
+
+*************************
+
+
+<Collapse header="ISLE Submission Instructions">
+##### To complete this assignment, use the **report editor** in the data explorer:
+
+
+<div>
+  1. Draft your report & create your data visualizations
+  2. Click + hold "Drag Plot" to add your visualizations to your report
+  3. When your draft is complete, **click the submit button in the data explorer. This will save your work in the report editor:**<Image src="https://isle.stat.cmu.edu/WAD-proseed_ISLE_submit-button.png" />
+  4. Always save your report for your own records:
+      4a. If you prefer, you *could* choose to save as HTML:<Image src='https://isle.stat.cmu.edu/WAD-proseed_html_save-button.png' width="40" height="40" />
+      4b. You **must** save as PDF:<Image src='https://isle.stat.cmu.edu/WAD-proseed_pdf_save-button.png' width="40" height="37" />
+  5. **Submit the PDF of your report to Canvas to receive credit.**
+  </div>
+</Collapse>
+
+*************************
+
