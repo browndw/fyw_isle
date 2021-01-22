@@ -3,6 +3,7 @@ title: "MICUSP Confidence"
 author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
 date: 07/01/2020
 state: null
+hideProgressBar: true
 require:
     micusp_conf: "https://isle.stat.cmu.edu/76-107_107_micusp_confidence.json"
     coca_conf: "https://isle.stat.cmu.edu/76-107_107_coca_confidence.json"

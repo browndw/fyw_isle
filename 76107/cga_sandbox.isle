@@ -3,6 +3,7 @@ title: "CGA Sandbox"
 author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
 date: 08/04/2020
 state:
+hideProgressBar: true
 require:
     micusp_counts: "https://isle.stat.cmu.edu/76-107_micusp_ds_norm.csv"
     coca_counts: "https://isle.stat.cmu.edu/76-107_coca_sub_ds_norm.csv"

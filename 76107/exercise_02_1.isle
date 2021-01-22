@@ -3,6 +3,7 @@ title: Chapter 02 Homework
 author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
 date: 22/03/2020
 language: en-US
+hideProgressBar: true
 state:
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
@@ -87,16 +88,14 @@ For each example that you rate less than “completely credible,” indicate whi
   <div>
         <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+id="2.2_1"
+anonymous
     question="CAPTION: Male students answered more questions correctly than their female peers"
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
+    
 />
 
 <FreeTextQuestion
@@ -108,16 +107,14 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
         <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+id="2.2_2"
+    anonymous
     question="CAPTION: The number of units sold increased from 2014 - 2017."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
+    
 />
 
 
@@ -130,16 +127,13 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
         <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+id="2.2_3"
+    anonymous
     question="CAPTION: Racist attitudes toward dating appear to have improved slightly since 2008."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
 />
 
 
@@ -152,16 +146,13 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
         <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+id="2.2_4"
+    anonymous
     question="CAPTION: Revenue has steadily increased over the last decade."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
 />
 
 
@@ -174,16 +165,13 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+    anonymous
+    id="2.2_5"
     question="CAPTION: Shorter women receive more unsolicited emails than taller women (especially women above 5’10”) while the opposite trend is true for men."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
 />
 
 
@@ -196,16 +184,13 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+    id="2.2_6"
+    anonymous
     question="CAPTION: Gasoline prices dropped by over one-third between 2012-2015."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
 />
 
 
@@ -218,16 +203,13 @@ For each example that you rate less than “completely credible,” indicate whi
     <div>
        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" /></div>
 
-<MultipleChoiceQuestion
+<MultipleChoiceSurvey
+anonymous
+id="2.2_7"
     question="CAPTION: According to the OKCupid database, women are nearly twice as likely as men to believe that the earth is bigger than the sun."
     answers={[
-        {content:"4 = Completely credible", explanation:""},
-        {content:"3 = Mostly credible", explanation:""},
-        {content:"2 = Mostly note credible", explanation:""},
-        {content:"1 = Not credible", explanation:""}
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
-    solution={0}
-    provideFeedback=""
 />
 
 
@@ -236,12 +218,32 @@ For each example that you rate less than “completely credible,” indicate whi
   solution="Enter solution"
 />
     </div>
-  
-</Pages>
+<div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/WAD-proseed_exercise2.2_H.jpg"  width="500" height="420" /></div>
 
+<MultipleChoiceSurvey
+anonymous
+id="2.2_8"
+    question="CAPTION: The five-year graduation rates of students at two area universities. Students at University Z are much more likely to graduate within five years than students at University A."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  solution="Enter solution"
+/>
+    </div>
+
+</Pages>
 </Collapse>
 
 *********************************************************
 
 #### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
 <LessonSubmit />
+
+
+
+

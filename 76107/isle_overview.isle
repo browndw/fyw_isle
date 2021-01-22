@@ -3,6 +3,7 @@ title: ISLE Video Resources
 author: Michael Laudenbach
 date: 10/23/2020
 state: null
+hideProgressBar: true
 server: https://isle.stat.cmu.edu
 license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
 ---
