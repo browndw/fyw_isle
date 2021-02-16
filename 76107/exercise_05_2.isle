@@ -29,13 +29,16 @@ Your visualization should follow the principles covered in Chapter 4. Experiment
 
 ***************************************
 ##### Experiment with the data below. When you decide on your best visualization, drag it to the image question and click submit. Include a caption for your visualization as well.
+<div>
 <FlippableCard button="Click here for a video demonstration"
-  cardStyles={{
-  "container": {
-    "width": "100%"},
+  containerStyle={{
+    "width": "100%",
+    "height": 380
 }}
 >
-<div>
+<div style={{
+  "paddingBottom": 0
+}}>
 Tips for adding new variables:
   1. From the Data Explorer toolbox, click "Transform"
   2. Select the top button: "Interactions, Transformations (e.g., sqrt), Functions"
@@ -47,16 +50,20 @@ Tips for adding new variables:
   5. Set the name of your new variable
   6. Click "Create new variable"
   7. Feel free to experiment with the variables you create! 
-</div><VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_exercise-5.1.mp4"
+</div>
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_exercise-5.1.mp4"
   controls={true}
 />
 </FlippableCard>
+</div>
 
-
+************************************
 
 
 <br />
 <br />
+
+<div>
 <DataExplorer
   data={dataset1}
   categorical={["Country"]}
@@ -88,7 +95,7 @@ Tips for adding new variables:
   tables={[]}
   editor={false}
 />
-
+</div>
 
 ***************************************
 
