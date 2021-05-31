@@ -121,7 +121,7 @@ Be prepared to describe and defend your design choices in class discussion.
 
 
 
-<Pages paginationBelow>
+<Pages pagination='Below'>
     <div>
 ### Dataset 1: This data was collected to answer the question of what percentage of students are “satisfied” or “very satisfied” with the course offerings in their majors.
 
