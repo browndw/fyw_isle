@@ -78,7 +78,9 @@ On each of 7 pages below, study the data visualization and read the correspondin
 * 2 = Mostly not credible 
 * 1 = Not at all credible 
 
-For each example that you rate less than “completely credible,” indicate which of the four principles above it seems to violate (note: some may violate multiple principles).
+For each example that you rate less than “completely credible,” indicate which of the four principles above it seems to violate (note: some may violate multiple principles). 
+
+Then, **elaborate on your answers: how does the visualization affect the relationship between audience, purpose, and credibility?** Provide at least one suggestion for revising the visualization/caption.
 
 **Remember to click 'Submit' after entering your answer!**
 
@@ -97,9 +99,15 @@ anonymous
     ]}
     
 />
+<MultipleChoiceSurvey
+  id="2.2_1a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -116,10 +124,15 @@ id="2.2_2"
     ]}
     
 />
-
+<MultipleChoiceSurvey
+  id="2.2_2a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -135,10 +148,15 @@ id="2.2_3"
         "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
 />
-
+<MultipleChoiceSurvey
+  id="2.2_3a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -155,9 +173,15 @@ id="2.2_4"
     ]}
 />
 
+<MultipleChoiceSurvey
+  id="2.2_4a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -174,9 +198,15 @@ id="2.2_4"
     ]}
 />
 
+<MultipleChoiceSurvey
+  id="2.2_5a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -193,9 +223,15 @@ id="2.2_4"
     ]}
 />
 
+<MultipleChoiceSurvey
+  id="2.2_6a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -211,10 +247,15 @@ id="2.2_7"
         "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
 />
-
+<MultipleChoiceSurvey
+  id="2.2_7a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
@@ -229,9 +270,15 @@ id="2.2_8"
         "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
     ]}
 />
+<MultipleChoiceSurvey
+  id="2.2_8a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+/>
 
 <FreeTextQuestion
-  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate? (Note: some may violate multiple principles.)"
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
   solution="Enter solution"
 />
     </div>
