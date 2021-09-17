@@ -164,7 +164,7 @@ Finally, once you've explored sample patterns in MICUSP papers, answer the quest
 
 
 <FreeTextQuestion
-    question="Pick two  disciplines that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each discipline's discourse community (i.e. the kinds of things they study, their methods of study, the kind of knowledge they are trying to make, etc.). Support your answer with a textual excerpt from each discipline, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the MICUSP interface.)"
+    question="Pick two  disciplines that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each discipline's discourse community (i.e. the kinds of things they study, their methods of study, the kind of knowledge they are trying to make, etc.)."
 />
 </div>
 </Pages>
@@ -244,7 +244,7 @@ Then, search the <a href="https://www.english-corpora.org/coca" target="_blank">
 *Note: searching the COCA interace isn't quite as intuitive as searching the MICUSP interface. <Link href="https://canvas.cmu.edu/courses/18194/pages/navigating-coca" >**Use this guide to help you search**</Link>.*
 
 <FreeTextQuestion
-    question="Pick two text-types that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each text-type's discourse community (i.e. the kinds of topics community members are interested in, their target reading audience, their goals in writing, etc.). Support your answer with a textual excerpt from each text type, that shows either ConfidenceHigh or ConfidenceHedged language being used. (Draw your textual excerpts from the COCA interface.)"
+    question="Pick two text-types that use noticeably different amounts of ConfidenceHigh or ConfidenceHedged language. Write out a brief explanation of why you think this difference in confidence exists, based on differences in each text-type's discourse community (i.e. the kinds of topics community members are interested in, their target reading audience, their goals in writing, etc.)."
 />
 </div>
 </Pages>
