@@ -54,14 +54,14 @@ Now we can use that filtered data to create a boxplot:
 1. Go to "Show Toolbox".
 1. Under plots, select "Box Plot".
 1. For the variable, choose "AcademicTerms".
-1. Group by "PaperPiscipline".
+1. Group by "PaperDiscipline".
 1. And "Generate".
 
-You can also create your own variables by using the "Transform" option to combine or rename categories. For example, you could group disciplines under into broader disciplinary fields. <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN9_2/view?usp=sharing" >Review this video </Link>for a reminder of how to create new variables. 
+**You can also create your own variables by using the "Transform" option to combine or rename categories. For example, you could group disciplines under into broader disciplinary fields. <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN9_2/view?usp=sharing">Review this video </Link>for a reminder of how to create new variables.**
 </Collapse>
 
 <Collapse header = "Integrating Qualitative Evidence">
-It's great to learn high-level trends about language use across academic disciplines and/or text-types...but it's also helpful to actually see what those differences look like in excerpts of sample texts. 
+It's great to learn high-level trends about language use across academic disciplines and/or text-types, but it's also helpful to actually see what those differences look like in excerpts of sample texts. 
 
 In order to support the arguments you will make about why particular disciplines or text-types use language in particular ways, you'll need to offer some examples from texts. These examples can be short stretches of text (i.e. phrases) or longer, multi-sentence excerpts. The goal of using the excerpt is to show how a particular DocuScope variable (like ConfidenceHedged or Expert Vocabulary) is being used in a sample text. In your CGA paper, you should actually **highlight (or bold, or underline)** the sample language in your excerpt, the way this DocuScope categories page does when it offers examples.
 
