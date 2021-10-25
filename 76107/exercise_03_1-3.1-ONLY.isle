@@ -1,0 +1,106 @@
+---
+title: Chapter 03 Homework
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+hideProgressBar: true
+keywords:
+date: 06/12/2020
+language: en-US
+state:
+    fillColor: black
+    width: 800
+    height: 400
+    showGridy: false
+    showGridx: false
+    orientPlot: 'v'
+    plotType: 'bar'
+    plotText: ''
+    plotText1: ''
+    plotText2: ''
+    plotSort: ''
+    xlower: ''
+    xupper: ''
+    ylower: ''
+    yupper: ''
+    xlower2: ''
+    xupper2: ''
+    ylower2: ''
+    yupper2: ''
+    group: ''
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_a.csv"
+    dataset2: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_b.csv"
+    dataset3: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_c.csv"
+    dataset4: "https://isle.stat.cmu.edu/WAD-proseed_dataset_3.3_d.csv" 
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 3 Exercises
+
+
+### After reading Chapter 3, please complete Exercise 3.1 below. Simply click each exercise's button to see your assigned tasks. 
+
+
+***************************************
+<Collapse
+  header="Exercise 3.1"
+>
+
+**The purpose of this exercise is to refine your caption-writing skills.** 
+
+On each of the 6 pages below, analyze the caption and determine whether it is adequate as it stands or if it needs more information. If it needs more information, specify how the caption should be revised.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+<Pages>
+    <div>
+        <FreeTextQuestion
+          question="Figure 1: Average GPA (on 4-point scale) by hours studied per week of students at University X."
+          solution=""
+        />
+    </div>
+<div>
+        <FreeTextQuestion
+          question="Figure 2 shows the average test scores of male and female students."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Figure 3: Levelized costs (in dollars per megawatt hours of electricity) of five different power plants."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Table 1: Memory usage of five different web browsers with one tab open."
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Figure 4: Harley-Davidson is the most popular motorcycle"
+          solution=""
+        />
+    </div>
+    <div>
+        <FreeTextQuestion
+          question="Table 2: Popularity of the top-selling motorcycle brands among registered motorcycle owners in Pittsburgh. Harley-Davidson is the most popular."
+          solution=""
+        />
+    </div>
+
+</Pages>
+  
+</Collapse>
+
+**************************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
+
+
+

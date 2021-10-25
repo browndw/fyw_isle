@@ -1,0 +1,114 @@
+---
+title: Chapter 04 Homework
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+keywords:
+hideProgressBar: true
+date: 06/06/2020
+language: en-US
+state:
+require:
+    dataset_a: "https://isle.stat.cmu.edu/WAD-proseed_dataset_4.3_a.csv"
+    dataset_b: "https://isle.stat.cmu.edu/WAD-proseed_dataset_4.3_b.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Chapter 4 Exercises
+
+### After reading Chapter 4, please complete Exercises 4.2 and 4.3, below.
+
+***************************************
+
+<Collapse header='Exercise 4.3'>
+**The purpose of this exercise is to help you think carefully about how you group and arrange data.**
+
+For each of these data sets, create a visualization that tells the most compelling story. Refer to the checklist on page 19 of Chapter 4 to ensure that your visualization follows all of the best practices. Be prepared to describe and defend your design choices in class discussion.
+
+**Remember to click 'Submit' after entering your answer!**
+
+To create visualizations, click "Show Toolbox". From there, you can create tables (under "Statistics"), and plots. Click around in the plot options to experiment with different visualizations. 
+<Pages>
+<div>
+### Dataset A: This data was collected to answer the question of which fuel type is safest for the environment. The EUG2000 fuel is currently available while SEGO fuel is an experimental alkylate blend for small motors
+
+<DataExplorer
+  data={dataset_a}
+  categorical={['Fuel_type', 'Catalyst']}
+  quantitative={['Emissions_grams_Co2_per_gallon']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  transformer={false}
+  editor={false}
+/>
+
+</div>
+
+<div>
+### Dataset B: This data was collected to learn which type of surface or pavement will cause the fewest vehicle skids. We measure this through Coefficient of Friction (COF), which ranges from zero to one. A higher COF means that the vehicle is less likely to skid
+
+<DataExplorer
+  data={dataset_b}
+  categorical={['Surface_type', 'Miles_per_hour']}
+  quantitative={['Coefficient_friction']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter your caption for the visualization."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+  "Mean",
+  "Median",
+  "Min",
+  "Max",
+  "Range"
+]}
+  tests={[]}
+  transformer={false}
+  editor={false}
+/>
+
+</div>
+
+</Pages>
+</Collapse>
+
+****************************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
+
