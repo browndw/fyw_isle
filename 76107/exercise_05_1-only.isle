@@ -1,0 +1,119 @@
+---
+title: Exercises 5.1 & 8.1
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+hideProgressBar: true
+keywords:
+date: 10/23/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.1.csv"
+    
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Exercises 5.1
+
+### After reading Chapter 5, please complete Exercise 5.1. 
+
+##### The purpose of this lesson is to practice *reporting and interpreting* your findings in what would be the Results section of an IMRD.  
+
+
+***************************************
+
+<Collapse
+  header="Exercise 5.1 - Pencil Data"
+>
+**The purpose of this exercise is to help you learn that manipulating data in different ways creates different data stories.**
+
+Imagine we have conducted a study of students in a class, recording the number of pens and pencils they are carrying on four different dates (*yes, this is a silly study*). Using this data, please do the following:
+
+* Create two different visualizations to illustrate two different stories you might tell about this data.
+* Then, choose one of these visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories.
+
+A helpful note: your audience is fellow students and instructors who want to learn more about students’ habits and practices. 
+
+You can create data plots, of course. You can also create data tables via the statistics tab. Just be sure that the data visualizations you create tell a clear story.  Be sure that each of your visualizations has a complete caption and that axes are labeled. Follow the design principles from Chapter 4, and be prepared to defend your design choices in class. 
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+<Pages>
+
+<div>
+### Data Visualization 1:
+Create your first data visualization and accompanying data story here. 
+<DataExplorer
+  data={dataset1}
+  categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
+  quantitative={['Daily_pens_pencils_by_student']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter a caption for your visualization."
+            />
+        </div>
+  ]}
+  
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+  statistics={[
+]} tests={[]}
+  tables={[ "Frequency Table", "Contingency Table" ]}  transformer={true}
+  editor={false}
+/>
+
+</div>
+
+<div>
+### Data Visualization 2:
+Create your second data visualization and accompanying data story here. 
+<DataExplorer
+  data={dataset1}
+  categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
+  quantitative={['Daily_pens_pencils_by_student']}
+  questions={[
+        <div>
+            <ImageQuestion question="Create a data visualization for this data." />
+            <FreeTextQuestion
+                question="Enter a caption for your visualization."
+            />
+        </div>
+  ]}
+  models={[]}
+  plots={[
+  "Bar Chart",
+  "Pie Chart",
+  "Histogram",
+  "Box Plot",
+  "Line Plot",
+  "Scatterplot"
+]}
+   statistics={[
+]} tests={[]}
+  tables={[ "Frequency Table", "Contingency Table" ]}  transformer={true}
+  editor={false}
+/>
+</div></Pages>
+<FreeTextQuestion
+  question="Choose one of your visualizations and write up approximately 1-4 sentences describing its main and (if relevant) secondary stories."
+  solution=""
+/>
+
+</Collapse>
+
+****************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Submit the PDF to Canvas. 
+<LessonSubmit />
