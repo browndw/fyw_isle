@@ -70,16 +70,6 @@ Refer to the <a href="https://drive.google.com/open?id=1p3SIQ2JHsbpkX36QjHTLsG15
         data={micusp_counts}
         categorical={['PaperID','PaperDiscipline','StudentLevel','StudentGender','SpeakerStatus','PaperType']}
         quantitative={['CharacterTypes','CitationAuthority','CitationControversy','CitationHedged','CitationNeutral','ConfidenceHedged','ConfidenceHigh','ConfidenceLow','ExpertVocabulary','InformationComparison','InformationQuantities','MethodsResultsDiscussion','PurposePlan','ReaderDirectedMetadiscourse','ReaderDirectedMetadiscourseFP','Reasoning']}
-        editor={false}
-        questions={[
-        <div>
-            <ImageQuestion question="Create a data visualization." />
-            <FreeTextQuestion
-                question="Enter a caption for your visualization."
-            />
-        </div>
-        
-  ]}
     />
 </Gate>
 
