@@ -1,0 +1,157 @@
+---
+title: Exercises 5.1 & 8.1
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+description:
+hideProgressBar: true
+keywords:
+date: 10/23/2020
+language: en-US
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.1.csv"
+    
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+# Exercise 8.1
+
+### After reading Chapter 8, please complete Exercise 8.1. 
+
+
+
+
+***************************************
+
+
+<Collapse
+  header="Exercise 8.1 - Confidence Language"
+>
+
+**The purpose of this exercise is to give you practice with putting your data stories into words.**
+
+### 8.1 -- Using word choice to express confidence
+
+It is important to distinguish between **factual statements *about* the data** and **more debatable conclusions that we draw *from* the data**. The paragraphs in your results section should usually move from factual statements to less factual (though reasonable) conclusions about the data. Your verb choices should change to reflect your confidence in the data.
+
+Remember this OKCupid graph on Twitter users and relationship lengths from Chapter 2? 
+
+<div align="center">
+<Image src="https://isle.stat.cmu.edu/WAD-proseed_Twitter_plot.png"  width="500" height="500" /></div>
+
+Each of the 5 pages below contains a statement about this OKCupd data plot. For each statement, select the verb that you think best completes the sentence, making sure that the verb expresses a level of confidence you think is appropriate for the statement. You can also indicate that you think the statement is just too far-fetched to be reasonable, even with a tentative verb.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+
+<Pages>
+
+<div>
+<MultipleChoiceQuestion
+    question="1. Figure 8.1 _____ daily Twitter users average shorter relationships than others."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""},
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    
+    provideFeedback=""
+/>
+
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="2. Figure 8.1 _____ that Twitter use causes shorter relationships."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="3. Figure 8.1 _____ that older users tend to have longer relationships than younger users."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="4. Figure 8.1 ______ that relationships lengthen with age."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    provideFeedback=""
+/>
+</div>
+
+<div>
+<MultipleChoiceQuestion
+    question="5. Figure 8.1 ______ that older people have more stable relationships."
+    answers={[
+        {content:"demonstrates", explanation:""},
+        {content:"shows", explanation:""},
+        {content:"indicates", explanation:""},
+        {content:"illustrates", explanation:""},
+        {content:"reveals", explanation:""},
+        {content:"suggests", explanation:""},
+        {content:"might indicate", explanation:""},
+        {content:"may suggest", explanation:""}, 
+        {content:"seems to suggest", explanation:""}, 
+        {content:"statement is too far-fetched",explanation:""}
+    ]}
+    
+    provideFeedback=""
+/>
+</div>
+
+
+</Pages>
+</Collapse>
+
+***************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Submit the PDF to Canvas. 
+<LessonSubmit />

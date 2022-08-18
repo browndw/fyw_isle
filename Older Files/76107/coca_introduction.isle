@@ -1,0 +1,235 @@
+---
+title: Introduction to COCA
+author: David Brown
+description: null
+keywords: null
+hideProgressBar: true
+date: 1/21/2021
+language: en-US
+state: null
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+
+---
+
+# Introduction to COCA
+
+<div align="left">### Using the Corpus of Contemporary American English (COCA)
+
+#### The Corpus of Contemporary American English
+
+Once you have registered for <a href="https://www.english-corpora.org/coca/" target="_blank">the Corpus of Contemporary American English (COCA)</a> and joined the Carnegie Mellon University group, using the corpus is fairly intuitive. (You can also refer to the guide on Canvas.) However, it does have some specific features and capabilities. The purpose of this exercise is to get you acquainted with some of those, and also to help you to being thinking about patterns in language as a springboard for your project.
+
+#### Basic searching
+
+Here is the basic interface:
+
+<Image src="https://isle.stat.cmu.edu/76-380_780_coca_01.png" alt="Enter description"
+/>
+
+To search, you simply type a word or phrase into the field and hit “Find matching strings” (a string is a computer science-y term for any series of characters including spaces and punctuation). Also note that at the top, you have 5 options that will change the output of your search. For this exercise, we will be using the “List”, “Chart”, and “Collocates” views.
+<hr />
+</div>
+
+<Collapse header="List View">
+
+So let’s try some basic searches using the “List” view. Type in each of the following (exactly as it appears including spacing) and make note of the count and what kind of result is returned.
+<Pages>
+<div>
+##### increase
+    <FreeTextQuestion
+  question="What is the frequency (raw number of occurences)?"
+  solution=""
+/>
+    </div>
+    <div>
+##### increase in
+    <FreeTextQuestion
+  question="What is the frequency (raw number of occurences)?"
+  solution=""
+/>
+    </div>
+        <div>
+##### increase in/of
+    <FreeTextQuestion
+  question="What are the frequencies? (Two numbers!)"
+  solution=""
+/>
+    </div>
+            <div>
+ ##### [increase]
+    <FreeTextQuestion
+  question="What are the four most common forms? And their frequencies?"
+  solution=""
+/>
+    </div>
+            <div>
+##### [=increase]
+    <FreeTextQuestion
+  question="What are the three most common synonyms? And their frequencies?"
+  solution=""
+/>
+    </div>
+            <div>
+##### increas*
+    <FreeTextQuestion
+  question="What are the three most common forms? And their frequencies?"
+  solution=""
+/>
+    </div>
+                <div>
+##### increase_nn*
+    <FreeTextQuestion
+  question="What is the frequency? (Your search should produce only one result.)"
+  solution=""
+/>
+    </div>
+                <div>
+##### increase_v*
+    <FreeTextQuestion
+  question="What is the frequency?"
+  solution=""
+/>
+    </div>
+                <div>
+##### increase *
+    <FreeTextQuestion
+  question="What are the three most common forms? And their frequencies? (Note there should be a space between 'increase' and the wildcard.)"
+  solution=""
+/>
+    </div>
+               <div>
+##### increase _i*
+    <FreeTextQuestion
+  question="What are the three most common forms? And their frequencies? (Note there should be a space between 'increase' and the underscore.)"
+  solution=""
+/>
+    </div>
+
+</Pages>
+</Collapse>
+<Collapse header="Tags & KWIC">
+
+#### Part-of-speech tags
+
+The underscores followed by letters are part-of-speech. So the search **increase_nn*** returns all uses of increase used as a noun (*with the increase in voltage*), while **increase_v*** returns all uses of increase used as a verb (*the voltage will increase*). Alternatively, the search **increase _i*** (with a space between the word and the tag) returns all prepositions that follow increase (*increase in*, *increase of*, etc.).
+
+Also note that the square brackets around a word will search for all forms of that word. So **[increase]** returns all forms of increase regardless of part-of-speech (*increase, increases, increased, increasing*). We could combine tags and brackets as in **[increase]_nn*** to find, for example, only forms of increase used as a noun.
+
+#### Frequency charts
+
+Now let’s try switching to the “Chart” view. If we were to type **thing** in the search field with chart option selected, we would get something like this:
+
+<Image src="https://isle.stat.cmu.edu/76-380_780_coca_02.png" alt="COCA Chart View"
+height={275}
+  width={1198}
+/>
+
+The bar plot shows the frequencies of thing across five different text types: spoken, fiction, magazine, newspaper, and academic. A recent update has added blogs, the web, and television and movie scripts. From the chart, we can see that, among the five main text-types, the word is most frequent in spoken American English (occurring 117,979 times or 953.33 per million words) and least often in academic writing (97.23 per million words).
+
+Now we might ask ourselves, why is this so? What is it about spoken communication that would invite the use of thing? And why does the academic text-type disprefer it? It is important to note here that while the frequency of thing is low in the academic text-type it still does occur. If we wanted to know more, we could click on the “Academic” heading, and see the text-type broken down into disciplines:
+
+<Image src="https://isle.stat.cmu.edu/76-380_780_coca_03.png" alt="COCA Discipline View"
+/>
+
+#### Key words in context (KWIC)
+
+Here we find that thing is used more in law, the humanities, and philosophy than in science or medicine. For even more detail, we can click on any blue bar. Clicking on the one for “Phil/Rel” gives us a list of what are called “concordance lines” or “key words in context” (KWIC):
+
+<Image src="https://isle.stat.cmu.edu/76-380_780_coca_04.png" alt="COCA KWIC View"
+/>
+These are snippets of the actual word in use. From them, we can try to see if there are patterns, clues, that might help us explain why philosophy and religion seem to use more of this word than most other disciplines. In light of these concordance lines, what would you say?
+
+#### Now with these basic tools, answer the following questions:
+
+<Pages>
+<div>
+##### A friend knows that you’re taking MiHA, so she asks you if it is okay to use the phrase *statistically important* in a paper. [Hint: You can simply use the “List” view for this one.]
+    <FreeTextQuestion
+  question="How would you respond? Why? "
+  solution=""
+/>
+    </div>
+    <div>
+##### To find more conventional phrasings, you might carry out a search in a variety of different ways. You can search using a wildcard, using a synonym search, or using the part-of-speech tag for adjective following *statistically*.
+    <FreeTextQuestion
+  question="What would be the more conventional phrasing?"
+  solution=""
+/>
+    </div>
+        <div>
+##### Another friend asks if it is okay to use of the first person in academic writing and if it matters whether it’s singular or plural? [Hint: Switch to the “Chart” view. To answer the question, you only need to investigate the subject pronouns (*I* and *we*) You will also need to pay attention not just to the relationship between text-types, but also the frequencies themselves.]
+    <FreeTextQuestion
+  question="What advice would you give?"
+  solution=""
+/>
+    </div>
+            <div>
+ ##### After giving your reply, you start to wonder if maybe your friend’s major might matter. [Hint: See above for how to generate a chart of academic disciplines.] 
+    <FreeTextQuestion
+  question="How frequently is the first person used in different academic disciplines?"
+  solution=""
+/>
+    </div>
+            <div>
+##### While drafting a paper, you find yourself trying to decide if you should write *data is* or *data are*? [Hint: Use the “List” view and follow the example of *increase in/of* from earlier. In addition, check the “Sections” box below the search field.] 
+    <FreeTextQuestion
+  question="Which form do you think you should choose and why?"
+  solution=""
+/>
+    </div>
+            <div>
+##### While drafting a paper, you find yourself using words like *visualization* and *normalization*. It seems like there are a lot of *–ization* words in academic writing. [Hint: Keep the “Section” box checked as in the previous section. Also, open the “Sections” dialogue by clicking on it and select “ACADEMIC” from the list.] 
+    <FreeTextQuestion
+  question="What are the 5 most common –ization words in academic writing?"
+  solution=""
+/>
+    </div>
+</Pages>
+</Collapse>
+<Collapse header="Collocates">
+
+#### Collocates & Collocation
+
+Finally, lets look at “Collocates.” Collocates are words that conventionally appear together. For example, in American English happy and birthday conventionally appear together. If you told someone “merry birthday!” they would think it strange.
+
+This might seem obvious, but many patterns of collocation operate below the level of consciousness. For example, Paul Baker (2008) has demonstrated that the words like *eligible* and *happy* commonly collocate with *bachelor* and words like *frustrated* and *lonely* with *spinster*. These patterns shape and reinforce our perceptions of marital status and how that experience is gendered.
+
+To carry out a sample collocate search follow these steps:
+
+* Click the “Reset” button to clear all of our previous search settings.
+* Click the “Collocates” tab.
+
+There will be two search fields. The first is for a word or phrase. The second for any properties we want the collocates to have (like a particular part of speech). And below that is the span. The span is how many words to left or right we want to search for. For example we could set the left to 0 and the right to 5. That would specify collocates only 5 words to the right. For this experiment, we’ll just leave the span as is: 4 to the left and 4 to the right.
+
+* Type **cause** into the top search field.
+* In the collocate field put **_nn***
+* Click “Find collocates”
+
+The search shows nouns that collocate 4 words to the left and 4 words to the right of cause.
+
+<Pages>
+<div>
+##### Nouns that collocate with 'cause'
+    <FreeTextQuestion
+  question="Describe the patterns you find."
+  solution=""
+/>
+    </div>
+</Pages>
+</Collapse>
+<Collapse header="Optional COCA Tutorials">
+<div align="left"> ##### If you're having difficulty, here are a couple of short video tutorials. However, note that the syntax for part-of-speech tags has recently changed. In the videos, they are enclosed in square brakets (like [j*] for adjective). Now, they preceded by an underscore (like _j* for adjective).</div> 
+  <VideoPlayer url="https://youtu.be/sCLgRTlxG0Y" controls="true" />
+
+
+  <VideoPlayer url="https://youtu.be/KP-7thiUnLM" controls="true" />
+
+  <VideoPlayer url="https://youtu.be/t_SxpfiPo_o" controls="true" />
+  
+</Collapse>
+
+*************************
+
+#### When you are done, click the 'Finish Lesson' button below.
+<LessonSubmit />

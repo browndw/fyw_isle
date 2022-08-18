@@ -1,0 +1,43 @@
+---
+title: "Exercise 5.1"
+author: David Brown
+date: 27/01/2020
+state:
+require:
+    dataset1: "https://isle.stat.cmu.edu/WAD-proseed_dataset_5.1.csv"
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# Exercise 5.1
+# Putting your data story into words
+
+For homework, you were asked to create visualizions, caption them, and then write short interpreations of those visualions.
+
+To carry out the exercise, you were provided some toy data about pencils, which appears in the **Data Explorer** below.
+
+With a partner, compare your responses. Decide on a visualization and accompanying story that you think is particularly explanatory and/or compelling.
+
+Using the **Data Explorer**, recreate a version of the visualization. Note that you'll be mostly restricted to bar plots and tables. (Remember that you can use '**Bars represent**' and select '**Function evaluated for variable**'.) Line plots don't have as much functionality.
+
+Once you've created your visualization. Go to the 'Report' view. Drag over your visualization. Caption it. And compose an interpretation. You can draw from your homework, of course.
+
+<Gate banner={<h3>Please sign in with your account...</h3>} user >
+    <DataExplorer
+    data={dataset1}
+    categorical={['Student', 'Gender', 'Major', 'Year', 'Date']}
+    quantitative={['Daily_pens_pencils_by_student']}
+    />
+</Gate>
+
+After you and your partner have completed your short Report, copy and paste your **caption** and your **Results paragraph** to paste into the fields below.
+
+**Finally, submit your report** putting your names at the top.
+
+<FreeTextQuestion
+    question="Paste your caption here:"
+/>
+
+<FreeTextQuestion
+    question="Paste your paragraph here:"
+/>

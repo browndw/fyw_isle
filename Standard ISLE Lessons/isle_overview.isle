@@ -1,0 +1,80 @@
+---
+title: ISLE Video Resources
+author: Michael Laudenbach
+date: 10/23/2020
+state: null
+hideProgressBar: true
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# ISLE Overview
+
+##### This page is meant to serve as a repository of video resources for ISLE. Click on the boxes below to view videos for the corresponding topic. 
+*************************
+<Collapse header="ISLE Question Types & Submitting Assignments">
+<VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Question-Types_ISLE.mp4"
+  controls={true}
+/>
+</Collapse>
+
+*************************
+
+<Collapse header="Report Editor & Submitting Reports">
+  <VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Report-Editor_ISLE.mp4"
+  controls={true}
+/>
+</Collapse>
+
+*************************
+
+<Collapse header="Filtering & Transforming Datasets">
+  <VideoPlayer url="https://isle.stat.cmu.edu/WAD-proseed_Transforming-data_ISLE.mp4"
+  controls={true}
+/>
+</Collapse>
+
+
+*************************
+
+<Collapse header="Creating Tables">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Bar Plots">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Line Plots">
+ 
+</Collapse>
+
+*************************
+
+<Collapse header="Box Plots">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="Histograms">
+  
+</Collapse>
+
+
+
+*************************
+
+<Collapse header="Significance Tests (ANOVA)">
+  
+</Collapse>
+
+*************************
+
+<Collapse header="T-tests">
+  
+</Collapse>

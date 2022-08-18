@@ -1,0 +1,306 @@
+---
+title: Chapter 02 Homework
+author: Writing about Data (Emily DeJeu, Mike Laudenbach, David Brown)
+date: 22/03/2020
+language: en-US
+hideProgressBar: true
+state:
+server: https://isle.stat.cmu.edu
+license: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0]
+---
+
+# Chapter 2 Exercises
+
+
+### After reading Chapter 2, please complete Exercises 2.1 and 2.2, below. Simply click each exercise's button to see your assigned tasks.
+
+
+*************************************
+
+<Collapse
+header="Exercise 2.1">
+  
+
+
+#### Exercise 2.1
+**The goal of this exercise is to give you practice telling stories about data.** Below you will find four data visualizations accompanied by captions that describe, but do not tell a story about, the visualization’s content.
+
+On each of the four pages below, study the data visualization. Then, write one complete sentence that communicates its main story. Finally, if the visualization has multiple stories, write an additional one or two sentences communicating these secondary stories.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+<Pages>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_a.png" width="500" height="300"
+/></div>
+
+<FreeTextQuestion
+    question="CAPTION: Percentage of adults who feel secure sharing private data via different communication channels."  
+/>
+    </div>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_b.png"  width="500" height="285"
+/></div>
+
+<FreeTextQuestion
+    question="CAPTION: Recurrence of gastric ulcers for the year after successful healing with ranitidine alone or triple therapy plus ranitidine."
+/>
+    </div>
+<div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_c.png"  width="500" height="285" /></div>
+
+<FreeTextQuestion
+    question="CAPTION: Times to complete three different virtual store functions by adults over 60 years and under 30 years."
+/>
+    </div>
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_01_d.png"  width="500" height="170" /></div>
+
+<FreeTextQuestion
+    question="CAPTION: Average hours studied per week, GPA, and degree completion of students in three different majors."
+/>
+    </div>
+
+</Pages>
+
+</Collapse>
+
+<Collapse
+header="Exercise 2.2">
+
+#### Exercise 2.2
+**The goal of this exercise is to generate good questions about what is and is not credible in discussing data.** Focus on your understanding and on raising good questions rather than obsessing over whether you are obtaining the “correct” answer.
+
+On each of 8 pages below, study the data visualization and read the corresponding caption. Then, rate each data story on a scale of 1-4 for how credible it is. 
+* 4 = Very credible 
+* 3 = Mostly credible 
+* 2 = Mostly not credible 
+* 1 = Not at all credible 
+
+For each example that you rate less than “completely credible,” indicate which of the four principles above it seems to violate (note: some may violate multiple principles). 
+
+Then, **elaborate on your answers: how does the visualization affect the relationship between audience, purpose, and credibility?** Provide at least one suggestion for revising the visualization/caption.
+
+**Remember to click 'Submit' after entering your answer!**
+
+
+
+<Pages>
+  <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_a.png"  width="500" height="140" /></div>
+
+<MultipleChoiceSurvey
+id="2.2_1"
+anonymous
+    question="CAPTION: Male students answered more questions correctly than their female peers"
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+    
+/>
+<MultipleChoiceSurvey
+  id="2.2_1a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_b.png"  width="500" height="350" /></div>
+
+<MultipleChoiceSurvey
+id="2.2_2"
+    anonymous
+    question="CAPTION: The number of units sold increased from 2014 - 2017."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+    
+/>
+<MultipleChoiceSurvey
+  id="2.2_2a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_c.png"  width="500" height="385" /></div>
+
+<MultipleChoiceSurvey
+id="2.2_3"
+    anonymous
+    question="CAPTION: Racist attitudes toward dating appear to have improved slightly since 2008."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+<MultipleChoiceSurvey
+  id="2.2_3a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+        <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_d.png"  width="500" height="300" /></div>
+
+<MultipleChoiceSurvey
+id="2.2_4"
+    anonymous
+    question="CAPTION: Revenue has steadily increased over the last decade."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+
+<MultipleChoiceSurvey
+  id="2.2_4a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_e.png"  width="500" height="350" /></div>
+
+<MultipleChoiceSurvey
+    anonymous
+    id="2.2_5"
+    question="CAPTION: Shorter women receive more unsolicited emails than taller women (especially women above 5’10”) while the opposite trend is true for men."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+
+<MultipleChoiceSurvey
+  id="2.2_5a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_f.png"  width="500" height="370" /></div>
+
+<MultipleChoiceSurvey
+    id="2.2_6"
+    anonymous
+    question="CAPTION: Gasoline prices dropped by over one-third between 2012-2015."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+
+<MultipleChoiceSurvey
+  id="2.2_6a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+    <div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/76-107_exercise_02_02_g.png"  width="500" height="420" /></div>
+
+<MultipleChoiceSurvey
+anonymous
+id="2.2_7"
+    question="CAPTION: According to the OKCupid database, women are nearly twice as likely as men to believe that the earth is bigger than the sun."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+<MultipleChoiceSurvey
+  id="2.2_7a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+<div>
+       <div align="center"><Image src="https://isle.stat.cmu.edu/WAD-proseed_exercise2.2_H.jpg"  width="500" height="420" /></div>
+
+<MultipleChoiceSurvey
+anonymous
+id="2.2_8"
+    question="CAPTION: The five-year graduation rates of students at two area universities. Students at University Z are much more likely to graduate within five years than students at University A."
+    answers={[
+        "4 = Completely credible", "3 = Mostly credible", "2 = Mostly not credible", "1 = Not credible",
+    ]}
+/>
+<MultipleChoiceSurvey
+  id="2.2_8a"
+  anonymous
+  question="If you rated the visual as less than 'completely credible', which of the four principles in Chapter 2 does this visual violate?"
+  answers={[ "1. Going against common conventions for reporting or displaying datain the hopes readers will misinterpret the data", "2. Leading readers to believethat small differences are actually large (or vice-versa)", "3. Leaving out important context or information that would change readers’ understanding of the data", "4. Exaggerating the conclusions we can draw from the data"]}
+  multipleAnswers={true}
+/>
+
+<FreeTextQuestion
+  question="If you rated the visual as less than 'completely credible', elaborate on your answer and suggest at least one revision to the visualization or caption."
+  solution="Enter solution"
+/>
+    </div>
+
+</Pages>
+</Collapse>
+
+*********************************************************
+
+#### Don't forget to click the 'Finish Lesson' button below and then the 'Download PDF of Responses' button on the pop-up. Remember, you must upload the PDF to Canvas to receive credit for completing these exercises.
+<LessonSubmit />
+
+
+
+
