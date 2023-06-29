@@ -55,7 +55,7 @@ Now we can use that filtered data to create a boxplot:
 1. Group by "PaperPiscipline".
 1. And "Generate".
 
-You can also create your own variables by using the "Transform" option to combine or rename categories. For example, you could group disciplines under into broader disciplinary fields. <Link href="https://drive.google.com/file/d/1vHU9xXnS-eEno7AICiItMDT7fgUgN9_2/view?usp=sharing" >Review this video </Link>for a reminder of how to create new variables. 
+You can also create your own variables by using the "Transform" option to combine or rename categories. For example, you could group disciplines under into broader disciplinary fields. <Link href="https://drive.google.com/file/d/1dOfMGsEBe3cG9pQyHZz3IHocThngnzv2/view?usp=share_link" >Review this video </Link>for a reminder of how to create new variables. 
 </Collapse>
 
 <Collapse header = "Integrating Qualitative Evidence">
@@ -71,9 +71,6 @@ Here's an example of how to integrate a textual excerpt into a paragraph, in ord
 />
 
 If you're wondering how to find textual excerpts that will support your arguments, good news: we have pulled out the most popular words and phrases (or "tokens") in MICUSP and have organized them by their DocuScope categories. You can see the entire MICUSP token spreadsheet <Link href="https://docs.google.com/spreadsheets/d/1beunPfDrXEOygcptW7UEIVkmujfMWxwee7AZNkSdXVw/edit#gid=0" >here.</Link>
-
-Watch <Link href="https://drive.google.com/file/d/1GWpcXYa_hvOzzaR0e-HPZege_bJ16D31/view?usp=sharing" >this video</Link> for information on how to sort and filter this spreadsheet (ignore all references to the COCA wordlist). Once you know how to sort and filter based on the DocuScope variables you care about, you'll have a long list of sample words and phrases you can search in MICUSP, which is a fast way to find sample text excerpts to use in your CGA report.
-
 
 </Collapse>
 
